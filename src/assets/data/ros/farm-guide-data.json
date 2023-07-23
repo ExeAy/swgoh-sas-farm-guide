@@ -1,0 +1,56 @@
+[
+  {
+    "id": "part1",
+    "name": "Geo DS",
+    "description": "Fokus på lag för Geo DS TB",
+    "teams": [
+      {
+        "id": "11",
+        "name": "Genosians",
+        "members": [
+          {
+            "id": "GEONOSIANBROODALPHA",
+            "gear": 13,
+            "relic": 3,
+            "zetas": [
+              {
+                "id": "leaderskill_GEONOSIANBROODALPHA",
+                "recommendation": "recommended"
+              },
+              {
+                "id": "uniqueskill_GEONOSIANBROODALPHA01",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "SUNFAC",
+            "gear": 12,
+            "relic": 0
+          },
+          {
+            "id": "GEONOSIANSOLDIER",
+            "gear": 12,
+            "relic": 0
+          },
+          {
+            "id": "GEONOSIANSPY",
+            "gear": 13,
+            "relic": 3
+          },
+          {
+            "id": "POGGLETHELESSER",
+            "gear": 12,
+            "relic": 0,
+            "omicrons": [
+              {
+                "id": "uniqueskill_POGGLETHELESSER01",
+                "recommendation": "recommended"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -4,5 +4,6 @@ module.exports = {
   theme: {
     extend: {},
   },
+  safelist: ['bg-red-200'],
   plugins: [],
 }
