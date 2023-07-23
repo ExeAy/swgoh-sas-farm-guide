@@ -9,7 +9,7 @@ interface PartContainerProps {
 const PartContainer = ({ color, children }: PartContainerProps) => {
   return (
     <div
-      className={`container flex border border-solid w-full rounded-md border-black bg-${color}`}
+      className={`container flex border border-solid w-full rounded-md border-black bg-${color}-200`}
     >
       <div className="flex flex-col border-r-2 p-4 border-black">
         <h3>Description goes here</h3>

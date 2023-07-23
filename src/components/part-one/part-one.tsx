@@ -13,8 +13,10 @@ const PartOne = () => {
   return (
     <div>
       <h1 className="text-xl font-bold text-center text-gray-800">Prio 1</h1>
-      <PartContainer color="red-200" partId="part-one">
-        {partOneData?.teams.map((team) => <Squad team={team} />)}
+      <PartContainer color="red" partId="part-one">
+        {partOneData?.teams.map((team) => (
+          <Squad key={team.id} team={team} color="red" />
+        ))}
       </PartContainer>
     </div>
   )

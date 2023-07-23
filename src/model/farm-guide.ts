@@ -2,18 +2,17 @@ import type { PlayerCharacter } from './character'
 
 export type OmiZetaRecommendation = 'required' | 'recommended'
 
+export type FarmGuideAbility = {
+  id: string
+  recommendation: string
+}
+
 export interface FarmGuideTeamMember {
   id: string
   gear: number
-  relic: number
-  zetas?: {
-    id: string
-    recommendation: string
-  }[]
-  omicrons?: {
-    id: string
-    recommendation: string
-  }[]
+  relic?: number
+  zetas?: FarmGuideAbility[]
+  omicrons?: FarmGuideAbility[]
 }
 
 export interface FarmGuideTeam {
