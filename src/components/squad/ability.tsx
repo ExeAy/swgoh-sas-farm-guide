@@ -5,10 +5,11 @@ import type { FarmGuideAbility } from '../../model/farm-guide'
 
 interface AbilityProps {
   farmGuideAbility: FarmGuideAbility
+  type: 'zeta' | 'omicron'
 }
 
 const Ability: React.FC<AbilityProps> = (props) => {
-  const { farmGuideAbility } = props
+  const { farmGuideAbility, type } = props
 
   const abilities = useContext(AbilitiesContext)
 
@@ -38,14 +39,14 @@ const Ability: React.FC<AbilityProps> = (props) => {
         className={`leading-none text-sm text-${color} `}
       >
         {farmGuideAbility.recommendation === 'recommended' ? '(' : null}
-        {ability.is_zeta && (
+        {ability.is_zeta && type === 'zeta' && (
           <img
             src="https://game-assets.swgoh.gg/tex.skill_zeta.png"
             alt="Ability Material Zeta"
             className="w-4 inline"
           ></img>
         )}
-        {ability.is_omicron && (
+        {ability.is_omicron && type === 'omicron' && (
           <img
             src="https://game-assets.swgoh.gg/tex.skill_hexagon_white.png"
             alt="Ability Omicron Material"

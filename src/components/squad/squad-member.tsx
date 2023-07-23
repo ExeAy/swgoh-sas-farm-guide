@@ -36,12 +36,12 @@ const SquadMember: React.FC<SquadMemberProps> = (props) => {
         <RequiredGear teamMember={farmGuideTeamMember} />
         {farmGuideTeamMember.zetas?.length
           ? farmGuideTeamMember.zetas.map((zeta) => (
-              <Ability farmGuideAbility={zeta} />
+              <Ability farmGuideAbility={zeta} type="zeta" />
             ))
           : null}
         {farmGuideTeamMember.omicrons?.length
           ? farmGuideTeamMember.omicrons.map((omi) => (
-              <Ability farmGuideAbility={omi} />
+              <Ability farmGuideAbility={omi} type="omicron" />
             ))
           : null}
       </div>
