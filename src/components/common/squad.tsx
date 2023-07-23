@@ -22,7 +22,7 @@ const Squad: React.FC<SquadProps> = (props) => {
   }, [team])
 
   return (
-    <div className="bg-white p-2 flex flex-col gap-2">
+    <div className="bg-white p-2 flex flex-col gap-2 max-w-xs">
       <h4 className="font-bold text-center text-xl">{team.name}</h4>
       {teamMembers.map((member) => (
         <SquadMember
@@ -32,6 +32,7 @@ const Squad: React.FC<SquadProps> = (props) => {
           color={color}
         />
       ))}
+      {team.notes && <p className="text-xs">{team.notes}</p>}
     </div>
   )
 }

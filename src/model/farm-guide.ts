@@ -19,6 +19,7 @@ export interface FarmGuideTeam {
   id: string
   name: string
   members: FarmGuideTeamMember[]
+  notes?: string
 }
 
 export interface FarmGuideDataPart {

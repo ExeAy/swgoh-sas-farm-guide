@@ -71,7 +71,71 @@
               }
             ]
           }
-        ]
+        ],
+        "notes": "Helt okej att dra upp Nute Gunray om man vill också."
+      },
+      {
+        "id": "13",
+        "name": "Empire",
+        "members": [
+          {
+            "id": "EMPERORPALPATINE",
+            "gear": 12,
+            "zetas": [
+              {
+                "id": "leaderskill_EMPERORPALPATINE",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "VADER",
+            "gear": 13,
+            "relic": 3,
+            "zetas": [
+              {
+                "id": "specialskill_VADER03",
+                "recommendation": "required"
+              },
+              {
+                "id": "leaderskill_VADER",
+                "recommendation": "recommended"
+              },
+              {
+                "id": "uniqueskill_VADER01",
+                "recommendation": "recommended"
+              }
+            ]
+          },
+          {
+            "id": "GRANDADMIRALTHRAWN",
+            "gear": 12,
+            "relic": 0
+          },
+          {
+            "id": "MARAJADE",
+            "gear": 12,
+            "relic": 0,
+            "zetas": [
+              {
+                "id": "specialskill_MARAJADE02",
+                "recommendation": "recommended"
+              }
+            ],
+            "omicrons": [
+              {
+                "id": "uniqueskill_MARAJADE01",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "GRANDMOFFTARKIN",
+            "gear": 12,
+            "relic": 0
+          }
+        ],
+        "notes": "Ibland är det läge att använda Vader någon annanstans (t.ex. solo mot geos). Därför är det bra om man drar upp en till Empire-karaktär. Tie Fighter Pilot, Shore Trooper eller Royal Guard är en bra kandidater."
       }
     ]
   }
