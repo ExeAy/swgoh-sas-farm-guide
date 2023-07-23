@@ -50,6 +50,28 @@
             ]
           }
         ]
+      },
+      {
+        "id": "12",
+        "name": "Separatists",
+        "members": [
+          {
+            "id": "COUNTDOOKU",
+            "gear": 12,
+            "relic": 0
+          },
+          {
+            "id": "ASAJVENTRESS",
+            "gear": 12,
+            "relic": 0,
+            "zetas": [
+              {
+                "id": "uniqueskill_ASAJVENTRESS01",
+                "recommendation": "recommended"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

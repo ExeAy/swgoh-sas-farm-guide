@@ -23,6 +23,7 @@ const Squad: React.FC<SquadProps> = (props) => {
 
   return (
     <div className="bg-white p-2 flex flex-col gap-2">
+      <h4 className="font-bold text-center text-xl">{team.name}</h4>
       {teamMembers.map((member) => (
         <SquadMember
           key={member.base_id}

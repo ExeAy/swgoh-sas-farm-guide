@@ -39,6 +39,11 @@ const SquadMember: React.FC<SquadMemberProps> = (props) => {
               <Ability farmGuideAbility={zeta} />
             ))
           : null}
+        {farmGuideTeamMember.omicrons?.length
+          ? farmGuideTeamMember.omicrons.map((omi) => (
+              <Ability farmGuideAbility={omi} />
+            ))
+          : null}
       </div>
     </div>
   )
