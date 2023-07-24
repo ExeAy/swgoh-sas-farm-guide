@@ -5,11 +5,13 @@ module.exports = {
     extend: {
       width: {
         15: '5rem',
+        squad: '18rem',
       },
     },
   },
   safelist: [
     'bg-red-200',
+    'bg-red-400',
     'text-indigo-800',
     'text-indigo-400',
     'text-slate-800',

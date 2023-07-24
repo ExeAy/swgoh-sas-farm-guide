@@ -8,7 +8,7 @@ const RequiredGear: React.FC<RequiredGearProps> = (props) => {
   const { teamMember } = props
 
   return (
-    <div className="leading-none text-sm text-gray-800 mb-1">
+    <div className="leading-none text-xs text-gray-800 mb-1">
       <span>Minimum gear: </span>
       {teamMember.relic ? (
         <span>Relic: {teamMember.relic}</span>

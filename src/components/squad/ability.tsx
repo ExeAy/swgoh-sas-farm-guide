@@ -36,7 +36,7 @@ const Ability: React.FC<AbilityProps> = (props) => {
     <Tooltip title={ability.description}>
       <span
         key={ability.base_id}
-        className={`leading-none text-sm text-${color} `}
+        className={`leading-none text-xs text-${color} `}
       >
         {farmGuideAbility.recommendation === 'recommended' ? '(' : null}
         {ability.is_zeta && type === 'zeta' && (

@@ -1,5 +1,3 @@
-import type { PlayerCharacter } from './character'
-
 export type OmiZetaRecommendation = 'required' | 'recommended'
 
 export type FarmGuideAbility = {
@@ -18,13 +16,15 @@ export interface FarmGuideTeamMember {
 export interface FarmGuideTeam {
   id: string
   name: string
-  members: FarmGuideTeamMember[]
+  members?: FarmGuideTeamMember[]
+  subTeams?: FarmGuideTeam[]
   notes?: string
 }
 
 export interface FarmGuideDataPart {
   id: string
   name: string
+  color: string
   description: string
   teams: FarmGuideTeam[]
 }

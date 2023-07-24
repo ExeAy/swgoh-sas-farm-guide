@@ -7,17 +7,16 @@ import RequiredGear from './gear'
 interface SquadMemberProps {
   character: Character
   team: FarmGuideTeam
-  color: string
 }
 
 const SquadMember: React.FC<SquadMemberProps> = (props) => {
-  const { character, team, color } = props
+  const { character, team } = props
   const [farmGuideTeamMember, setFarmGuideTeamMember] =
     useState<FarmGuideTeamMember>()
 
   useEffect(() => {
-    const member = team.members.find(
-      (member) => member.id === character.base_id,
+    const member = team.members!.find(
+      (member) => member.id === character?.base_id,
     )
     setFarmGuideTeamMember(member)
   }, [team, character])
@@ -28,20 +27,28 @@ const SquadMember: React.FC<SquadMemberProps> = (props) => {
 
   return (
     <div className="flex gap-1 items-center">
-      <a href={character.url}>
-        <img src={character.image} alt={character.name} className="w-15" />
+      <a href={character?.url}>
+        <img src={character?.image} alt={character?.name} className="w-15" />
       </a>
       <div className="flex flex-col justify-start">
-        <span className="mb-1 leading-none">{character.name}</span>
+        <span className="mb-1 leading-none text-sm">{character?.name}</span>
         <RequiredGear teamMember={farmGuideTeamMember} />
         {farmGuideTeamMember.zetas?.length
           ? farmGuideTeamMember.zetas.map((zeta) => (
-              <Ability farmGuideAbility={zeta} type="zeta" />
+              <Ability
+                farmGuideAbility={zeta}
+                type="zeta"
+                key={`zeta-${zeta.id}`}
+              />
             ))
           : null}
         {farmGuideTeamMember.omicrons?.length
           ? farmGuideTeamMember.omicrons.map((omi) => (
-              <Ability farmGuideAbility={omi} type="omicron" />
+              <Ability
+                farmGuideAbility={omi}
+                type="omicron"
+                key={`omi-${omi.id}`}
+              />
             ))
           : null}
       </div>

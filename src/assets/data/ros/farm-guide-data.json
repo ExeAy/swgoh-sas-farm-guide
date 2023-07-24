@@ -3,6 +3,7 @@
     "id": "part1",
     "name": "Geo DS",
     "description": "Fokus på lag för Geo DS TB",
+    "color": "red",
     "teams": [
       {
         "id": "11",
@@ -136,6 +137,127 @@
           }
         ],
         "notes": "Ibland är det läge att använda Vader någon annanstans (t.ex. solo mot geos). Därför är det bra om man drar upp en till Empire-karaktär. Tie Fighter Pilot, Shore Trooper eller Royal Guard är en bra kandidater."
+      },
+      {
+        "id": "14",
+        "name": "Valbara lag",
+        "notes": "Välj minst ett av lagen. Vet du inte vilket du ska välja så vill guilden ha First Order med omicron Phasma till TW och Darth Revan med Malak till plutoner. Troopers, BH, DR & Malak",
+        "subTeams": [
+          {
+            "id": "141",
+            "name": "First Order",
+            "members": [
+              {
+                "id": "PHASMA",
+                "gear": 12,
+                "zetas": [
+                  {
+                    "id": "leaderskill_PHASMA",
+                    "recommendation": "required"
+                  }
+                ],
+                "omicrons": [
+                  {
+                    "id": "leaderskill_PHASMA",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "KYLORENUNMASKED",
+                "gear": 12,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_KYLORENUNMASKED01",
+                    "recommendation": "recommended"
+                  }
+                ]
+              },
+              {
+                "id": "KYLOREN",
+                "gear": 12
+              },
+              {
+                "id": "GENERALHUX",
+                "gear": 12,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_GENERALHUX01",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "FOSITHTROOPER",
+                "gear": 12
+              }
+            ]
+          },
+          {
+            "id": "142",
+            "name": "Nightsisters",
+            "members": [
+              {
+                "id": "MOTHERTALZIN",
+                "gear": 12,
+                "zetas": [
+                  {
+                    "id": "leaderskill_MOTHERTALZIN",
+                    "recommendation": "required"
+                  },
+                  {
+                    "id": "uniqueskill_MOTHERTALZIN01",
+                    "recommendation": "recommended"
+                  }
+                ]
+              },
+              {
+                "id": "ASAJVENTRESS",
+                "gear": 12,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_ASAJVENTRESS01",
+                    "recommendation": "recommended"
+                  }
+                ],
+                "omicrons": [
+                  {
+                    "id": "specialskill_ASAJVENTRESS01",
+                    "recommendation": "recommended"
+                  }
+                ]
+              },
+              {
+                "id": "DAKA",
+                "gear": 12
+              },
+              {
+                "id": "MERRIN",
+                "gear": 12
+              },
+              {
+                "id": "NIGHTSISTERZOMBIE",
+                "gear": 12
+              }
+            ]
+          },
+          {
+            "id": "143",
+            "name": "Bounty Hunters",
+            "members": [
+              {
+                "id": "BOSSK",
+                "gear": 12,
+                "zetas": [
+                  {
+                    "id": "leaderskill_BOSSK",
+                    "recommendation": "required"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

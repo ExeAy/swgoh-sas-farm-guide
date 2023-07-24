@@ -10,12 +10,12 @@ interface PartContainerProps {
 const PartContainer = ({ color, children, part }: PartContainerProps) => {
   return (
     <div
-      className={`container flex border border-solid w-full rounded-md border-black bg-${color}-200`}
+      className={`flex border border-solid w-full rounded-md border-black bg-${color}-200 `}
     >
-      <div className="flex flex-col justify-center border-r-2 p-4 border-black">
+      <div className="flex flex-col justify-center border-r-2 p-4 border-black min-w-[7rem]">
         <h3>{part?.description}</h3>
       </div>
-      <div className="p-4">{children}</div>
+      <div className="p-4 overflow-scroll">{children}</div>
     </div>
   )
 }
