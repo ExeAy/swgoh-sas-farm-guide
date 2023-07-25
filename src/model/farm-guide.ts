@@ -7,7 +7,8 @@ export type FarmGuideAbility = {
 
 export interface FarmGuideTeamMember {
   id: string
-  gear: number
+  name?: string
+  gear?: number
   relic?: number
   zetas?: FarmGuideAbility[]
   omicrons?: FarmGuideAbility[]

@@ -23,7 +23,7 @@ const TeamGroup = (props: TeamGroupProps) => {
     elements.push(
       <div
         key={team.id}
-        className={`flex flex-col p-4 gap-2 bg-${color}-400 rounded-md`}
+        className={`flex flex-col p-4 gap-2 bg-${color}-400 rounded-md w-fit`}
       >
         <h4 className="font-bold text-center text-xl">{team.name}</h4>
         <div className="grid grid-rows-2 gap-2 grid-flow-col">
@@ -31,9 +31,8 @@ const TeamGroup = (props: TeamGroupProps) => {
             <Squad key={subTeam.id} team={subTeam} />
           ))}
         </div>
-
         <div>
-          <p className="text-xs ">{team.notes}</p>
+          <p className="text-sm w-squad-container-text">{team.notes}</p>
         </div>
       </div>,
     )
@@ -41,7 +40,7 @@ const TeamGroup = (props: TeamGroupProps) => {
     elements.push(<Squad key={team.id} team={team} />)
   }
 
-  return <div className="flex items-center gap-2">{elements}</div>
+  return <div className="flex items-center gap-1">{elements}</div>
 }
 
 export default TeamGroup

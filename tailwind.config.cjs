@@ -6,6 +6,7 @@ module.exports = {
       width: {
         15: '5rem',
         squad: '18rem',
+        'squad-container-text': '36rem',
       },
     },
   },

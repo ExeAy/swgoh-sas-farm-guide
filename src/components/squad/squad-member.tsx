@@ -1,28 +1,42 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
+import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined'
 import type { Character } from '../../model/character'
 import type { FarmGuideTeam, FarmGuideTeamMember } from '../../model/farm-guide'
 import Ability from './ability'
 import RequiredGear from './gear'
+import { CharacterContext } from '../../contexts/CharactersContext'
 
 interface SquadMemberProps {
-  character: Character
-  team: FarmGuideTeam
+  farmGuideTeamMember: FarmGuideTeamMember
 }
 
 const SquadMember: React.FC<SquadMemberProps> = (props) => {
-  const { character, team } = props
-  const [farmGuideTeamMember, setFarmGuideTeamMember] =
-    useState<FarmGuideTeamMember>()
+  const { farmGuideTeamMember } = props
+
+  const characters = useContext(CharacterContext)
+
+  const [character, setCharacter] = useState<Character>()
 
   useEffect(() => {
-    const member = team.members!.find(
-      (member) => member.id === character?.base_id,
+    const character = characters.find(
+      (char) => char.base_id === farmGuideTeamMember.id,
     )
-    setFarmGuideTeamMember(member)
-  }, [team, character])
+    setCharacter(character)
+  }, [])
 
   if (!farmGuideTeamMember) {
     return null
+  }
+
+  if (farmGuideTeamMember.id === 'OPTIONAL') {
+    return (
+      <div className="flex gap-1 items-center">
+        <PermIdentityOutlinedIcon sx={{ fontSize: 50 }} />
+        <span className="mb-1 leading-none text-sm">
+          {farmGuideTeamMember?.name}
+        </span>
+      </div>
+    )
   }
 
   return (
