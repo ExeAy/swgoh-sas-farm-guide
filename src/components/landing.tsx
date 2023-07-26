@@ -12,8 +12,8 @@ const Landing: React.FC = () => {
     <FarmDataContext.Provider value={farmGuideData}>
       <CharacterContext.Provider value={characters}>
         <AbilitiesContext.Provider value={abilities}>
-          <div className="flex justify-center">
-            <div className="px-2 w-fit flex flex-col gap-5 mt-20">
+          <div className="flex justify-center w-fit mx-auto">
+            <div className="px-2 flex flex-col items-center w-full gap-5 mt-20">
               <Header />
               <FarmBlocks />
             </div>
