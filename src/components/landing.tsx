@@ -13,7 +13,7 @@ const Landing: React.FC = () => {
       <CharacterContext.Provider value={characters}>
         <AbilitiesContext.Provider value={abilities}>
           <div className="flex justify-center">
-            <div className="container flex flex-col gap-5 mt-20">
+            <div className="px-2 w-fit flex flex-col gap-5 mt-20">
               <Header />
               <FarmBlocks />
             </div>

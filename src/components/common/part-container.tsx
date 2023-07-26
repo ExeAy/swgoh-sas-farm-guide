@@ -17,7 +17,7 @@ const PartContainer = ({ color, children, part }: PartContainerProps) => {
           {part?.description}
         </h3>
       </div>
-      <div className="p-4 overflow-scroll">{children}</div>
+      <div className="p-4">{children}</div>
     </div>
   )
 }
