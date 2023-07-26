@@ -59,18 +59,18 @@
           {
             "id": "COUNTDOOKU",
             "gear": 12,
-            "relic": 0
+            "relic": 0,
+            "zetas": [
+              {
+                "id": "leaderskill_COUNTDOOKU",
+                "recommendation": "recommended"
+              }
+            ]
           },
           {
             "id": "ASAJVENTRESS",
             "gear": 12,
-            "relic": 0,
-            "zetas": [
-              {
-                "id": "uniqueskill_ASAJVENTRESS01",
-                "recommendation": "recommended"
-              }
-            ]
+            "relic": 0
           }
         ],
         "notes": "Helt okej att dra upp Nute Gunray om man vill också."

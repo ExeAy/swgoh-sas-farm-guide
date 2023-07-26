@@ -1,14 +1,11 @@
 import Header from './header/header'
-import PartOne from './part'
 import farmGuideData from '../assets/data/ros/farm-guide-data.json'
+import characters from '../assets/data/swgoh/characters.json'
+import abilities from '../assets/data/swgoh/abilities.json'
 import { FarmDataContext } from '../contexts/FarmDataContext'
-import { getAbilities, getCharacters } from '../api/swgoh.gg'
 import { CharacterContext } from '../contexts/CharactersContext'
 import { AbilitiesContext } from '../contexts/AbilitiesContext'
 import FarmBlocks from './farm-blocks'
-
-const characters = await getCharacters()
-const abilities = await getAbilities()
 
 const Landing: React.FC = () => {
   return (
