@@ -19,13 +19,16 @@ const Part = (props: PartProps) => {
 
   return (
     <div>
-      <h1 className="text-4xl font-bold text-center text-gray-800">Prio 1</h1>
-      <PartContainer color="red" part={partData}>
+      <h1 className="text-4xl font-bold text-center text-gray-800">
+        {partData?.name}
+      </h1>
+      <PartContainer color={partData?.color || 'white'} part={partData}>
         <div className="flex items-center gap-2">
           {partData?.teams!.map((team, index) => (
             <TeamGroup
               key={team.id}
               team={team}
+              allTeams={partData.teams}
               color={partData.color}
               index={index}
             />

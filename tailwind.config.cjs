@@ -13,6 +13,8 @@ module.exports = {
   safelist: [
     'bg-red-200',
     'bg-red-400',
+    'bg-amber-200',
+    'bg-amber-400',
     'text-indigo-800',
     'text-indigo-400',
     'text-slate-800',

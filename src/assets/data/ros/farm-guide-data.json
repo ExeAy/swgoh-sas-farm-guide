@@ -387,5 +387,46 @@
         ]
       }
     ]
+  },
+  {
+    "id": "part2",
+    "name": "Raids och GL",
+    "description": "Fokus på lag för raids och Galactic Legends",
+    "color": "amber",
+    "teams": [
+      {
+        "notes": "Gå endast mot 1 GL, de är väldigt resurskrävande och vi kommer inte prioritera någon speciell utan välj en du vill spela med. Välj ett lag för Krayt Dragon efter det. Farma upp Krayt-laget först. Vet du inte vad du vill välja så rekommenderar vi Jabba."
+      },
+      {
+        "notes": "För visssa lag är det lämpligt att gå vidare mot en viss GL men ni får kombinera som ni vill.För de GL:s utan koppling till KD-lag är det helt fritt att välja KD-lag.Satsa på att bygga upp ett KD-lag till Relic 5Hutt Cartell är de bästa KD-lagen. Gå du mot Jabba så får du alltså de två bästa KD-lagen."
+      },
+      {
+        "id": "21",
+        "name": "Old Republic",
+        "members": [
+          {
+            "id": "JEDIKNIGHTREVAN",
+            "gear": 13,
+            "relic": 5
+          },
+          {
+            "id": "BASTILASHAN",
+            "gear": 12
+          },
+          {
+            "id": "MISSIONVAO",
+            "gear": 12
+          },
+          {
+            "id": "ZAALBAR",
+            "gear": 12
+          },
+          {
+            "id": "OPTIONAL",
+            "name": "Jolee Bindo eller Juhani"
+          }
+        ]
+      }
+    ]
   }
 ]
