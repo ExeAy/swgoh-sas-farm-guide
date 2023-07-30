@@ -19,7 +19,10 @@ const Squad: React.FC<SquadProps> = (props) => {
     >
       <h4 className="font-bold text-center text-xl">{team.name}</h4>
       {team.members?.map((teamMember) => (
-        <SquadMember key={teamMember.id} farmGuideTeamMember={teamMember} />
+        <SquadMember
+          key={teamMember.id + teamMember.name}
+          farmGuideTeamMember={teamMember}
+        />
       ))}
       {team.notes && <p className="text-sm">{team.notes}</p>}
     </div>

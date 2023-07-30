@@ -23,7 +23,7 @@ const Part = (props: PartProps) => {
         {partData?.teamParts!.map((teamPart, index) => {
           if (Array.isArray(teamPart)) {
             return (
-              <div className={`flex flex-col gap-1 `}>
+              <div className={`grid grid-rows-2 gap-2 grid-flow-col`}>
                 {(teamPart as FarmGuideDataPart[]).map((subPart) => (
                   <div className={`p-2 bg-${subPart.color}-200`}>
                     <SubPart key={subPart.id} part={subPart} />

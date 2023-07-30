@@ -542,19 +542,19 @@
               },
               {
                 "id": "OPTIONAL",
-                "name": "Valfri dark side character. T.ex. Darth Vader"
+                "name": "Valfri sith"
               },
               {
                 "id": "OPTIONAL",
-                "name": "Valfri dark side character. T.ex. Grand Adminral Thrawn"
+                "name": "Valfri sith"
               },
               {
                 "id": "OPTIONAL",
-                "name": "Valfri dark side character. T.ex. Emperor Palpatine"
+                "name": "Valfri sith"
               },
               {
                 "id": "OPTIONAL",
-                "name": "Valfri dark side character. T.ex. Royal Guard"
+                "name": "Valfri sith"
               }
             ]
           },
@@ -656,7 +656,7 @@
       [
         {
           "id": "22",
-          "name": "JML",
+          "name": "Old Republic och JML",
           "color": "amber",
           "description": "JML",
           "teamParts": [
@@ -707,6 +707,7 @@
             {
               "id": "22b",
               "name": "JML",
+              "notes": "JKR, Bastilla och Jolee Bindo är karakäter som fungera mycket bra i JML-lag",
               "members": [
                 {
                   "id": "GRANDMASTERLUKE",
@@ -745,7 +746,7 @@
         },
         {
           "id": "23",
-          "name": "Jabba",
+          "name": "Hutt Cartell och Jabba",
           "color": "amber",
           "description": "Jabba",
           "teamParts": [
@@ -853,7 +854,7 @@
         },
         {
           "id": "24",
-          "name": "Lord Vader or Jabba",
+          "name": "Tuskens och LV eller Jabba",
           "color": "amber",
           "description": "Lord Vader, Jabba and Tuskens",
           "teamParts": [
@@ -981,6 +982,332 @@
                         },
                         {
                           "id": "uniqueskill_GALACTICLEGEND01",
+                          "recommendation": "required"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "241",
+          "name": "Jawas och Jabba",
+          "color": "amber",
+          "description": "Lord Vader, Jabba and Tuskens",
+          "teamParts": [
+            {
+              "id": "241a",
+              "name": "Jawas",
+              "members": [
+                {
+                  "id": "CHIEFNEBIT",
+                  "gear": 13,
+                  "relic": 5
+                },
+                {
+                  "id": "JAWAENGINEER",
+                  "gear": 13,
+                  "relic": 5
+                },
+                {
+                  "id": "JAWASCAVENGER",
+                  "gear": 13,
+                  "relic": 5
+                },
+                {
+                  "id": "DATHCHA",
+                  "gear": 13,
+                  "relic": 5
+                },
+                {
+                  "id": "JAWA",
+                  "gear": 13,
+                  "relic": 5
+                }
+              ]
+            },
+            {
+              "id": "241b",
+              "name": "Jabba the Hutt",
+              "highlight": true,
+              "members": [
+                {
+                  "id": "JABBATHEHUTT",
+                  "gear": 13,
+                  "relic": 8,
+                  "zetas": [
+                    {
+                      "id": "basicskill_JABBATHEHUTT",
+                      "reommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_JABBATHEHUTT01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_JABBATHEHUTT02",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "leaderskill_JABBATHEHUTT",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_JABBATHEHUTT01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_GALACTICLEGEND01",
+                      "recommendation": "required"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "26",
+          "name": "Mandalorians och JMK eller SEE",
+          "color": "amber",
+          "description": "Jedi Master Kenobi, SEE and mandos",
+          "teamParts": [
+            {
+              "id": "26a",
+              "name": "Mandalorians",
+              "notes": "Maul är optimal lead men Bo Katan fungerar så länge. I så fall väljs en valfri mandaorian till så länge. T.ex. Sabine Wren.",
+              "members": [
+                {
+                  "id": "MAULS7",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "specialskill_MAULS701",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_MAULS702",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_MAULS701",
+                      "recommendation": "required"
+                    }
+                  ]
+                },
+                {
+                  "id": "BOKATAN",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "uniqueskill_BOKATAN01",
+                      "recommendation": "required"
+                    }
+                  ]
+                },
+                {
+                  "id": "CANDEROUSORDO",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "uniqueskill_CANDEROUSORDO01",
+                      "recommendation": "required"
+                    }
+                  ]
+                },
+                {
+                  "id": "THEMANDALORIANBESKARARMOR",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "uniqueskill_THEMANDALORIANBESKARARMOR01",
+                      "recommendation": "required"
+                    }
+                  ]
+                },
+                {
+                  "id": "ARMORER",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "specialskill_ARMORER01",
+                      "recommendation": "required"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "26b",
+              "name": "JMK",
+              "optionalTeams": [
+                {
+                  "id": "26b1",
+                  "name": "JMK",
+                  "notes": "Bo Katan är en requirement för JMK.",
+                  "members": [
+                    {
+                      "id": "JEDIMASTERKENOBI",
+                      "gear": 13,
+                      "relic": 8,
+                      "zetas": [
+                        {
+                          "id": "basicskill_JEDIMASTERKENOBI",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_JEDIMASTERKENOBI01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_JEDIMASTERKENOBI02",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "leaderskill_JEDIMASTERKENOBI",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_JEDIMASTERKENOBI01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_GALACTICLEGEND01",
+                          "recommendation": "required"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "26b2",
+                  "name": "SEE",
+                  "notes": "The Armorer fungara väldigt bra med SEE.",
+                  "members": [
+                    {
+                      "id": "SITHPALPATINE",
+                      "gear": 13,
+                      "relic": 5,
+                      "zetas": [
+                        {
+                          "id": "basicskill_SITHPALPATINE",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_SITHPALPATINE01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_SITHPALPATINE02",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "leaderskill_SITHPALPATINE",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_SITHPALPATINE01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_GALACTICLEGEND01",
+                          "recommendation": "required"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "27",
+          "name": "GL:s utan koppling",
+          "color": "amber",
+          "description": "GL:s utan koppling",
+          "teamParts": [
+            {
+              "id": "27a",
+              "name": "GL:s utan koppling",
+              "notes": "Dessa GL:s har ingen koppling till Krayt Dragon. Därför kan ett valfritt Krayt Dragon lag väljas.",
+              "optionalTeams": [
+                {
+                  "id": "27a1",
+                  "name": "Rey",
+                  "members": [
+                    {
+                      "id": "GLREY",
+                      "gear": 13,
+                      "relic": 7,
+                      "zetas": [
+                        {
+                          "id": "basicskill_GLREY",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_GLREY01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_GLREY02",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "leaderskill_GLREY",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_GLREY01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_GALACTICLEGEND01",
+                          "recommendation": "required"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "27a2",
+                  "name": "SLKR",
+                  "members": [
+                    {
+                      "id": "SUPREMELEADERKYLOREN",
+                      "gear": 13,
+                      "relic": 7,
+                      "zetas": [
+                        {
+                          "id": "basicskill_SUPREMELEADERKYLOREN",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_SUPREMELEADERKYLOREN01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "leaderskill_SUPREMELEADERKYLOREN",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_SUPREMELEADERKYLOREN01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_GALACTICLEGEND01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_SUPREMELEADERKYLOREN02",
                           "recommendation": "required"
                         }
                       ]
