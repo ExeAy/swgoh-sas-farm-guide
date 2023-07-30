@@ -45,7 +45,7 @@ const TeamGroup = (props: TeamGroupProps) => {
           ))}
         </div>
         <div>
-          <p className="text-sm w-squad-container-text">{team.notes}</p>
+          <p className="text-sm max-w-squad-container-text">{team.notes}</p>
         </div>
       </div>,
     )

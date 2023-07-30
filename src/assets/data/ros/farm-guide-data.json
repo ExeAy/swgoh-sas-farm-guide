@@ -146,6 +146,7 @@
           {
             "id": "141",
             "name": "First Order",
+            "highlight": true,
             "members": [
               {
                 "id": "PHASMA",
@@ -565,6 +566,7 @@
             {
               "id": "23b",
               "name": "Jabba",
+              "highlight": true,
               "members": [
                 {
                   "id": "JABBATHEHUTT",
@@ -594,6 +596,146 @@
                     {
                       "id": "uniqueskill_GALACTICLEGEND01",
                       "recommendation": "required"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "24",
+          "name": "Lord Vader or Jabba",
+          "color": "amber",
+          "description": "Lord Vader, Jabba and Tuskens",
+          "teamParts": [
+            {
+              "id": "24a",
+              "name": "Tuskens",
+              "members": [
+                {
+                  "id": "TUSKENCHIEFTAIN",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "basicskill_TUSKENCHIEFTAIN",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "leaderskill_TUSKENCHIEFTAIN",
+                      "recommendation": "required"
+                    }
+                  ]
+                },
+                {
+                  "id": "TUSKENHUNTRESS",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "specialskill_TUSKENHUNTRESS02",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_TUSKENHUNTRESS01",
+                      "recommendation": "required"
+                    }
+                  ]
+                },
+                {
+                  "id": "TUSKENSHAMAN",
+                  "gear": 13,
+                  "relic": 5
+                },
+                {
+                  "id": "TUSKENRAIDER",
+                  "gear": 13,
+                  "relic": 5
+                },
+                {
+                  "id": "URORRURRR",
+                  "gear": 13,
+                  "relic": 5
+                }
+              ]
+            },
+            {
+              "id": "24b",
+              "name": "Valbar GL",
+              "optionalTeams": [
+                {
+                  "id": "23b",
+                  "name": "Jabba",
+                  "highlight": true,
+                  "members": [
+                    {
+                      "id": "JABBATHEHUTT",
+                      "gear": 13,
+                      "relic": 8,
+                      "zetas": [
+                        {
+                          "id": "basicskill_JABBATHEHUTT",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_JABBATHEHUTT01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_JABBATHEHUTT02",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "leaderskill_JABBATHEHUTT",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_JABBATHEHUTT01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_GALACTICLEGEND01",
+                          "recommendation": "required"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "22b",
+                  "name": "Lord Vader",
+                  "members": [
+                    {
+                      "id": "LORDVADER",
+                      "gear": 13,
+                      "relic": 8,
+                      "zetas": [
+                        {
+                          "id": "basicskill_LORDVADER",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_LORDVADER01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_LORDVADER02",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "leaderskill_LORDVADER",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_LORDVADER01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_GALACTICLEGEND01",
+                          "recommendation": "required"
+                        }
+                      ]
                     }
                   ]
                 }
