@@ -1,12 +1,10 @@
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
-import type { FarmGuideTeam } from '../model/farm-guide'
+import type { FarmGuideDataPart, FarmGuideTeam } from '../model/farm-guide'
 import Squad from './common/squad'
-import { useContext } from 'react'
-import { FarmDataContext } from '../contexts/FarmDataContext'
 
 interface TeamGroupProps {
   team: FarmGuideTeam
-  allTeams: FarmGuideTeam[]
+  allTeams: (FarmGuideTeam | FarmGuideDataPart[])[]
   color: string
   index: number
 }
@@ -14,25 +12,27 @@ interface TeamGroupProps {
 const TeamGroup = (props: TeamGroupProps) => {
   const { team, index, color, allTeams } = props
 
-  if (!team.members && !team.subTeams && team.notes)
+  if (!team.members && !team.optionalTeams && team.notes) {
     return (
-      <p className="m-3 p-3 bg-white rounded-lg text-lg w-squad">
-        {team.notes}
-      </p>
-    )
-
-  const elements: JSX.Element[] = []
-
-  if (
-    index !== 0 &&
-    (allTeams[index - 1].subTeams || allTeams[index - 1].members)
-  ) {
-    elements.push(
-      <ArrowForwardIcon key={`arrow-${team.id}`} sx={{ fontSize: 50 }} />,
+      <div className="m-3 p-3 bg-white rounded-lg w-squad">
+        {team.name && <h2 className="font-bold text-xl">{team.name}</h2>}
+        <p className=" text-lg ">{team.notes}</p>
+      </div>
     )
   }
 
-  if (team.subTeams) {
+  const elements: JSX.Element[] = []
+
+  if (index !== 0 && !Array.isArray(allTeams[index - 1])) {
+    const previousTeam = allTeams[index - 1] as FarmGuideTeam
+
+    if (previousTeam.optionalTeams || previousTeam.members)
+      elements.push(
+        <ArrowForwardIcon key={`arrow-${team.id}`} sx={{ fontSize: 50 }} />,
+      )
+  }
+
+  if (team.optionalTeams) {
     elements.push(
       <div
         key={team.id}
@@ -40,7 +40,7 @@ const TeamGroup = (props: TeamGroupProps) => {
       >
         <h4 className="font-bold text-center text-xl">{team.name}</h4>
         <div className="grid grid-rows-2 gap-2 grid-flow-col">
-          {team.subTeams.map((subTeam) => (
+          {team.optionalTeams.map((subTeam) => (
             <Squad key={subTeam.id} team={subTeam} />
           ))}
         </div>
@@ -53,8 +53,7 @@ const TeamGroup = (props: TeamGroupProps) => {
     elements.push(<Squad key={team.id} team={team} />)
   }
 
-  if (team.members)
-    return <div className="flex items-center gap-1">{elements}</div>
+  return <div className="flex items-center gap-1">{elements}</div>
 }
 
 export default TeamGroup

@@ -18,7 +18,7 @@ export interface FarmGuideTeam {
   id: string
   name: string
   members?: FarmGuideTeamMember[]
-  subTeams?: FarmGuideTeam[]
+  optionalTeams?: FarmGuideTeam[]
   notes?: string
 }
 
@@ -27,5 +27,5 @@ export interface FarmGuideDataPart {
   name: string
   color: string
   description: string
-  teams: FarmGuideTeam[]
+  teamParts: (FarmGuideTeam | FarmGuideDataPart[])[]
 }

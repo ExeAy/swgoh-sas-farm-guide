@@ -4,7 +4,7 @@
     "name": "Geo DS",
     "description": "Fokus på lag för Geo DS TB",
     "color": "red",
-    "teams": [
+    "teamParts": [
       {
         "id": "11",
         "name": "Genosians",
@@ -142,7 +142,7 @@
         "id": "14",
         "name": "Valbara lag",
         "notes": "Välj minst ett av lagen. Vet du inte vilket du ska välja så vill guilden ha First Order med omicron Phasma till TW.",
-        "subTeams": [
+        "optionalTeams": [
           {
             "id": "141",
             "name": "First Order",
@@ -393,40 +393,215 @@
     "name": "Raids och GL",
     "description": "Fokus på lag för raids och Galactic Legends",
     "color": "amber",
-    "teams": [
+    "teamParts": [
       {
+        "id": "21a",
+        "name": "Val av GL",
         "notes": "Gå endast mot 1 GL, de är väldigt resurskrävande och vi kommer inte prioritera någon speciell utan välj en du vill spela med. Välj ett lag för Krayt Dragon efter det. Farma upp Krayt-laget först. Vet du inte vad du vill välja så rekommenderar vi Jabba."
       },
       {
-        "notes": "För visssa lag är det lämpligt att gå vidare mot en viss GL men ni får kombinera som ni vill.För de GL:s utan koppling till KD-lag är det helt fritt att välja KD-lag.Satsa på att bygga upp ett KD-lag till Relic 5Hutt Cartell är de bästa KD-lagen. Gå du mot Jabba så får du alltså de två bästa KD-lagen."
+        "id": "21b",
+        "name": "Raid-lag",
+        "notes": "För visssa lag är det lämpligt att gå vidare mot en viss GL men ni får kombinera som ni vill. För de GL:s utan koppling till KD-lag är det helt fritt att välja KD-lag. Satsa på att bygga upp ett KD-lag till Relic 5. Hutt Cartell är de bästa KD-lagen. Gå du mot Jabba så får du alltså de två bästa KD-lagen."
       },
-      {
-        "id": "21",
-        "name": "Old Republic",
-        "members": [
-          {
-            "id": "JEDIKNIGHTREVAN",
-            "gear": 13,
-            "relic": 5
-          },
-          {
-            "id": "BASTILASHAN",
-            "gear": 12
-          },
-          {
-            "id": "MISSIONVAO",
-            "gear": 12
-          },
-          {
-            "id": "ZAALBAR",
-            "gear": 12
-          },
-          {
-            "id": "OPTIONAL",
-            "name": "Jolee Bindo eller Juhani"
-          }
-        ]
-      }
+      [
+        {
+          "id": "22",
+          "name": "JML",
+          "color": "amber",
+          "description": "JML",
+          "teamParts": [
+            {
+              "id": "22a",
+              "name": "Old Republic",
+              "members": [
+                {
+                  "id": "JEDIKNIGHTREVAN",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "specialskill_JEDIKNIGHTREVAN02",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_JEDIKNIGHTREVAN02",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "leaderskill_JEDIKNIGHTREVAN",
+                      "recommendation": "required"
+                    }
+                  ]
+                },
+                {
+                  "id": "BASTILASHAN",
+                  "gear": 13,
+                  "relic": 5
+                },
+                {
+                  "id": "MISSIONVAO",
+                  "gear": 13,
+                  "relic": 5
+                },
+                {
+                  "id": "ZAALBAR",
+                  "gear": 13,
+                  "relic": 5
+                },
+                {
+                  "id": "OPTIONAL",
+                  "name": "Jolee Bindo eller Juhani"
+                }
+              ]
+            },
+            {
+              "id": "22b",
+              "name": "JML",
+              "members": [
+                {
+                  "id": "GRANDMASTERLUKE",
+                  "gear": 13,
+                  "relic": 8,
+                  "zetas": [
+                    {
+                      "id": "leaderskill_GRANDMASTERLUKE",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "basicskill_GRANDMASTERLUKE",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_GRANDMASTERLUKE01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_GRANDMASTERLUKE02",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_GRANDMASTERLUKE01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_GALACTICLEGEND01",
+                      "recommendation": "required"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "23",
+          "name": "Jabba",
+          "color": "amber",
+          "description": "Jabba",
+          "teamParts": [
+            {
+              "id": "23a",
+              "name": "Hutt Cartell",
+              "notes": "Det finns många kombinationer men denna ska vara effektivast vid KD-raiden. Bortsett från Jabba.",
+              "members": [
+                {
+                  "id": "CADBANE",
+                  "gear": 13,
+                  "relic": 5
+                },
+                {
+                  "id": "BOBAFETT",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "uniqueskill_BOBAFETT01",
+                      "recommendation": "required"
+                    }
+                  ]
+                },
+                {
+                  "id": "GREEDO",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "specialskill_GREEDO02",
+                      "recommendation": "required"
+                    }
+                  ]
+                },
+                {
+                  "id": "KRRSANTAN",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "uniqueskill_KRRSANTAN01",
+                      "recommendation": "required"
+                    }
+                  ]
+                },
+                {
+                  "id": "BOUSHH",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "uniqueskill_BOUSHH01",
+                      "recommendation": "required"
+                    }
+                  ],
+                  "omicrons": [
+                    {
+                      "id": "uniqueskill_BOUSHH02",
+                      "recommendation": "required"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "23b",
+              "name": "Jabba",
+              "members": [
+                {
+                  "id": "JABBATHEHUTT",
+                  "gear": 13,
+                  "relic": 8,
+                  "zetas": [
+                    {
+                      "id": "basicskill_JABBATHEHUTT",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_JABBATHEHUTT01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_JABBATHEHUTT02",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "leaderskill_JABBATHEHUTT",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_JABBATHEHUTT01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_GALACTICLEGEND01",
+                      "recommendation": "required"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     ]
   }
 ]
