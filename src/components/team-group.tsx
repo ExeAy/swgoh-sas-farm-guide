@@ -38,7 +38,9 @@ const TeamGroup = (props: TeamGroupProps) => {
         key={team.id}
         className={`flex flex-col p-4 gap-2 bg-${color}-500 rounded-md w-fit`}
       >
-        <h4 className="font-bold text-center text-xl">{team.name}</h4>
+        <h4 className="font-bold text-center text-xl text-white">
+          {team.name}
+        </h4>
         <div className="grid grid-rows-2 gap-2 grid-flow-col">
           {team.optionalTeams.map((subTeam) => (
             <Squad key={subTeam.id} team={subTeam} />
@@ -46,7 +48,7 @@ const TeamGroup = (props: TeamGroupProps) => {
         </div>
         <div>
           <p
-            className={`${
+            className={`text-white ${
               team.optionalTeams.length > 2
                 ? 'max-w-squad-container-text'
                 : 'max-w-squad-card-text'
