@@ -63,6 +63,12 @@ const TeamGroup = (props: TeamGroupProps) => {
     elements.push(<Squad key={team.id} team={team} />)
   }
 
+  if (team.withArrowAfter) {
+    elements.push(
+      <ArrowForwardIcon key={`arrow-${team.id}-after`} sx={{ fontSize: 50 }} />,
+    )
+  }
+
   return <div className="flex items-center gap-1">{elements}</div>
 }
 

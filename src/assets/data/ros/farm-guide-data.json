@@ -516,7 +516,7 @@
       {
         "id": "21a",
         "name": "Val av GL",
-        "notes": "Gå endast mot 1 GL, de är väldigt resurskrävande och vi kommer inte prioritera någon speciell utan välj en du vill spela med. Välj ett lag för Krayt Dragon efter det. Farma upp Krayt-laget först. Vet du inte vad du vill välja så rekommenderar vi Jabba."
+        "notes": "Gå endast mot 1 GL, de är väldigt resurskrävande och vi kommer inte prioritera någon speciell utan välj en du vill spela med. Välj ett lag för Krayt Dragon (KD) efter det. Farma upp Krayt-laget först. Vet du inte vad du vill välja så rekommenderar vi Jabba."
       },
       {
         "id": "21b",
@@ -1017,7 +1017,7 @@
             },
             {
               "id": "26b",
-              "name": "JMK",
+              "name": "Valbar GL",
               "optionalTeams": [
                 {
                   "id": "26b1",
@@ -1181,6 +1181,612 @@
                           "recommendation": "required"
                         }
                       ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "part3",
+    "name": "Geo LS",
+    "description": "Fokus på lag för Geo LS",
+    "color": "blue",
+    "teamParts": [
+      {
+        "id": "31",
+        "name": "Padmé",
+        "members": [
+          {
+            "id": "PADMEAMIDALA",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "leaderskill_PADMEAMIDALA",
+                "recommendation": "required"
+              },
+              {
+                "id": "uniqueskill_PADMEAMIDALA01",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "ANAKINKNIGHT",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "uniqueskill_ANAKINKNIGHT01",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "GENERALKENOBI",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "uniqueskill_GENERALKENOBI01",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "AHSOKATANO",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "uniqueskill_AHSOKATANO01",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "C3POLEGENDARY",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "specialskill_C3POLEGENDARY01",
+                "recommendation": "required"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "32",
+        "name": "501st",
+        "notes": "Behövs för Kam-SM",
+        "members": [
+          {
+            "id": "SHAAKTI",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "leaderskill_SHAAKTI",
+                "recommendation": "required"
+              },
+              {
+                "id": "uniqueskill_SHAAKTI01",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "CT7567",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "uniqueskill_CT555501",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "CT5555",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "uniqueskill_CT555501",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "CT210408",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "uniqueskill_ct21040802",
+                "recommendation": "recommended"
+              }
+            ]
+          },
+          {
+            "id": "ARCTROOPER501ST",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "uniqueskill_ARCTROOPER501ST01",
+                "recommendation": "recommended"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "33",
+        "name": "GAS",
+        "members": [
+          {
+            "id": "GENERALSKYWALKER",
+            "gear": 13,
+            "relic": 7,
+            "zetas": [
+              {
+                "id": "basicskill_GENERALSKYWALKER",
+                "recommendation": "required"
+              },
+              {
+                "id": "leaderskill_GENERALSKYWALKER",
+                "recommendation": "required"
+              },
+              {
+                "id": "uniqueskill_GENERALSKYWALKER01",
+                "recommendation": "required"
+              },
+              {
+                "id": "uniqueskill_GENERALSKYWALKER02",
+                "recommendation": "required"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "34",
+        "name": "Mon Mothma",
+        "members": [
+          {
+            "id": "MONMOTHMA",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "leaderskill_MONMOTHMA",
+                "recommendation": "required"
+              },
+              {
+                "id": "uniqueskill_MONMOTHMA01",
+                "recommendation": "recommended"
+              }
+            ]
+          },
+          {
+            "id": "KYLEKATARN",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "specialskill_KYLEKATARN02",
+                "recommendation": "recommended"
+              }
+            ],
+            "omicrons": [
+              {
+                "id": "uniqueskill_KYLEKATARN01",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "HOTHREBELSOLDIER",
+            "gear": 13,
+            "relic": 5
+          },
+          {
+            "id": "PAO",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "uniqueskill_PAO01",
+                "recommendation": "recommended"
+              }
+            ]
+          },
+          {
+            "id": "CARADUNE",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "uniqueskill_CARADUNE02",
+                "recommendation": "recommended"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "35",
+        "name": "Jedis",
+        "members": [
+          {
+            "id": "JEDIKNIGHTREVAN",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "specialskill_JEDIKNIGHTREVAN02",
+                "recommendation": "required"
+              },
+              {
+                "id": "uniqueskill_JEDIKNIGHTREVAN02",
+                "recommendation": "required"
+              },
+              {
+                "id": "leaderskill_JEDIKNIGHTREVAN",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "BASTILASHAN",
+            "gear": 13,
+            "relic": 5
+          },
+          {
+            "id": "JOLEEBINDO",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "specialskill_JOLEEBINDO02",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "GRANDMASTERYODA",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "specialskill_GRANDMASTERYODA03",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "OPTIONAL",
+            "name": "Valfri jedi"
+          }
+        ]
+      },
+      {
+        "id": "36",
+        "name": "CLS",
+        "withArrowAfter": true,
+        "members": [
+          {
+            "id": "COMMANDERLUKESKYWALKER",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "leaderskill_COMMANDERLUKESKYWALKER",
+                "recommendation": "required"
+              },
+              {
+                "id": "uniqueskill_COMMANDERLUKESKYWALKER01",
+                "recommendation": "required"
+              },
+              {
+                "id": "uniqueskill_COMMANDERLUKESKYWALKER02",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "HANSOLO",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "uniqueskill_HANSOLO01",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "CHEWBACCALEGENDARY",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "uniqueskill_CHEWBACCALEGENDARY01",
+                "recommendation": "required"
+              },
+              {
+                "id": "uniqueskill_CHEWBACCALEGENDARY02",
+                "recommendation": "recommended"
+              }
+            ]
+          },
+          {
+            "id": "C3POCHEWBACCA",
+            "gear": 13,
+            "relic": 5,
+            "zetas": [
+              {
+                "id": "specialskill_C3POCHEWBACCA02",
+                "recommendation": "required"
+              }
+            ]
+          },
+          {
+            "id": "OPTIONAL",
+            "name": "Valfri rebel, förslagsvis R2D2 eller Old Ben."
+          }
+        ]
+      },
+      [
+        {
+          "id": "371",
+          "color": "blue",
+          "name": "Helt valfritt lag som leder till GL",
+          "teamParts": [
+            {
+              "id": "371a",
+              "name": "JKL",
+              "members": [
+                {
+                  "id": "JEDIKNIGHTLUKE",
+                  "gear": 13,
+                  "relic": 7,
+                  "zetas": [
+                    {
+                      "id": "leaderskill_JEDIKNIGHTLUKE",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_JEDIKNIGHTLUKE01",
+                      "recommendation": "required"
+                    }
+                  ]
+                },
+                {
+                  "id": "HERMITYODA",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "specialskill_HERMITYODA02",
+                      "recommendation": "recommended"
+                    },
+                    {
+                      "id": "uniqueskill_HERMITYODA02",
+                      "recommendation": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "id": "OLDBENKENOBI",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "uniqueskill_OLDBENKENOBI01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_OLDBENKENOBI02",
+                      "recommendation": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "id": "AAYLASECURA",
+                  "gear": 13,
+                  "relic": 5
+                },
+                {
+                  "id": "QUIGONJINN",
+                  "gear": 13,
+                  "relic": 3
+                }
+              ]
+            },
+            {
+              "id": "371b",
+              "optionalTeams": [
+                {
+                  "id": "371b1",
+                  "name": "Jedi Master Kenobi",
+                  "notes": "Aayla och Qui Gon behövs för JMK",
+                  "members": [
+                    {
+                      "id": "JEDIMASTERKENOBI",
+                      "gear": 13,
+                      "relic": 8,
+                      "zetas": [
+                        {
+                          "id": "basicskill_JEDIMASTERKENOBI",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_JEDIMASTERKENOBI01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_JEDIMASTERKENOBI02",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "leaderskill_JEDIMASTERKENOBI",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_JEDIMASTERKENOBI01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_GALACTICLEGEND01",
+                          "recommendation": "required"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "371b2",
+                  "name": "JML",
+                  "notes": "JKL, Old Ben och Hoda behövs för JML.",
+                  "members": [
+                    {
+                      "id": "GRANDMASTERLUKE",
+                      "gear": 13,
+                      "relic": 8,
+                      "zetas": [
+                        {
+                          "id": "leaderskill_GRANDMASTERLUKE",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "basicskill_GRANDMASTERLUKE",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_GRANDMASTERLUKE01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "specialskill_GRANDMASTERLUKE02",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_GRANDMASTERLUKE01",
+                          "recommendation": "required"
+                        },
+                        {
+                          "id": "uniqueskill_GALACTICLEGEND01",
+                          "recommendation": "required"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "372",
+          "color": "blue",
+          "name": "Helt valfritt lag som leder till GL Rey",
+          "teamParts": [
+            {
+              "id": "372a",
+              "name": "Resistance",
+              "members": [
+                {
+                  "id": "REYJEDITRAINING",
+                  "gear": 13,
+                  "relic": 7,
+                  "zetas": [
+                    {
+                      "id": "leaderskill_REYJEDITRAINING",
+                      "recommendation": "required"
+                    }
+                  ]
+                },
+                {
+                  "id": "BB8",
+                  "gear": 13,
+                  "relic": 7,
+                  "zetas": [
+                    {
+                      "id": "uniqueskill_BB801",
+                      "recommendation": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "id": "FINN",
+                  "gear": 13,
+                  "relic": 5
+                },
+                {
+                  "id": "EPIXFINN",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "uniqueskill_EPIXFINN01",
+                      "recommendation": "required"
+                    }
+                  ]
+                },
+                {
+                  "id": "EPIXPOE",
+                  "gear": 13,
+                  "relic": 5,
+                  "zetas": [
+                    {
+                      "id": "uniqueskill_EPIXPOE01",
+                      "recommendation": "required"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "372b1",
+              "name": "Rey",
+              "members": [
+                {
+                  "id": "GLREY",
+                  "gear": 13,
+                  "relic": 7,
+                  "zetas": [
+                    {
+                      "id": "basicskill_GLREY",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_GLREY01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_GLREY02",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "leaderskill_GLREY",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_GLREY01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_GALACTICLEGEND01",
+                      "recommendation": "required"
                     }
                   ]
                 }

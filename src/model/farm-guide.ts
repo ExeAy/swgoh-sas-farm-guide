@@ -18,6 +18,7 @@ export interface FarmGuideTeam {
   id: string
   name: string
   highlight?: boolean
+  withArrowAfter?: boolean
   members?: FarmGuideTeamMember[]
   optionalTeams?: FarmGuideTeam[]
   notes?: string
