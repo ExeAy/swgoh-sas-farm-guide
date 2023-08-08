@@ -16,7 +16,10 @@ const TeamGroup = (props: TeamGroupProps) => {
     return (
       <div className="m-3 p-3 bg-white rounded-lg w-squad">
         {team.name && <h2 className="font-bold text-xl">{team.name}</h2>}
-        <p className="text-lg">{team.notes}</p>
+        <p
+          className="text-lg"
+          dangerouslySetInnerHTML={{ __html: team.notes }}
+        ></p>
       </div>
     )
   }

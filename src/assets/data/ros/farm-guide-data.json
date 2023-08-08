@@ -508,20 +508,20 @@
     ]
   },
   {
-    "id": "part2",
-    "name": "Raids och GL",
-    "description": "Fokus på lag för raids och Galactic Legends",
+    "id": "KDRAID",
+    "name": "Krayt Dragon och GL",
+    "description": "Fokus på lag för krayt dragon och Galactic Legends",
     "color": "amber",
     "teamParts": [
       {
         "id": "21a",
         "name": "Val av GL",
-        "notes": "Gå endast mot 1 GL, de är väldigt resurskrävande och vi kommer inte prioritera någon speciell utan välj en du vill spela med. Välj ett lag för Krayt Dragon (KD) efter det. Farma upp Krayt-laget först. Vet du inte vad du vill välja så rekommenderar vi Jabba."
+        "notes": "Gå endast mot 1 GL, de är väldigt resurskrävande och vi kommer inte prioritera någon speciell utan välj en du vill spela med. Välj ett lag för Krayt Dragon (KD) efter det. Farma upp Krayt-laget först till åtminstonne gear 12. Vet du inte vad du vill välja så rekommenderar vi Jabba."
       },
       {
         "id": "21b",
         "name": "Raid-lag",
-        "notes": "För visssa lag är det lämpligt att gå vidare mot en viss GL men ni får kombinera som ni vill. För de GL:s utan koppling till KD-lag är det helt fritt att välja KD-lag. Satsa på att bygga upp ett KD-lag till Relic 5. Hutt Cartell är de bästa KD-lagen. Gå du mot Jabba så får du alltså de två bästa KD-lagen."
+        "notes": "<b>OBS! Denna raid kommer sluta köras. Lägg därför inte ner allför mycket resurser på detta.</b><br /> <br />För visssa lag är det lämpligt att gå vidare mot en viss GL men ni får kombinera som ni vill. För de GL:s utan koppling till KD-lag är det helt fritt att välja KD-lag. Hutt Cartell är de bästa KD-lagen. Gå du mot Jabba så får du alltså de två bästa KD-lagen."
       },
       [
         {
@@ -556,17 +556,15 @@
                 {
                   "id": "BASTILASHAN",
                   "gear": 13,
-                  "relic": 5
+                  "relic": 1
                 },
                 {
                   "id": "MISSIONVAO",
-                  "gear": 13,
-                  "relic": 5
+                  "gear": 12
                 },
                 {
                   "id": "ZAALBAR",
-                  "gear": 13,
-                  "relic": 5
+                  "gear": 12
                 },
                 {
                   "id": "OPTIONAL",
@@ -628,56 +626,45 @@
               "members": [
                 {
                   "id": "CADBANE",
-                  "gear": 13,
-                  "relic": 5
+                  "gear": 12
                 },
                 {
                   "id": "BOBAFETT",
-                  "gear": 13,
-                  "relic": 5,
+                  "gear": 12,
                   "zetas": [
                     {
                       "id": "uniqueskill_BOBAFETT01",
-                      "recommendation": "required"
+                      "recommendation": "recommended"
                     }
                   ]
                 },
                 {
                   "id": "GREEDO",
-                  "gear": 13,
-                  "relic": 5,
+                  "gear": 12,
                   "zetas": [
                     {
                       "id": "specialskill_GREEDO02",
-                      "recommendation": "required"
+                      "recommendation": "recommended"
                     }
                   ]
                 },
                 {
                   "id": "KRRSANTAN",
-                  "gear": 13,
-                  "relic": 5,
+                  "gear": 12,
                   "zetas": [
                     {
                       "id": "uniqueskill_KRRSANTAN01",
-                      "recommendation": "required"
+                      "recommendation": "recommended"
                     }
                   ]
                 },
                 {
                   "id": "BOUSHH",
-                  "gear": 13,
-                  "relic": 5,
+                  "gear": 12,
                   "zetas": [
                     {
                       "id": "uniqueskill_BOUSHH01",
-                      "recommendation": "required"
-                    }
-                  ],
-                  "omicrons": [
-                    {
-                      "id": "uniqueskill_BOUSHH02",
-                      "recommendation": "required"
+                      "recommendation": "recommended"
                     }
                   ]
                 }
@@ -735,48 +722,43 @@
               "members": [
                 {
                   "id": "TUSKENCHIEFTAIN",
-                  "gear": 13,
-                  "relic": 5,
+                  "gear": 12,
                   "zetas": [
                     {
                       "id": "basicskill_TUSKENCHIEFTAIN",
-                      "recommendation": "required"
+                      "recommendation": "recommended"
                     },
                     {
                       "id": "leaderskill_TUSKENCHIEFTAIN",
-                      "recommendation": "required"
+                      "recommendation": "recommended"
                     }
                   ]
                 },
                 {
                   "id": "TUSKENHUNTRESS",
-                  "gear": 13,
-                  "relic": 5,
+                  "gear": 12,
                   "zetas": [
                     {
                       "id": "specialskill_TUSKENHUNTRESS02",
-                      "recommendation": "required"
+                      "recommendation": "recommended"
                     },
                     {
                       "id": "uniqueskill_TUSKENHUNTRESS01",
-                      "recommendation": "required"
+                      "recommendation": "recommended"
                     }
                   ]
                 },
                 {
                   "id": "TUSKENSHAMAN",
-                  "gear": 13,
-                  "relic": 5
+                  "gear": 12
                 },
                 {
                   "id": "TUSKENRAIDER",
-                  "gear": 13,
-                  "relic": 5
+                  "gear": 12
                 },
                 {
                   "id": "URORRURRR",
-                  "gear": 13,
-                  "relic": 5
+                  "gear": 12
                 }
               ]
             },
@@ -875,28 +857,23 @@
               "members": [
                 {
                   "id": "CHIEFNEBIT",
-                  "gear": 13,
-                  "relic": 5
+                  "gear": 12
                 },
                 {
                   "id": "JAWAENGINEER",
-                  "gear": 13,
-                  "relic": 5
+                  "gear": 12
                 },
                 {
                   "id": "JAWASCAVENGER",
-                  "gear": 13,
-                  "relic": 5
+                  "gear": 12
                 },
                 {
                   "id": "DATHCHA",
-                  "gear": 13,
-                  "relic": 5
+                  "gear": 12
                 },
                 {
                   "id": "JAWA",
-                  "gear": 13,
-                  "relic": 5
+                  "gear": 12
                 }
               ]
             },
@@ -953,20 +930,19 @@
               "members": [
                 {
                   "id": "MAULS7",
-                  "gear": 13,
-                  "relic": 5,
+                  "gear": 12,
                   "zetas": [
                     {
                       "id": "specialskill_MAULS701",
-                      "recommendation": "required"
+                      "recommendation": "recommended"
                     },
                     {
                       "id": "specialskill_MAULS702",
-                      "recommendation": "required"
+                      "recommendation": "recommended"
                     },
                     {
                       "id": "uniqueskill_MAULS701",
-                      "recommendation": "required"
+                      "recommendation": "recommended"
                     }
                   ]
                 },
@@ -977,42 +953,21 @@
                   "zetas": [
                     {
                       "id": "uniqueskill_BOKATAN01",
-                      "recommendation": "required"
+                      "recommendation": "recommended"
                     }
                   ]
                 },
                 {
                   "id": "CANDEROUSORDO",
-                  "gear": 13,
-                  "relic": 5,
-                  "zetas": [
-                    {
-                      "id": "uniqueskill_CANDEROUSORDO01",
-                      "recommendation": "required"
-                    }
-                  ]
+                  "gear": 12
                 },
                 {
                   "id": "THEMANDALORIANBESKARARMOR",
-                  "gear": 13,
-                  "relic": 5,
-                  "zetas": [
-                    {
-                      "id": "uniqueskill_THEMANDALORIANBESKARARMOR01",
-                      "recommendation": "required"
-                    }
-                  ]
+                  "gear": 12
                 },
                 {
                   "id": "ARMORER",
-                  "gear": 13,
-                  "relic": 5,
-                  "zetas": [
-                    {
-                      "id": "specialskill_ARMORER01",
-                      "recommendation": "required"
-                    }
-                  ]
+                  "gear": 12
                 }
               ]
             },
