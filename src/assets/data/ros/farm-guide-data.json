@@ -388,7 +388,7 @@
       {
         "id": "16",
         "name": "Geo DS Phase 4, helt valfritt",
-        "notes": "Andra  med resurskrävande lag som funkar bra i fas 4. Alla är helt valfria.",
+        "notes": "Andra  mer resurskrävande lag som funkar bra i fas 4. Alla är helt valfria.",
         "optionalTeams": [
           {
             "id": "16a",
@@ -1395,7 +1395,7 @@
             ]
           },
           {
-            "id": "HOTHREBELSOLDIER",
+            "id": "HOTHREBELSCOUT",
             "gear": 13,
             "relic": 5
           },
