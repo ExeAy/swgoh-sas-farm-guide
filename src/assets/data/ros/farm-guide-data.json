@@ -1480,68 +1480,147 @@
       },
       {
         "id": "36",
-        "name": "CLS",
+        "name": "Valbara lag som fungerar bra",
         "withArrowAfter": true,
-        "members": [
+        "notes": "Välj ett av lagen, ROLO är bäst i Geo LS generellt men kräver en omicron",
+        "optionalTeams": [
           {
-            "id": "COMMANDERLUKESKYWALKER",
-            "gear": 13,
-            "relic": 5,
-            "zetas": [
+            "id": "361",
+            "name": "CLS",
+            "members": [
               {
-                "id": "leaderskill_COMMANDERLUKESKYWALKER",
-                "recommendation": "required"
+                "id": "COMMANDERLUKESKYWALKER",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "leaderskill_COMMANDERLUKESKYWALKER",
+                    "recommendation": "required"
+                  },
+                  {
+                    "id": "uniqueskill_COMMANDERLUKESKYWALKER01",
+                    "recommendation": "required"
+                  },
+                  {
+                    "id": "uniqueskill_COMMANDERLUKESKYWALKER02",
+                    "recommendation": "required"
+                  }
+                ]
               },
               {
-                "id": "uniqueskill_COMMANDERLUKESKYWALKER01",
-                "recommendation": "required"
+                "id": "HANSOLO",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_HANSOLO01",
+                    "recommendation": "required"
+                  }
+                ]
               },
               {
-                "id": "uniqueskill_COMMANDERLUKESKYWALKER02",
-                "recommendation": "required"
-              }
-            ]
-          },
-          {
-            "id": "HANSOLO",
-            "gear": 13,
-            "relic": 5,
-            "zetas": [
-              {
-                "id": "uniqueskill_HANSOLO01",
-                "recommendation": "required"
-              }
-            ]
-          },
-          {
-            "id": "CHEWBACCALEGENDARY",
-            "gear": 13,
-            "relic": 5,
-            "zetas": [
-              {
-                "id": "uniqueskill_CHEWBACCALEGENDARY01",
-                "recommendation": "required"
+                "id": "CHEWBACCALEGENDARY",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_CHEWBACCALEGENDARY01",
+                    "recommendation": "required"
+                  },
+                  {
+                    "id": "uniqueskill_CHEWBACCALEGENDARY02",
+                    "recommendation": "recommended"
+                  }
+                ]
               },
               {
-                "id": "uniqueskill_CHEWBACCALEGENDARY02",
-                "recommendation": "recommended"
-              }
-            ]
-          },
-          {
-            "id": "C3POCHEWBACCA",
-            "gear": 13,
-            "relic": 5,
-            "zetas": [
+                "id": "C3POCHEWBACCA",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "specialskill_C3POCHEWBACCA02",
+                    "recommendation": "required"
+                  }
+                ]
+              },
               {
-                "id": "specialskill_C3POCHEWBACCA02",
-                "recommendation": "required"
+                "id": "OPTIONAL",
+                "name": "Valfri rebel, förslagsvis R2D2 eller Old Ben."
               }
             ]
           },
           {
-            "id": "OPTIONAL",
-            "name": "Valfri rebel, förslagsvis R2D2 eller Old Ben."
+            "id": "362",
+            "name": "ROLO",
+            "notes": "Finns andra team-kompositioner som fungerar T.ex. kan man ersätta Han och Chewie med Lando och R2D2.",
+            "members": [
+              {
+                "id": "HOTHLEIA",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_HOTHLEIA01",
+                    "recommendation": "required"
+                  }
+                ],
+                "omicrons": [
+                  {
+                    "id": "leaderskill_HOTHLEIA",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "HANSOLO",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_HANSOLO01",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "CHEWBACCALEGENDARY",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_CHEWBACCALEGENDARY01",
+                    "recommendation": "required"
+                  },
+                  {
+                    "id": "uniqueskill_CHEWBACCALEGENDARY02",
+                    "recommendation": "recommended"
+                  }
+                ]
+              },
+              {
+                "id": "C3POCHEWBACCA",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "specialskill_C3POCHEWBACCA02",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "HOTHHAN",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_HOTHHAN01",
+                    "recommendation": "required"
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
