@@ -623,6 +623,7 @@
             {
               "id": "23a",
               "name": "Hutt Cartell",
+              "highlight": true,
               "notes": "Det finns många kombinationer men denna ska vara effektivast vid KD-raiden. Bortsett från Jabba.",
               "members": [
                 {
