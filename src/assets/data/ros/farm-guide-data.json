@@ -561,11 +561,23 @@
                 },
                 {
                   "id": "MISSIONVAO",
-                  "gear": 12
+                  "gear": 12,
+                  "zetas": [
+                    {
+                      "id": "uniqueskill_MISSIONVAO02",
+                      "recommendation": "required"
+                    }
+                  ]
                 },
                 {
                   "id": "ZAALBAR",
-                  "gear": 12
+                  "gear": 12,
+                  "zetas": [
+                    {
+                      "id": "uniqueskill_ZAALBAR02",
+                      "recommendation": "required"
+                    }
+                  ]
                 },
                 {
                   "id": "OPTIONAL",
