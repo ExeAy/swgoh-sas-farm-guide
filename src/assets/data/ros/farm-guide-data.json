@@ -1161,6 +1161,24 @@
     ]
   },
   {
+    "id": "SPEEDER_RAID",
+    "name": "Speeder bike raid",
+    "description": "Fokus på lag för speeder bike raiden",
+    "color": "lime",
+    "teamParts": [
+      {
+        "id": "SPEEDER_1A",
+        "name": "Generell info",
+        "notes": "Vi vet för lite om raiden för att kunna ge några specifika rekommendationer. Vi kommer uppdatera denna sektionen när vi vet mer. Det vi vet är att man använder 3 gubbar per match."
+      },
+      {
+        "id": "SPEEDER_2A",
+        "name": "Karaktärer som går att använda",
+        "notes": "Observera att vi inte vet hur bra de är och vad som funkar bäst tillsammans.<br /> <ul><li>Admiral Ackbar</li><li>C-3PO</li><li>Chewbacca (Journey Guide version)</li><li>Han Solo (Raid reward version)</li><li>Hera Syndulla</li><li>Lando Calrissian</li><li>Wedge Antilles</li><li>Jedi Knight Luke Skywalker</li><li>Chief Chirpa</li><li>Ewok Elder</li><li>Ewok Scout</li><li>Logray</li><li>Paploo</li><li>Teebo</li><li>Wicket</li><li>Admiral Piett</li><li>Imperial Stormtrooper</li><li>Iden Versio</li><li>Moff Gideon</li><li>Range Trooper</li><li>Magmatrooper</li><li>Death Trooper</li><li>Shoretrooper</li><li>General Veers</li><li>Col. Starck</li><li>Scout trooper</li><li>GL Leia</li></ul>"
+      }
+    ]
+  },
+  {
     "id": "part3",
     "name": "Geo LS",
     "description": "Fokus på lag för Geo LS",
