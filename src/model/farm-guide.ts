@@ -29,5 +29,6 @@ export interface FarmGuideDataPart {
   name: string
   color: string
   description: string
+  notes: string
   teamParts: (FarmGuideTeam | FarmGuideDataPart[])[]
 }

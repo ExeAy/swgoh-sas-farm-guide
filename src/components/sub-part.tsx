@@ -24,6 +24,7 @@ const SubPart = (props: SubPartProps) => {
           />
         ))}
       </div>
+      {part?.notes && <p className="mt-2">{part.notes}</p>}
     </div>
   )
 }

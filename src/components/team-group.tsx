@@ -29,7 +29,10 @@ const TeamGroup = (props: TeamGroupProps) => {
   if (index !== 0 && !Array.isArray(allTeams[index - 1])) {
     const previousTeam = allTeams[index - 1] as FarmGuideTeam
 
-    if (previousTeam.optionalTeams || previousTeam.members)
+    if (
+      previousTeam.withArrowAfter !== false &&
+      (previousTeam.optionalTeams || previousTeam.members)
+    )
       elements.push(
         <ArrowForwardIcon key={`arrow-${team.id}`} sx={{ fontSize: 50 }} />,
       )

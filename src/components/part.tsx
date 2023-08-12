@@ -22,15 +22,24 @@ const Part = (props: PartProps) => {
       <div className="flex items-center gap-2">
         {partData?.teamParts!.map((teamPart, index) => {
           if (Array.isArray(teamPart)) {
-            return (
-              <div className={`grid grid-rows-2 gap-2 grid-flow-col`}>
-                {(teamPart as FarmGuideDataPart[]).map((subPart) => (
-                  <div className={`p-2 bg-${subPart.color}-200`}>
-                    <SubPart key={subPart.id} part={subPart} />
-                  </div>
-                ))}
-              </div>
-            )
+            if (teamPart.length > 1) {
+              return (
+                <div className={`grid grid-rows-2 gap-2 grid-flow-col`}>
+                  {(teamPart as FarmGuideDataPart[]).map((subPart) => (
+                    <div className={`p-2 bg-${subPart.color}-200`}>
+                      <SubPart key={subPart.id} part={subPart} />
+                    </div>
+                  ))}
+                </div>
+              )
+            } else {
+              const subPart = teamPart[0] as FarmGuideDataPart
+              return (
+                <div className={`p-2 bg-${subPart.color}-200`}>
+                  <SubPart key={subPart.id} part={subPart} />
+                </div>
+              )
+            }
           } else {
             return (
               <TeamGroup
@@ -55,6 +64,7 @@ const Part = (props: PartProps) => {
       <PartContainer color={partData?.color || 'white'} part={partData}>
         {element}
       </PartContainer>
+      {partData?.notes && <p className="text-sm">{partData.notes}</p>}
     </div>
   )
 }
