@@ -73,7 +73,9 @@
             "relic": 0
           }
         ],
-        "notes": "Helt okej att dra upp Nute Gunray om man vill också."
+        "notes": {
+          "texts": ["Helt okej att dra upp Nute Gunray om man vill också."]
+        }
       },
       {
         "id": "13",
@@ -136,18 +138,26 @@
             "relic": 0
           }
         ],
-        "notes": "Ibland är det läge att använda Vader någon annanstans (t.ex. solo mot geos). Därför är det bra om man drar upp en till Empire-karaktär. Tie Fighter Pilot, Shore Trooper eller Royal Guard är en bra kandidater."
+        "notes": {
+          "texts": [
+            "Ibland är det läge att använda Vader någon annanstans (t.ex. solo mot geos). Därför är det bra om man drar upp en till Empire-karaktär. Tie Fighter Pilot, Shore Trooper eller Royal Guard är en bra kandidater."
+          ]
+        }
       },
       {
         "id": "14",
         "name": "Valbara lag",
-        "notes": "Välj minst ett av lagen. Vet du inte vilket du ska välja så vill guilden ha First Order med omicron Phasma till TW eller Bounty Huners för att gå mot Jabba.",
+        "notes": {
+          "texts": [
+            "Välj minst ett av lagen. Vet du inte vilket du ska välja så vill guilden ha First Order med omicron Phasma till TW eller Bounty Huners för att gå mot Jabba."
+          ]
+        },
         "optionalTeams": [
           {
             "id": "141",
             "name": "First Order",
             "highlight": true,
-            "notes": "Leder till SLKR",
+            "notes": { "texts": ["Leder till SLKR"] },
             "members": [
               {
                 "id": "PHASMA",
@@ -247,7 +257,11 @@
             "id": "143",
             "name": "Bounty Hunters",
             "highlight": true,
-            "notes": "Bounty hunters leder till Executor och Jabba. Välj ut ditt lag beroende på vad du siktar på.",
+            "notes": {
+              "texts": [
+                "Bounty hunters leder till Executor och Jabba. Välj ut ditt lag beroende på vad du siktar på."
+              ]
+            },
             "members": [
               {
                 "id": "BOSSK",
@@ -266,22 +280,22 @@
               },
               {
                 "id": "OPTIONAL",
-                "name": "Valfri dark side bounty hunter."
+                "name": "Valfri dark side bounty hunter 1"
               },
               {
                 "id": "OPTIONAL",
-                "name": "Valfri dark side bounty hunter."
+                "name": "Valfri dark side bounty hunter 2"
               },
               {
                 "id": "OPTIONAL",
-                "name": "Valfri dark side bounty hunter."
+                "name": "Valfri dark side bounty hunter 3"
               }
             ]
           },
           {
             "id": "144",
             "name": "Imperial Troopers",
-            "notes": "Leder till SEE",
+            "notes": { "texts": ["Leder till SEE"] },
             "members": [
               {
                 "id": "VEERS",
@@ -388,7 +402,11 @@
       {
         "id": "16",
         "name": "Geo DS Phase 4, helt valfritt",
-        "notes": "Andra  mer resurskrävande lag som funkar bra i fas 4. Alla är helt valfria.",
+        "notes": {
+          "texts": [
+            "Andra  mer resurskrävande lag som funkar bra i fas 4. Alla är helt valfria."
+          ]
+        },
         "optionalTeams": [
           {
             "id": "16a",
@@ -516,12 +534,21 @@
       {
         "id": "21a",
         "name": "Val av GL",
-        "notes": "Gå endast mot 1 GL, de är väldigt resurskrävande och vi kommer inte prioritera någon speciell utan välj en du vill spela med. Välj ett lag för Krayt Dragon (KD) efter det. Farma upp Krayt-laget först till åtminstonne gear 12. Vet du inte vad du vill välja så rekommenderar vi Jabba."
+        "notes": {
+          "texts": [
+            "Gå endast mot 1 GL, de är väldigt resurskrävande och vi kommer inte prioritera någon speciell utan välj en du vill spela med. Välj ett lag för Krayt Dragon (KD) efter det. Farma upp Krayt-laget först till åtminstonne gear 12. Vet du inte vad du vill välja så rekommenderar vi Jabba."
+          ]
+        }
       },
       {
         "id": "21b",
         "name": "Raid-lag",
-        "notes": "<b>OBS! Denna raid kommer sluta köras. Lägg därför inte ner allför mycket resurser på detta.</b><br /> <br />För visssa lag är det lämpligt att gå vidare mot en viss GL men ni får kombinera som ni vill. För de GL:s utan koppling till KD-lag är det helt fritt att välja KD-lag. Hutt Cartell är de bästa KD-lagen. Gå du mot Jabba så får du alltså de två bästa KD-lagen."
+        "notes": {
+          "header": "OBS! Denna raid kommer sluta köras. Lägg därför inte ner allför mycket resurser på detta.",
+          "texts": [
+            "För visssa lag är det lämpligt att gå vidare mot en viss GL men ni får kombinera som ni vill. För de GL:s utan koppling till KD-lag är det helt fritt att välja KD-lag. Hutt Cartell är de bästa KD-lagen. Gå du mot Jabba så får du alltså de två bästa KD-lagen."
+          ]
+        }
       },
       [
         {
@@ -533,7 +560,11 @@
             {
               "id": "22a",
               "name": "Old Republic",
-              "notes": "Detta är förslag på lag som funkar bäst på de högre nivåerna. Men det är fritt fram att kombinera som man vill.",
+              "notes": {
+                "texts": [
+                  "Detta är förslag på lag som funkar bäst på de högre nivåerna. Men det är fritt fram att kombinera som man vill."
+                ]
+              },
               "members": [
                 {
                   "id": "JEDIKNIGHTREVAN",
@@ -588,7 +619,11 @@
             {
               "id": "22b",
               "name": "JML",
-              "notes": "JKR, Bastilla och Jolee Bindo är karakäter som fungera mycket bra i JML-lag",
+              "notes": {
+                "texts": [
+                  "JKR, Bastilla och Jolee Bindo är karakäter som fungera mycket bra i JML-lag"
+                ]
+              },
               "members": [
                 {
                   "id": "GRANDMASTERLUKE",
@@ -635,7 +670,11 @@
               "id": "23a",
               "name": "Hutt Cartell",
               "highlight": true,
-              "notes": "Det finns många kombinationer men denna ska vara effektivast vid KD-raiden. Bortsett från Jabba.",
+              "notes": {
+                "texts": [
+                  "Det finns många kombinationer men denna ska vara effektivast vid KD-raiden. Bortsett från Jabba."
+                ]
+              },
               "members": [
                 {
                   "id": "CADBANE",
@@ -939,7 +978,11 @@
             {
               "id": "26a",
               "name": "Mandalorians",
-              "notes": "Maul är optimal lead men Bo Katan fungerar så länge. I så fall väljs en valfri mandaorian till. T.ex. Sabine Wren.",
+              "notes": {
+                "texts": [
+                  "Maul är optimal lead men Bo Katan fungerar så länge. I så fall väljs en valfri mandaorian till. T.ex. Sabine Wren."
+                ]
+              },
               "members": [
                 {
                   "id": "MAULS7",
@@ -991,7 +1034,7 @@
                 {
                   "id": "26b1",
                   "name": "JMK",
-                  "notes": "Bo Katan är en requirement för JMK.",
+                  "notes": { "texts": ["Bo Katan är en requirement för JMK."] },
                   "members": [
                     {
                       "id": "JEDIMASTERKENOBI",
@@ -1029,7 +1072,9 @@
                 {
                   "id": "26b2",
                   "name": "SEE",
-                  "notes": "The Armorer fungara väldigt bra med SEE.",
+                  "notes": {
+                    "texts": ["The Armorer fungara väldigt bra med SEE."]
+                  },
                   "members": [
                     {
                       "id": "SITHPALPATINE",
@@ -1077,7 +1122,11 @@
             {
               "id": "27a",
               "name": "GL:s utan koppling",
-              "notes": "Dessa GL:s har ingen koppling till Krayt Dragon. Därför kan ett valfritt Krayt Dragon lag väljas.",
+              "notes": {
+                "texts": [
+                  "Dessa GL:s har ingen koppling till Krayt Dragon. Därför kan ett valfritt Krayt Dragon lag väljas."
+                ]
+              },
               "optionalTeams": [
                 {
                   "id": "27a1",
@@ -1169,12 +1218,20 @@
       {
         "id": "SPEEDER_1A",
         "name": "Generell info",
-        "notes": "Vi vet för lite om raiden för att kunna ge några specifika rekommendationer. Vi kommer uppdatera denna sektionen när vi vet mer. Det vi vet är att man använder 3 gubbar per match."
+        "notes": {
+          "texts": [
+            "Vi vet för lite om raiden för att kunna ge några specifika rekommendationer. Vi kommer uppdatera denna sektionen när vi vet mer. Det vi vet är att man använder 3 gubbar per match."
+          ]
+        }
       },
       {
         "id": "SPEEDER_2A",
         "name": "Karaktärer som går att använda",
-        "notes": "Observera att vi inte vet hur bra de är och vad som funkar bäst tillsammans.<br /> <ul><li>Galactic Legend Leia Organa</li> <li>Captain Drogan </li> <li>Scout Trooper </li> <li>Princess Kneesaa </li> <li>Captain Rex </li> <li>Admiral Ackbar</li><li>C-3PO</li><li>Chewbacca (Journey Guide version)</li><li>Han Solo (Raid reward version)</li><li>Hera Syndulla</li><li>Lando Calrissian</li><li>Wedge Antilles</li><li>Jedi Knight Luke Skywalker</li><li>Chief Chirpa</li><li>Ewok Elder</li><li>Ewok Scout</li><li>Logray</li><li>Paploo</li><li>Teebo</li><li>Wicket</li><li>Admiral Piett</li><li>Imperial Stormtrooper</li><li>Iden Versio</li><li>Moff Gideon</li><li>Range Trooper</li><li>Magmatrooper</li><li>Death Trooper</li><li>Shoretrooper</li><li>General Veers</li><li>Col. Starck</li><li>Scout trooper</li>"
+        "notes": {
+          "texts": [
+            "Observera att vi inte vet hur bra de är och vad som funkar bäst tillsammans.<br /> <ul> <li>Galactic Legend Leia Organa</li> <li>Captain Drogan </li> <li>Scout Trooper </li> <li>Princess Kneesaa </li> <li>Captain Rex </li> <li>Admiral Ackbar</li> <li>C-3PO</li> <li>Chewbacca (Journey Guide version)</li> <li>Han Solo (Raid reward version)</li> <li>Hera Syndulla</li> <li>Lando Calrissian</li> <li>Wedge Antilles</li> <li>Jedi Knight Luke Skywalker</li> <li>Chief Chirpa</li> <li>Ewok Elder</li> <li>Ewok Scout</li> <li>Logray</li> <li>Paploo</li> <li>Teebo</li> <li>Wicket</li><li>Admiral Piett</li><li>Imperial Stormtrooper</li><li>Iden Versio</li><li>Moff Gideon</li><li>Range Trooper</li><li>Magmatrooper</li><li>Death Trooper</li><li>Shoretrooper</li><li>General Veers</li><li>Col. Starck</li><li>Scout trooper</li></ul>"
+          ]
+        }
       }
     ]
   },
@@ -1252,7 +1309,7 @@
       {
         "id": "32",
         "name": "501st",
-        "notes": "Behövs för Kam-SM",
+        "notes": { "texts": ["Behövs för Kam-SM"] },
         "members": [
           {
             "id": "SHAAKTI",
@@ -1406,7 +1463,11 @@
           "id": "36_optional_teams",
           "color": "blue",
           "name": "Valbara lag",
-          "notes": "Se till att ha minst två av lagen. Tänk på att det inte går att kombinera hur som helst eftersom vissa lag har gemensamma karaktärer.",
+          "notes": {
+            "texts": [
+              "Se till att ha minst två av lagen. Tänk på att det inte går att kombinera hur som helst eftersom vissa lag har gemensamma karaktärer."
+            ]
+          },
           "teamParts": [
             {
               "id": "34",
@@ -1670,7 +1731,11 @@
                 {
                   "id": "344",
                   "name": "ROLO",
-                  "notes": "Finns andra team-kompositioner som fungerar T.ex. kan man ersätta Han och Chewie med Lando och R2D2.",
+                  "notes": {
+                    "texts": [
+                      "Finns andra team-kompositioner som fungerar T.ex. kan man ersätta Han och Chewie med Lando och R2D2."
+                    ]
+                  },
                   "members": [
                     {
                       "id": "HOTHLEIA",
@@ -1782,7 +1847,7 @@
                     },
                     {
                       "id": "OPTIONAL",
-                      "name": "Valbar resistance"
+                      "name": "Valfri resistance"
                     }
                   ]
                 }
@@ -1795,7 +1860,11 @@
                 {
                   "id": "361",
                   "name": "JML",
-                  "notes": "Finns många varianter här. Man kan även sätta JML som lead om man behöver JKL någon annanstans. I så fall vill du ha GMY, JKR, Jolee och Bastila/Shaak.",
+                  "notes": {
+                    "texts": [
+                      "Finns många varianter här. Man kan även sätta JML som lead om man behöver JKL någon annanstans. I så fall vill du ha GMY, JKR, Jolee och Bastila/Shaak."
+                    ]
+                  },
                   "members": [
                     {
                       "id": "JEDIKNIGHTLUKE",
@@ -1872,7 +1941,11 @@
                 {
                   "id": "362",
                   "name": "JMK",
-                  "notes": "JMK lead fungerar bara i CM:et som kräver GR Jedi i fas 3. Annars går det bra att stoppa in honom i andra jedi-lag. Detta team har många varianter, detta är ett förslag som fungerar ok och är relativt lätt att farma upp.",
+                  "notes": {
+                    "texts": [
+                      "JMK lead fungerar bara i CM:et som kräver GR Jedi i fas 3. Annars går det bra att stoppa in honom i andra jedi-lag. Detta team har många varianter, detta är ett förslag som fungerar ok och är relativt lätt att farma upp."
+                    ]
+                  },
                   "members": [
                     {
                       "id": "JEDIMASTERKENOBI",
@@ -1950,7 +2023,11 @@
                 {
                   "id": "363",
                   "name": "Rey",
-                  "notes": "Rey är inte helt optimal som lead i GeoLS, då fungerar Finn med omicron bättre. Det finns väldigt många varianter på detta team men detta ska vara idealt.",
+                  "notes": {
+                    "texts": [
+                      "Rey är inte helt optimal som lead i GeoLS, då fungerar Finn med omicron bättre. Det finns väldigt många varianter på detta team men detta ska vara idealt."
+                    ]
+                  },
                   "members": [
                     {
                       "id": "GLREY",

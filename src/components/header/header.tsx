@@ -1,4 +1,4 @@
-import type React from 'react'
+import type React from "react";
 
 const Header: React.FC = () => {
   return (
@@ -8,18 +8,17 @@ const Header: React.FC = () => {
         Denna guide ska ses som en rekommendation för att klara guild-events på
         bästa sätt.
       </p>
-      <p className="text-xl mt-4">
+      <p className="text-xl">
         Vi har inte tagit hänsyn till skepp men här är vår rekommendation:
-        <ul className="list-disc list-inside text-xl">
-          <li>
-            Gå för Executor tidigt. Helt okej att låsa upp den före er första
-            GL.
-          </li>
-          <li>Farma upp Malevolance till 7* före ni farmar upp Negotioator.</li>
-        </ul>
       </p>
+      <ul className="list-disc list-inside text-xl">
+        <li>
+          Gå för Executor tidigt. Helt okej att låsa upp den före er första GL.
+        </li>
+        <li>Farma upp Malevolance till 7* före ni farmar upp Negotioator.</li>
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -4,6 +4,7 @@ import { FarmDataContext } from "../contexts/FarmDataContext";
 import TeamGroup from "./team-group";
 import SubPart from "./sub-part";
 import type { FarmGuideDataPart, FarmGuideTeam } from "../model/farm-guide";
+import NoteBlock from "./common/notes";
 
 interface PartProps {
   id: string;
@@ -70,7 +71,7 @@ const Part = (props: PartProps) => {
       <PartContainer color={partData?.color || "white"} part={partData}>
         {element}
       </PartContainer>
-      {partData?.notes && <p className="text-sm">{partData.notes}</p>}
+      {partData?.notes && <NoteBlock notes={partData.notes} />}
     </div>
   );
 };
