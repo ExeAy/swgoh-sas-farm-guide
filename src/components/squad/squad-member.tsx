@@ -1,5 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import type { Character } from "../../model/character";
 import type {
@@ -49,14 +50,14 @@ const SquadMember: React.FC<SquadMemberProps> = (props) => {
 
   return (
     <div className="flex gap-1 items-center">
-      <a href={character.url}>
+      <Link href={character.url}>
         <Image
           src={character.image}
           alt={character.name}
           width={50}
           height={50}
         />
-      </a>
+      </Link>
       <div className="flex flex-col justify-start">
         <span className="mb-1 leading-none text-sm">{character.name}</span>
         <RequiredGear teamMember={farmGuideTeamMember} />
