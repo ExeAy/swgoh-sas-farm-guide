@@ -1,7 +1,7 @@
 export type OmiZetaRecommendation = "required" | "recommended";
 
 export type Notes = {
-  header: string;
+  header?: string;
   texts: string[];
 };
 
@@ -33,7 +33,7 @@ export interface FarmGuideDataPart {
   id: string;
   name: string;
   color: string;
-  description: string;
-  notes: Notes;
+  description?: string;
+  notes?: Notes;
   teamParts: (FarmGuideTeam | FarmGuideDataPart[])[];
 }
