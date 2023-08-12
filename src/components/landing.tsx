@@ -1,11 +1,13 @@
-import Header from './header/header'
-import farmGuideData from '../assets/data/ros/farm-guide-data.json'
-import characters from '../assets/data/swgoh/characters.json'
-import abilities from '../assets/data/swgoh/abilities.json'
-import { FarmDataContext } from '../contexts/FarmDataContext'
-import { CharacterContext } from '../contexts/CharactersContext'
-import { AbilitiesContext } from '../contexts/AbilitiesContext'
-import FarmBlocks from './farm-blocks'
+"use client";
+
+import Header from "./header/header";
+import farmGuideData from "../data/ros/farm-guide-data.json";
+import characters from "../data/swgoh/characters.json";
+import abilities from "../data/swgoh/abilities.json";
+import { FarmDataContext } from "../contexts/FarmDataContext";
+import { CharacterContext } from "../contexts/CharactersContext";
+import { AbilitiesContext } from "../contexts/AbilitiesContext";
+import FarmBlocks from "./farm-blocks";
 
 const Landing: React.FC = () => {
   return (
@@ -21,7 +23,7 @@ const Landing: React.FC = () => {
         </AbilitiesContext.Provider>
       </CharacterContext.Provider>
     </FarmDataContext.Provider>
-  )
-}
+  );
+};
 
-export default Landing
+export default Landing;

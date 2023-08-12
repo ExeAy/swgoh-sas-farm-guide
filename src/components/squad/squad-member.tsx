@@ -1,34 +1,39 @@
-import { useState, useEffect, useContext } from 'react'
-import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined'
-import type { Character } from '../../model/character'
-import type { FarmGuideTeam, FarmGuideTeamMember } from '../../model/farm-guide'
-import Ability from './ability'
-import RequiredGear from './gear'
-import { CharacterContext } from '../../contexts/CharactersContext'
+import { useState, useEffect, useContext } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
+import type { Character } from "../../model/character";
+import type {
+  FarmGuideTeam,
+  FarmGuideTeamMember,
+} from "../../model/farm-guide";
+import Ability from "./ability";
+import RequiredGear from "./gear";
+import { CharacterContext } from "../../contexts/CharactersContext";
 
 interface SquadMemberProps {
-  farmGuideTeamMember: FarmGuideTeamMember
+  farmGuideTeamMember: FarmGuideTeamMember;
 }
 
 const SquadMember: React.FC<SquadMemberProps> = (props) => {
-  const { farmGuideTeamMember } = props
+  const { farmGuideTeamMember } = props;
 
-  const characters = useContext(CharacterContext)
+  const characters = useContext(CharacterContext);
 
-  const [character, setCharacter] = useState<Character>()
+  const [character, setCharacter] = useState<Character>();
 
   useEffect(() => {
     const character = characters.find(
-      (char) => char.base_id === farmGuideTeamMember.id,
-    )
-    setCharacter(character)
-  }, [])
+      (char) => char.base_id === farmGuideTeamMember.id
+    );
+    setCharacter(character);
+  }, []);
 
   if (!farmGuideTeamMember) {
-    return null
+    return null;
   }
 
-  if (farmGuideTeamMember.id === 'OPTIONAL') {
+  if (farmGuideTeamMember.id === "OPTIONAL") {
     return (
       <div className="flex gap-1 items-center">
         <PermIdentityOutlinedIcon sx={{ fontSize: 50 }} />
@@ -36,16 +41,25 @@ const SquadMember: React.FC<SquadMemberProps> = (props) => {
           {farmGuideTeamMember?.name}
         </span>
       </div>
-    )
+    );
+  }
+
+  if (!character) {
+    return null;
   }
 
   return (
     <div className="flex gap-1 items-center">
-      <a href={character?.url}>
-        <img src={character?.image} alt={character?.name} className="w-15" />
-      </a>
+      <Link href={character.url}>
+        <Image
+          src={character.image}
+          alt={character.name}
+          width={50}
+          height={50}
+        />
+      </Link>
       <div className="flex flex-col justify-start">
-        <span className="mb-1 leading-none text-sm">{character?.name}</span>
+        <span className="mb-1 leading-none text-sm">{character.name}</span>
         <RequiredGear teamMember={farmGuideTeamMember} />
         {farmGuideTeamMember.zetas?.length
           ? farmGuideTeamMember.zetas.map((zeta) => (
@@ -67,7 +81,7 @@ const SquadMember: React.FC<SquadMemberProps> = (props) => {
           : null}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SquadMember
+export default SquadMember;

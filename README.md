@@ -1,31 +1,34 @@
-# RoS Farming Guide
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This is the repo of https://exeay.github.io/swgoh-sas-farm-guide/ . Essentially this is guide for relatively new players in the mobile game Star Wars Galaxy of Heroes. The guide says what teams to farm and in what order.
+## Getting Started
 
-The page is built with [astro](https://astro.build/) and [react](https://react.dev/).
+First, run the development server:
 
-Feel free to use the code as you wish.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-## Hot to run
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-This project uses pnpm as package manager.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-#### Build
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-`pnpm build`
+## Learn More
 
-#### Run locally
+To learn more about Next.js, take a look at the following resources:
 
-`pnpm dev`
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-#### Format code
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-`pnpm pretty`
+## Deploy on Vercel
 
-## How it works
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Under the src/asset/data folder there are three json-files. The ones under the swgoh folder are data directly fetched form [the swgoh.gg api](http://api.swgoh.gg/). Specifically two calls are used to update the data, `/abilities` and `/characters`. The [farm-guide-data.json](./src/assets/data/ros/farm-guide-data.json) file contains all the data required to render the guide.
-
-Essentially the json file is an array of blocks or parts of the guide. The data structure looks like [FarmGuideDataPart i the model file](./src/model/farm-guide.ts). The character id and abilities ids (zetas and omicrons) must match the id:s from swgoh.gg.
-
-Each part consists of several teams and some meta data. Each team consists of members (typically 5 members). But instead of members a team can have sub-teams. This will in turn generate a sub block of teams. If a team members id is `OPTIONAL` instead of an id from swgoh.gg then an anonymous icon will be generated and you can add some notes in the name section. E.g. "Free to choose empire character".
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

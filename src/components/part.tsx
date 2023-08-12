@@ -1,21 +1,22 @@
-import PartContainer from './common/part-container'
-import { useContext, useMemo } from 'react'
-import { FarmDataContext } from '../contexts/FarmDataContext'
-import TeamGroup from './team-group'
-import SubPart from './sub-part'
-import type { FarmGuideDataPart, FarmGuideTeam } from '../model/farm-guide'
+import PartContainer from "./common/part-container";
+import { useContext, useMemo } from "react";
+import { FarmDataContext } from "../contexts/FarmDataContext";
+import TeamGroup from "./team-group";
+import SubPart from "./sub-part";
+import type { FarmGuideDataPart, FarmGuideTeam } from "../model/farm-guide";
+import NoteBlock from "./common/notes";
 
 interface PartProps {
-  id: string
+  id: string;
 }
 
 const Part = (props: PartProps) => {
-  const { id } = props
-  const farmGuide = useContext(FarmDataContext)
+  const { id } = props;
+  const farmGuide = useContext(FarmDataContext);
   const partData = useMemo(
     () => farmGuide.find((part) => part.id === id),
-    [farmGuide],
-  )
+    [farmGuide, id]
+  );
 
   const element = useMemo<JSX.Element>(() => {
     return (
@@ -24,21 +25,27 @@ const Part = (props: PartProps) => {
           if (Array.isArray(teamPart)) {
             if (teamPart.length > 1) {
               return (
-                <div className={`grid grid-rows-2 gap-2 grid-flow-col`}>
+                <div
+                  key={partData.id}
+                  className={`grid grid-rows-2 gap-2 grid-flow-col`}
+                >
                   {(teamPart as FarmGuideDataPart[]).map((subPart) => (
-                    <div className={`p-2 bg-${subPart.color}-200`}>
-                      <SubPart key={subPart.id} part={subPart} />
+                    <div
+                      key={subPart.id}
+                      className={`p-2 bg-${subPart.color}-200`}
+                    >
+                      <SubPart part={subPart} />
                     </div>
                   ))}
                 </div>
-              )
+              );
             } else {
-              const subPart = teamPart[0] as FarmGuideDataPart
+              const subPart = teamPart[0] as FarmGuideDataPart;
               return (
-                <div className={`p-2 bg-${subPart.color}-200`}>
-                  <SubPart key={subPart.id} part={subPart} />
+                <div key={subPart.id} className={`p-2 bg-${subPart.color}-200`}>
+                  <SubPart part={subPart} />
                 </div>
-              )
+              );
             }
           } else {
             return (
@@ -49,24 +56,24 @@ const Part = (props: PartProps) => {
                 color={partData.color}
                 index={index}
               />
-            )
+            );
           }
         })}
       </div>
-    )
-  }, [partData])
+    );
+  }, [partData]);
 
   return (
     <div>
       <h1 className="text-4xl font-bold text-center text-gray-800">
         {partData?.name}
       </h1>
-      <PartContainer color={partData?.color || 'white'} part={partData}>
+      <PartContainer color={partData?.color || "white"} part={partData}>
         {element}
       </PartContainer>
-      {partData?.notes && <p className="text-sm">{partData.notes}</p>}
+      {partData?.notes && <NoteBlock notes={partData.notes} />}
     </div>
-  )
-}
+  );
+};
 
-export default Part
+export default Part;
