@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useContext, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
@@ -20,15 +20,10 @@ const SquadMember: React.FC<SquadMemberProps> = (props) => {
 
   const characters = useContext(CharacterContext);
 
-  const [character, setCharacter] = useState<Character>();
-
-  useEffect(() => {
-    const character = characters.find(
-      (char) => char.base_id === farmGuideTeamMember.id
-    );
-    setCharacter(character);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const character = useMemo<Character | undefined>(
+    () => characters?.find((char) => char.base_id === farmGuideTeamMember.id),
+    [characters, farmGuideTeamMember.id]
+  );
 
   if (!farmGuideTeamMember) {
     return null;

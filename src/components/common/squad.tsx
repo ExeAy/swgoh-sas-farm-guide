@@ -1,7 +1,4 @@
-import { useContext, useEffect, useState } from "react";
-import type { Character } from "../../model/character";
 import type { FarmGuideTeam } from "../../model/farm-guide";
-import { CharacterContext } from "../../contexts/CharactersContext";
 import SquadMember from "../squad/squad-member";
 import NoteBlock from "./notes";
 
