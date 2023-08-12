@@ -27,6 +27,7 @@ const SquadMember: React.FC<SquadMemberProps> = (props) => {
       (char) => char.base_id === farmGuideTeamMember.id
     );
     setCharacter(character);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (!farmGuideTeamMember) {
