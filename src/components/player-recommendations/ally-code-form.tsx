@@ -6,11 +6,13 @@ import Checkbox from "@mui/material/Checkbox";
 import Button from "@mui/material/Button/Button";
 import React, { useEffect, useState } from "react";
 import { getPlayerData } from "./server-actions";
+import { Player } from "../../model/player";
 
 const AllyCodeForm: React.FC = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const [allyCode, setAllyCode] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
+  const [player, setPlayer] = useState<Player>();
 
   useEffect(() => {
     const savedAllyCode = localStorage.getItem("allyCode");
@@ -26,8 +28,12 @@ const AllyCodeForm: React.FC = () => {
   };
 
   const getPlayer = async (): Promise<void> => {
-    const player = await getPlayerData(allyCode);
-    console.log(player);
+    try {
+      const player = await getPlayerData(allyCode);
+      setPlayer(player);
+    } catch (error) {
+      setErrorMessage("Kunde inte hitta spelaren");
+    }
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
