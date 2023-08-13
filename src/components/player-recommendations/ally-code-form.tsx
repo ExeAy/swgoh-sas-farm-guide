@@ -4,14 +4,21 @@ import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import Button from "@mui/material/Button/Button";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { getPlayerData } from "./server-actions";
-import { Player } from "../../model/player";
 
 const AllyCodeForm: React.FC = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const [allyCode, setAllyCode] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
+
+  useEffect(() => {
+    const savedAllyCode = localStorage.getItem("allyCode");
+    if (savedAllyCode) {
+      setAllyCode(savedAllyCode);
+      setRememberMe(true);
+    }
+  }, []);
 
   const validateAllyCode = (allyCode: string): boolean => {
     const allyCodeRegex = new RegExp("^[0-9]{3}-?[0-9]{3}-?[0-9]{3}$");
@@ -29,6 +36,12 @@ const AllyCodeForm: React.FC = () => {
     if (!validateAllyCode(allyCode)) {
       setErrorMessage("Ogiltig ally code");
       return;
+    }
+
+    if (rememberMe) {
+      localStorage.setItem("allyCode", allyCode);
+    } else {
+      localStorage.removeItem("allyCode");
     }
 
     getPlayer();
