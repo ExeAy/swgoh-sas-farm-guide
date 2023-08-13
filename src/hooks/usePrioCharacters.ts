@@ -27,11 +27,8 @@ const usePrioritizedCharacters = (player?: Player): FarmGuideTeamMember[] => {
       const index = player!.units.findIndex(
         (unit) => unit.base_id === character.id
       );
-      console.log("index", index);
       const playerCharacter = player!.units[index];
-      console.log("playerCharacter", playerCharacter);
 
-      console.log("stars", playerCharacter.rarity);
       return playerCharacter?.rarity === 7;
     };
 
@@ -44,8 +41,6 @@ const usePrioritizedCharacters = (player?: Player): FarmGuideTeamMember[] => {
         (unit) => unit.base_id === character.id
       );
 
-      console.log("gear", playerCharacter?.gear_level);
-      console.log("relic", playerCharacter?.relic_tier);
       return (
         playerCharacter!.gear_level < (character.gear ?? 0) ||
         playerCharacter!.relic_tier < (character.relic ?? 0)
