@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@emotion/cache': ^11.11.0
   '@emotion/react': ^11.11.1
   '@emotion/styled': ^11.11.0
   '@mui/icons-material': ^5.14.3
@@ -20,6 +21,7 @@ specifiers:
   typescript: 5.1.6
 
 dependencies:
+  '@emotion/cache': 11.11.0
   '@emotion/react': 11.11.1_j3ahe22lw6ac2w6qvqp4kjqnqy
   '@emotion/styled': 11.11.0_yteb73ll6h6uyykb3t5anncyhm
   '@mui/icons-material': 5.14.3_ryerbjukrw7y55mdhhv3dxk4ri

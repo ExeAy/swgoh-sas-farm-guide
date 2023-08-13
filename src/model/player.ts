@@ -1,6 +1,7 @@
-import type { PlayerCharacter } from './character'
+import type { PlayerCharacter } from "./character";
 
 export interface Player {
-  allyCode: string
-  units: PlayerCharacter[]
+  allyCode: string;
+  name: string;
+  units: PlayerCharacter[];
 }
