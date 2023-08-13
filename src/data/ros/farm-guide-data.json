@@ -1228,8 +1228,39 @@
         "id": "SPEEDER_2A",
         "name": "Karaktärer som går att använda",
         "notes": {
+          "header": "Observera att vi inte vet hur bra de är och vad som funkar bäst tillsammans.",
           "texts": [
-            "Observera att vi inte vet hur bra de är och vad som funkar bäst tillsammans.<br /> <ul> <li>Galactic Legend Leia Organa</li> <li>Captain Drogan </li> <li>Scout Trooper </li> <li>Princess Kneesaa </li> <li>Captain Rex </li> <li>Admiral Ackbar</li> <li>C-3PO</li> <li>Chewbacca (Journey Guide version)</li> <li>Han Solo (Raid reward version)</li> <li>Hera Syndulla</li> <li>Lando Calrissian</li> <li>Wedge Antilles</li> <li>Jedi Knight Luke Skywalker</li> <li>Chief Chirpa</li> <li>Ewok Elder</li> <li>Ewok Scout</li> <li>Logray</li> <li>Paploo</li> <li>Teebo</li> <li>Wicket</li><li>Admiral Piett</li><li>Imperial Stormtrooper</li><li>Iden Versio</li><li>Moff Gideon</li><li>Range Trooper</li><li>Magmatrooper</li><li>Death Trooper</li><li>Shoretrooper</li><li>General Veers</li><li>Col. Starck</li><li>Scout trooper</li></ul>"
+            "Galactic Legend Leia Organa",
+            "Captain Drogan ",
+            "Scout Trooper ",
+            "Princess Kneesaa ",
+            "Captain Rex ",
+            "Admiral Ackbar",
+            "C-3PO",
+            "Chewbacca (Journey Guide version)",
+            "Han Solo (Raid reward version)",
+            "Hera Syndulla",
+            "Lando Calrissian",
+            "Wedge Antilles",
+            "Jedi Knight Luke Skywalker",
+            "Chief Chirpa",
+            "Ewok Elder",
+            "Ewok Scout",
+            "Logray",
+            "Paploo",
+            "Teebo",
+            "Wicket",
+            "Admiral Piett",
+            "Imperial Stormtrooper",
+            "Iden Versio",
+            "Moff Gideon",
+            "Range Trooper",
+            "Magmatrooper",
+            "Death Trooper",
+            "Shoretrooper",
+            "General Veers",
+            "Col. Starck",
+            "Scout trooper"
           ]
         }
       }

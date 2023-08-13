@@ -10,7 +10,7 @@ const NoteBlock = (props: { notes?: Notes }) => {
   const { header, texts } = notes;
 
   return (
-    <div>
+    <div className="text-base">
       {header ? <h3 className="font-bold mb-2">{header}</h3> : null}
       <ul>
         {texts?.map((text, index) => (

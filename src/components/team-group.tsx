@@ -1,6 +1,6 @@
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import type { FarmGuideDataPart, FarmGuideTeam } from "../model/farm-guide";
-import Squad from "./common/squad";
+import Squad from "./squad/squad";
 import NoteBlock from "./common/notes";
 
 interface TeamGroupProps {

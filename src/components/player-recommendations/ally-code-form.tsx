@@ -1,18 +1,20 @@
-"use client";
 import TextField from "@mui/material/TextField";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import Button from "@mui/material/Button/Button";
 import React, { useEffect, useState } from "react";
-import { getPlayerData } from "./server-actions";
-import { Player } from "../../model/player";
 
-const AllyCodeForm: React.FC = () => {
+interface AllyCodeFormProps {
+  getPlayer: (allyCode: string) => Promise<void>;
+}
+
+const AllyCodeForm: React.FC<AllyCodeFormProps> = (props) => {
+  const { getPlayer } = props;
+
   const [errorMessage, setErrorMessage] = useState("");
   const [allyCode, setAllyCode] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
-  const [player, setPlayer] = useState<Player>();
 
   useEffect(() => {
     const savedAllyCode = localStorage.getItem("allyCode");
@@ -25,15 +27,6 @@ const AllyCodeForm: React.FC = () => {
   const validateAllyCode = (allyCode: string): boolean => {
     const allyCodeRegex = new RegExp("^[0-9]{3}-?[0-9]{3}-?[0-9]{3}$");
     return allyCodeRegex.test(allyCode);
-  };
-
-  const getPlayer = async (): Promise<void> => {
-    try {
-      const player = await getPlayerData(allyCode);
-      setPlayer(player);
-    } catch (error) {
-      setErrorMessage("Kunde inte hitta spelaren");
-    }
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -50,7 +43,11 @@ const AllyCodeForm: React.FC = () => {
       localStorage.removeItem("allyCode");
     }
 
-    getPlayer();
+    try {
+      getPlayer(allyCode);
+    } catch (error: any) {
+      setErrorMessage(error.message);
+    }
   };
 
   const handleAllyCodeChange = (event: React.ChangeEvent<HTMLInputElement>) => {

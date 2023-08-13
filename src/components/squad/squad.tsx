@@ -1,6 +1,6 @@
 import type { FarmGuideTeam } from "../../model/farm-guide";
-import SquadMember from "../squad/squad-member";
-import NoteBlock from "./notes";
+import SquadMember from "./squad-member";
+import NoteBlock from "../common/notes";
 
 interface SquadProps {
   team: FarmGuideTeam;

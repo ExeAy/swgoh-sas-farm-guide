@@ -11,6 +11,7 @@ interface UnitResponse {
     relic_tier: number;
     url: string;
     zeta_abilities: string[];
+    rarity: number;
   };
 }
 
@@ -38,6 +39,7 @@ export async function getPlayerData(allyCode: string): Promise<Player> {
         relic_tier: unit.data.relic_tier,
         url: unit.data.url,
         zeta_abilities: unit.data.zeta_abilities,
+        rarity: unit.data.rarity,
       })),
     };
   } catch (error) {
