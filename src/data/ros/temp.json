@@ -826,7 +826,7 @@
               "name": "Valbar GL",
               "optionalTeams": {
                 "minimumTeamsToFarm": 0,
-                "teams": [
+                "teams:": [
                   {
                     "id": "23b",
                     "name": "Jabba",

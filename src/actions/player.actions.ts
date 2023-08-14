@@ -1,6 +1,9 @@
 "use server";
 
-import { Player } from "../../model/player";
+import { FarmGuideData } from "../contexts/FarmDataContext";
+import { FarmGuideTeamMember } from "../model/farm-guide";
+import { Player } from "../model/player";
+import { getRecommendedCharacters } from "../utils/farm-guide.utils";
 
 interface UnitResponse {
   data: {
@@ -16,7 +19,8 @@ interface UnitResponse {
 }
 
 export async function getPlayerData(allyCode: string): Promise<Player> {
-  const formattedAllyCode = allyCode.replace(/-/g, "");
+  console.log("getPlayerData", allyCode);
+  const formattedAllyCode = allyCode.toString().replace(/-/g, "");
 
   try {
     const response = await fetch(
@@ -46,4 +50,11 @@ export async function getPlayerData(allyCode: string): Promise<Player> {
     console.error(error);
     throw error;
   }
+}
+
+export async function getCharacterRecommendation(
+  allyCode: string
+): Promise<FarmGuideTeamMember[]> {
+  const player = await getPlayerData(allyCode);
+  return getRecommendedCharacters(player, FarmGuideData);
 }

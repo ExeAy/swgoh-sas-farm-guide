@@ -19,13 +19,19 @@ export interface FarmGuideTeamMember {
   omicrons?: FarmGuideAbility[];
 }
 
+export interface OptionalTeams {
+  minimumTeamsToFarm: number;
+  preferredTeamsToFarm?: string[];
+  teams: FarmGuideTeam[];
+}
+
 export interface FarmGuideTeam {
   id: string;
   name: string;
   highlight?: boolean;
   withArrowAfter?: boolean;
   members?: FarmGuideTeamMember[];
-  optionalTeams?: FarmGuideTeam[];
+  optionalTeams?: OptionalTeams;
   notes?: Notes;
 }
 

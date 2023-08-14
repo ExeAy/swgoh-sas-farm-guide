@@ -46,14 +46,14 @@ const TeamGroup = (props: TeamGroupProps) => {
           {team.name}
         </h4>
         <div className="grid grid-rows-2 gap-2 grid-flow-col">
-          {team.optionalTeams.map((subTeam) => (
+          {team.optionalTeams.teams.map((subTeam) => (
             <Squad key={subTeam.id} team={subTeam} />
           ))}
         </div>
         <div>
           <div
             className={`text-white ${
-              team.optionalTeams.length > 2
+              team.optionalTeams.teams.length > 2
                 ? "max-w-squad-container-text"
                 : "max-w-squad-card-text"
             }`}

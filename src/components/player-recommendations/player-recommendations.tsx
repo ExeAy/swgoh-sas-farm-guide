@@ -3,7 +3,7 @@
 import AllyCodeForm from "./ally-code-form";
 import Container from "@mui/material/Container/Container";
 import CharactersSuggestions from "./recommendations/characters";
-import { getPlayerData } from "./server-actions";
+import { getPlayerData } from "../../actions/player.actions";
 import { useState } from "react";
 import { Player } from "../../model/player";
 import { FarmDataContext } from "../../contexts/FarmDataContext";
@@ -16,6 +16,8 @@ const PlayerRecommendations: React.FC = () => {
 
   const getPlayer = async (allyCode: string): Promise<void> => {
     try {
+      if (!allyCode) throw new Error("Ange en ally code");
+      console.log("Getting player data", allyCode);
       const player = await getPlayerData(allyCode);
       setPlayer(player);
     } catch (error) {
