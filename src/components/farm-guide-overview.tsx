@@ -10,31 +10,25 @@ import FarmBlocks from "./farm-blocks";
 
 const FarmGuideOverview: React.FC = () => {
   return (
-    <FarmDataContext.Provider value={farmGuideData}>
-      <CharacterContext.Provider value={characters}>
-        <AbilitiesContext.Provider value={abilities}>
-          <div>
-            <p className="text-xl">
-              Denna guide ska ses som en rekommendation för att klara
-              guild-events på bästa sätt.
-            </p>
-            <p className="text-xl">
-              Vi har inte tagit hänsyn till skepp men här är vår rekommendation:
-            </p>
-            <ul className="list-disc list-inside text-xl">
-              <li>
-                Gå för Executor tidigt. Helt okej att låsa upp den före er
-                första GL.
-              </li>
-              <li>
-                Farma upp Malevolance till 7* före ni farmar upp Negotioator.
-              </li>
-            </ul>
-          </div>
-          <FarmBlocks />
-        </AbilitiesContext.Provider>
-      </CharacterContext.Provider>
-    </FarmDataContext.Provider>
+    <div className="flex flex-col items-center gap-6">
+      <div>
+        <p className="text-xl">
+          Denna guide ska ses som en rekommendation för att klara guild-events
+          på bästa sätt.
+        </p>
+        <p className="text-xl">
+          Vi har inte tagit hänsyn till skepp men här är vår rekommendation:
+        </p>
+        <ul className="list-disc list-inside text-xl">
+          <li>
+            Gå för Executor tidigt. Helt okej att låsa upp den före er första
+            GL.
+          </li>
+          <li>Farma upp Malevolance till 7* före ni farmar upp Negotioator.</li>
+        </ul>
+      </div>
+      <FarmBlocks />
+    </div>
   );
 };
 

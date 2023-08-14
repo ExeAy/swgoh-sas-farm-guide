@@ -1,15 +1,10 @@
-import { useState, useContext, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
-import type { Character } from "../../model/character";
-import type {
-  FarmGuideTeam,
-  FarmGuideTeamMember,
-} from "../../model/farm-guide";
+import type { FarmGuideTeamMember } from "../../model/farm-guide";
 import Ability from "./ability";
 import RequiredGear from "./gear";
-import { CharacterContext } from "../../contexts/CharactersContext";
+import { Characters } from "../../contexts/CharactersContext";
 
 interface SquadMemberProps {
   farmGuideTeamMember: FarmGuideTeamMember;
@@ -18,11 +13,8 @@ interface SquadMemberProps {
 const SquadMember: React.FC<SquadMemberProps> = (props) => {
   const { farmGuideTeamMember } = props;
 
-  const characters = useContext(CharacterContext);
-
-  const character = useMemo<Character | undefined>(
-    () => characters?.find((char) => char.base_id === farmGuideTeamMember.id),
-    [characters, farmGuideTeamMember.id]
+  const character = Characters.find(
+    (char) => char.base_id === farmGuideTeamMember.id
   );
 
   if (!farmGuideTeamMember) {
