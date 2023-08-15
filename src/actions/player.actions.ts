@@ -15,6 +15,7 @@ interface UnitResponse {
     url: string;
     zeta_abilities: string[];
     rarity: number;
+    categories: string[];
   };
 }
 

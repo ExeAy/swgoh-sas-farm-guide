@@ -1,11 +1,15 @@
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import type { FarmGuideDataPart, FarmGuideTeam } from "../model/farm-guide";
+import type {
+  FarmGuideDataPart,
+  FarmGuideDataSubPart,
+  FarmGuideTeam,
+} from "../model/farm-guide";
 import Squad from "./squad/squad";
 import NoteBlock from "./common/notes";
 
 interface TeamGroupProps {
   team: FarmGuideTeam;
-  allTeams: (FarmGuideTeam | FarmGuideDataPart[])[];
+  allTeams: (FarmGuideTeam | FarmGuideDataSubPart)[];
   color: string;
   index: number;
 }
@@ -24,7 +28,7 @@ const TeamGroup = (props: TeamGroupProps) => {
 
   const elements: JSX.Element[] = [];
 
-  if (index !== 0 && !Array.isArray(allTeams[index - 1])) {
+  if (index !== 0 && !Object.keys(allTeams[index - 1]).includes("subParts")) {
     const previousTeam = allTeams[index - 1] as FarmGuideTeam;
 
     if (

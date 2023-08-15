@@ -2,7 +2,11 @@ import PartContainer from "./common/part-container";
 import { FarmGuideData } from "../contexts/FarmDataContext";
 import TeamGroup from "./team-group";
 import SubPart from "./sub-part";
-import type { FarmGuideDataPart, FarmGuideTeam } from "../model/farm-guide";
+import type {
+  FarmGuideDataPart,
+  FarmGuideDataSubPart,
+  FarmGuideTeam,
+} from "../model/farm-guide";
 import NoteBlock from "./common/notes";
 
 interface PartProps {
@@ -16,14 +20,15 @@ const Part = (props: PartProps) => {
   const element = (
     <div className="flex items-center gap-2">
       {partData?.teamParts!.map((teamPart, index) => {
-        if (Array.isArray(teamPart)) {
-          if (teamPart.length > 1) {
+        if (Object.keys(teamPart).includes("subParts")) {
+          const farmGuideSubParts = teamPart as FarmGuideDataSubPart;
+          if (farmGuideSubParts.subParts.length > 1) {
             return (
               <div
                 key={partData.id}
-                className={`grid grid-rows-2 gap-2 grid-flow-col`}
+                className={`grid grid-cols-3 gap-2 grid-flow-row w-[200rem]`}
               >
-                {(teamPart as FarmGuideDataPart[]).map((subPart) => (
+                {farmGuideSubParts.subParts.map((subPart) => (
                   <div
                     key={subPart.id}
                     className={`p-2 bg-${subPart.color}-200`}
@@ -34,7 +39,7 @@ const Part = (props: PartProps) => {
               </div>
             );
           } else {
-            const subPart = teamPart[0] as FarmGuideDataPart;
+            const subPart = farmGuideSubParts.subParts[0] as FarmGuideDataPart;
             return (
               <div key={subPart.id} className={`p-2 bg-${subPart.color}-200`}>
                 <SubPart part={subPart} />

@@ -3,6 +3,7 @@ export interface Character {
   base_id: string;
   url: string;
   image: string;
+  categories: string[];
 }
 
 export interface PlayerCharacter extends Character {

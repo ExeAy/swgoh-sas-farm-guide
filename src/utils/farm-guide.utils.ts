@@ -1,9 +1,10 @@
 import { Character } from "../model/character";
-import {
+import type {
   FarmGuideDataPart,
   FarmGuideTeam,
   FarmGuideTeamMember,
   OptionalTeams,
+  FarmGuideDataSubPart,
 } from "../model/farm-guide";
 import { Player } from "../model/player";
 
@@ -149,29 +150,32 @@ const getRecommendedCharacterFromPart = (
   ];
 
   part.teamParts.forEach((team) => {
-    if (Array.isArray(team)) {
+    if (Object.keys(team).includes("subParts")) {
       console.log("teams is data part");
-      team.forEach((subPart) => {
-        console.log("subPart", subPart);
-        newRecommendedCharacters = getRecommendedCharacterFromPart({
-          part: subPart,
-          recommendedCharacters: newRecommendedCharacters,
-          player,
-        });
-        console.log(
-          "newRecommendedCharacters for subPart",
-          subPart.id,
-          newRecommendedCharacters
-        );
+      // (team as FarmGuideDataSubPart).subParts.forEach((subPart) => {
+      //   console.log("subPart", subPart);
+      //   newRecommendedCharacters = getRecommendedCharacterFromPart({
+      //     part: subPart,
+      //     recommendedCharacters: newRecommendedCharacters,
+      //     player,
+      //   });
+      //   console.log(
+      //     "newRecommendedCharacters for subPart",
+      //     subPart.id,
+      //     newRecommendedCharacters
+      //   );
 
-        if (newRecommendedCharacters.length >= MAX_RECOMMENDED_CHARACTERS)
-          return newRecommendedCharacters;
-      });
+      //   if (newRecommendedCharacters.length >= MAX_RECOMMENDED_CHARACTERS)
+      //     return newRecommendedCharacters;
+      // });
     } else {
-      newRecommendedCharacters = getRecommendedCharactersFromTeam(team, {
-        ...params,
-        recommendedCharacters: newRecommendedCharacters,
-      });
+      newRecommendedCharacters = getRecommendedCharactersFromTeam(
+        team as FarmGuideTeam,
+        {
+          ...params,
+          recommendedCharacters: newRecommendedCharacters,
+        }
+      );
       console.log(
         "newRecommendedCharacters for teamPart",
         team,

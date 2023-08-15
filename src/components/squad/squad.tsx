@@ -12,7 +12,7 @@ const Squad: React.FC<SquadProps> = (props) => {
   return (
     <div
       className={`bg-white p-2 flex flex-col gap-2 w-squad rounded-lg ${
-        team.highlight && "border-4 border-green-400"
+        team.isPreferred && "border-4 border-green-400"
       }`}
     >
       <h4 className="font-bold text-center text-xl">{team.name}</h4>

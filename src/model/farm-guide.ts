@@ -28,11 +28,16 @@ export interface OptionalTeams {
 export interface FarmGuideTeam {
   id: string;
   name: string;
-  highlight?: boolean;
+  isPreferred?: boolean;
   withArrowAfter?: boolean;
   members?: FarmGuideTeamMember[];
   optionalTeams?: OptionalTeams;
   notes?: Notes;
+}
+
+export interface FarmGuideDataSubPart {
+  id: string;
+  subParts: FarmGuideDataPart[];
 }
 
 export interface FarmGuideDataPart {
@@ -41,5 +46,5 @@ export interface FarmGuideDataPart {
   color: string;
   description?: string;
   notes?: Notes;
-  teamParts: (FarmGuideTeam | FarmGuideDataPart[])[];
+  teamParts: (FarmGuideTeam | FarmGuideDataSubPart)[];
 }
