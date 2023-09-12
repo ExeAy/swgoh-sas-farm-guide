@@ -259,7 +259,6 @@
             {
               "id": "143",
               "name": "Bounty Hunters",
-              "isPreferred": true,
               "notes": {
                 "texts": [
                   "Bounty hunters leder till Executor och Jabba. Välj ut ditt lag beroende på vad du siktar på."
@@ -559,6 +558,7 @@
       },
       {
         "id": "GLs_KD_subpart",
+        "selectionMode": "pickExistingGL",
         "subParts": [
           {
             "id": "22",
@@ -670,7 +670,7 @@
             ]
           },
           {
-            "id": "23",
+            "id": "BIG_KD_JABBA",
             "name": "Jabba",
             "color": "amber",
             "description": "Jabba",
@@ -854,10 +854,10 @@
             ]
           },
           {
-            "id": "24",
-            "name": "Tuskens och LV eller Jabba",
+            "id": "KD_VADER",
+            "name": "Lord Vader",
             "color": "amber",
-            "description": "Lord Vader, Jabba and Tuskens",
+            "description": "Lord Vader",
             "teamParts": [
               {
                 "id": "24a",
@@ -1525,6 +1525,7 @@
       },
       {
         "id": "36_subparts",
+        "selectionMode": "findFirstNonFinishedTeam",
         "subParts": [
           {
             "id": "36_optional_teams",

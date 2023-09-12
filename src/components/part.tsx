@@ -26,16 +26,21 @@ const Part = (props: PartProps) => {
             return (
               <div
                 key={partData.id}
-                className={`grid grid-cols-3 gap-2 grid-flow-row w-[200rem]`}
+                className={`grid grid-rows-2 gap-2 grid-flow-col`}
               >
-                {farmGuideSubParts.subParts.map((subPart) => (
-                  <div
-                    key={subPart.id}
-                    className={`p-2 bg-${subPart.color}-200`}
-                  >
-                    <SubPart part={subPart} />
-                  </div>
-                ))}
+                {farmGuideSubParts.subParts.map((subPart) => {
+                  const specialClass = subPart.id.includes("BIG")
+                    ? "row-span-2"
+                    : "";
+                  return (
+                    <div
+                      key={subPart.id}
+                      className={`p-2 bg-${subPart.color}-200 ${specialClass}`}
+                    >
+                      <SubPart part={subPart} />
+                    </div>
+                  );
+                })}
               </div>
             );
           } else {

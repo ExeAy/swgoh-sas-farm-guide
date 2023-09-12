@@ -1,5 +1,6 @@
 "use server";
 
+import { Characters } from "../contexts/CharactersContext";
 import { FarmGuideData } from "../contexts/FarmDataContext";
 import { FarmGuideTeamMember } from "../model/farm-guide";
 import { Player } from "../model/player";
@@ -15,7 +16,7 @@ interface UnitResponse {
     url: string;
     zeta_abilities: string[];
     rarity: number;
-    categories: string[];
+    is_galactic_legend: boolean;
   };
 }
 
@@ -45,6 +46,7 @@ export async function getPlayerData(allyCode: string): Promise<Player> {
         url: unit.data.url,
         zeta_abilities: unit.data.zeta_abilities,
         rarity: unit.data.rarity,
+        isGalacticLegend: unit.data.is_galactic_legend,
       })),
     };
   } catch (error) {
@@ -57,5 +59,5 @@ export async function getCharacterRecommendation(
   allyCode: string
 ): Promise<FarmGuideTeamMember[]> {
   const player = await getPlayerData(allyCode);
-  return getRecommendedCharacters(player, FarmGuideData);
+  return getRecommendedCharacters(player, FarmGuideData, Characters);
 }

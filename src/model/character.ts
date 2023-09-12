@@ -3,7 +3,6 @@ export interface Character {
   base_id: string;
   url: string;
   image: string;
-  categories: string[];
 }
 
 export interface PlayerCharacter extends Character {
@@ -12,4 +11,5 @@ export interface PlayerCharacter extends Character {
   zeta_abilities: string[];
   omicron_abilities: string[];
   rarity: number;
+  isGalacticLegend: boolean;
 }

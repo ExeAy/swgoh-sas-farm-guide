@@ -6,5 +6,5 @@ export const characterIsGL = (character: Character) => {
 };
 
 export const getPlayerGLs = (player: Player): PlayerCharacter[] => {
-  return player.units.filter((unit) => characterIsGL(unit));
-};
+    return player.units.filter((unit) => unit.isGalacticLegend);
+  };
