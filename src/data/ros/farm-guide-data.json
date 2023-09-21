@@ -2178,5 +2178,587 @@
         ]
       }
     ]
+  },
+  {
+    "id": "tw-part",
+    "name": "Territory War",
+    "description": "Fokus på lag för Territory War",
+    "color": "fuchsia",
+    "teamParts": [
+      {
+        "id": "easy-teams",
+        "name": "Lag i främre zoner",
+        "optionalTeams": [
+          {
+            "id": "easy-teams-1",
+            "name": "Phoenix",
+            "members": [
+              {
+                "id": "HERASYNDULLAS3",
+                "gear": 12,
+                "zetas": [
+                  {
+                    "id": "specialskill_HERASYNDULLAS301",
+                    "recommendation": "recommended"
+                  }
+                ],
+                "omicrons": [
+                  {
+                    "id": "leaderskill_HERASYNDULLAS3",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "CAPTAINREX",
+                "gear": 12
+              },
+              {
+                "id": "KANANJARRUSS3",
+                "gear": 12
+              },
+              {
+                "id": "OPTIONAL",
+                "name": "Valfri Phoenix, t.ex. Zeb"
+              },
+              {
+                "id": "OPTIONAL",
+                "name": "Valfri Phoenix, t.ex. Chopper"
+              }
+            ]
+          },
+          {
+            "id": "medium-tw-teams-2",
+            "name": "Jawas",
+            "members": [
+              {
+                "id": "CHIEFNEBIT",
+                "gear": 12,
+                "omicrons": [
+                  {
+                    "id": "leaderskill_CHIEFNEBIT",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "JAWAENGINEER",
+                "gear": 12
+              },
+              {
+                "id": "JAWASCAVENGER",
+                "gear": 12
+              },
+              {
+                "id": "DATHCHA",
+                "gear": 12
+              },
+              {
+                "id": "JAWA",
+                "gear": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "medium-teams",
+        "name": "Lag i andra zonen",
+        "optionalTeams": [
+          {
+            "id": "medium-tw-teams-1",
+            "name": "Mon Mothma",
+            "members": [
+              {
+                "id": "MONMOTHMA",
+                "gear": 13,
+                "relic": 3,
+                "zetas": [
+                  {
+                    "id": "leaderskill_MONMOTHMA",
+                    "recommendation": "required"
+                  },
+                  {
+                    "id": "uniqueskill_MONMOTHMA01",
+                    "recommendation": "recommended"
+                  }
+                ]
+              },
+              {
+                "id": "KYLEKATARN",
+                "gear": 13,
+                "relic": 3,
+                "zetas": [
+                  {
+                    "id": "specialskill_KYLEKATARN02",
+                    "recommendation": "recommended"
+                  }
+                ]
+              },
+              {
+                "id": "HOTHREBELSCOUT",
+                "gear": 13,
+                "relic": 3
+              },
+              {
+                "id": "PAO",
+                "gear": 13,
+                "relic": 3,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_PAO01",
+                    "recommendation": "recommended"
+                  }
+                ]
+              },
+              {
+                "id": "CARADUNE",
+                "gear": 13,
+                "relic": 3,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_CARADUNE02",
+                    "recommendation": "recommended"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "easy-teams-2",
+            "name": "Wookies",
+            "members": [
+              {
+                "id": "TARFFUL",
+                "gear": 13,
+                "relic": 3,
+                "omicrons": [
+                  {
+                    "id": "leaderskill_TARFFUL",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "OPTIONAL",
+                "gear": 13,
+                "relic": 3,
+                "name": "Valfri Wookie"
+              },
+              {
+                "id": "OPTIONAL",
+                "gear": 13,
+                "relic": 3,
+                "name": "Valfri Wookie eller Veteran Han med Veteran Chewie"
+              },
+              {
+                "id": "OPTIONAL",
+                "gear": 13,
+                "relic": 3,
+                "name": "Valfri Wookie eller Mission Vao med Zaalbar"
+              },
+              {
+                "id": "OPTIONAL",
+                "gear": 13,
+                "relic": 3,
+                "name": "Valfri Wookie 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hard-teams",
+        "name": "Lag i tredje zonen",
+        "optionalTeams": [
+          {
+            "id": "hard-tw-teams-1",
+            "name": "Genosian droids",
+            "members": [
+              {
+                "id": "GRIEVOUS",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "leaderskill_GRIEVOUS",
+                    "recommendation": "required"
+                  },
+                  {
+                    "id": "uniqueskill_GRIEVOUS01",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "B1BATTLEDROIDV2",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_b1battledroidv2_02",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "B2SUPERBATTLEDROID",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_B2SUPERBATTLEDROID02",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "MAGNAGUARD",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "specialskill_MAGNAGUARD02",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "DROIDEKA",
+                "gear": 13,
+                "relic": 5,
+                "omicrons": [
+                  {
+                    "id": "uniqueskill_DROIDEKA01",
+                    "recommendation": "required"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "hard-tw-teams-2",
+            "name": "First Order",
+            "members": [
+              {
+                "id": "PHASMA",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "leaderskill_PHASMA",
+                    "recommendation": "required"
+                  }
+                ],
+                "omicrons": [
+                  {
+                    "id": "leaderskill_PHASMA",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "KYLORENUNMASKED",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_KYLORENUNMASKED01",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "KYLOREN",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "specialskill_KYLOREN02",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "GENERALHUX",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_GENERALHUX01",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "FOSITHTROOPER",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_FOSITHTROOPER01",
+                    "recommendation": "required"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "atackk teams",
+        "name": "Lag till anfall",
+        "withArrowAfter": true,
+        "optionalTeams": [
+          {
+            "id": "TW_ATTACK_TRAYA",
+            "name": "Sith Triumvirate",
+            "members": [
+              {
+                "id": "DARTHTRAYA",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_DARTHTRAYA01",
+                    "recommendation": "required"
+                  },
+                  {
+                    "id": "leaderskill_DARTHTRAYA",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "DARTHSION",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_DARTHSION01",
+                    "recommendation": "recommended"
+                  }
+                ]
+              },
+              {
+                "id": "DARTHNIHILUS",
+                "gear": 13,
+                "relic": 5
+              },
+              {
+                "id": "OPTIONAL",
+                "gear": 13,
+                "relic": 5,
+                "name": "Valfri sith, t.ex. Darth Talon"
+              },
+              {
+                "id": "OPTIONAL",
+                "gear": 13,
+                "relic": 5,
+                "name": "Valfri sith, t.ex. Sithe Empire Trooper"
+              }
+            ]
+          },
+          {
+            "id": "TW_ATTACK_GEOS",
+            "name": "Genosians",
+            "members": [
+              {
+                "id": "GEONOSIANBROODALPHA",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "leaderskill_GEONOSIANBROODALPHA",
+                    "recommendation": "recommended"
+                  },
+                  {
+                    "id": "uniqueskill_GEONOSIANBROODALPHA01",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "SUNFAC",
+                "gear": 13,
+                "relic": 5
+              },
+              {
+                "id": "GEONOSIANSOLDIER",
+                "gear": 13,
+                "relic": 5
+              },
+              {
+                "id": "GEONOSIANSPY",
+                "gear": 13,
+                "relic": 5
+              },
+              {
+                "id": "POGGLETHELESSER",
+                "gear": 13,
+                "relic": 5,
+                "omicrons": [
+                  {
+                    "id": "uniqueskill_POGGLETHELESSER01",
+                    "recommendation": "required"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "TW_ATTACK_EMPIRE",
+            "name": "Empire",
+            "members": [
+              {
+                "id": "EMPERORPALPATINE",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "leaderskill_EMPERORPALPATINE",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "VADER",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "specialskill_VADER03",
+                    "recommendation": "required"
+                  },
+                  {
+                    "id": "leaderskill_VADER",
+                    "recommendation": "required"
+                  },
+                  {
+                    "id": "uniqueskill_VADER01",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "GRANDADMIRALTHRAWN",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_GRANDADMIRALTHRAWN01",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "MARAJADE",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "specialskill_MARAJADE02",
+                    "recommendation": "required"
+                  }
+                ],
+                "omicrons": [
+                  {
+                    "id": "uniqueskill_MARAJADE01",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "OPTIONAL",
+                "name": "Valfire empire, t.ex. Royal Guard",
+                "gear": 13,
+                "relic": 5
+              }
+            ]
+          },
+          {
+            "id": "TW_ATTACK_CLS",
+            "name": "CLS",
+            "members": [
+              {
+                "id": "COMMANDERLUKESKYWALKER",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "leaderskill_COMMANDERLUKESKYWALKER",
+                    "recommendation": "required"
+                  },
+                  {
+                    "id": "uniqueskill_COMMANDERLUKESKYWALKER01",
+                    "recommendation": "required"
+                  },
+                  {
+                    "id": "uniqueskill_COMMANDERLUKESKYWALKER02",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "HANSOLO",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_HANSOLO01",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "CHEWBACCALEGENDARY",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "uniqueskill_CHEWBACCALEGENDARY01",
+                    "recommendation": "required"
+                  },
+                  {
+                    "id": "uniqueskill_CHEWBACCALEGENDARY02",
+                    "recommendation": "recommended"
+                  }
+                ]
+              },
+              {
+                "id": "C3POCHEWBACCA",
+                "gear": 13,
+                "relic": 5,
+                "zetas": [
+                  {
+                    "id": "specialskill_C3POCHEWBACCA02",
+                    "recommendation": "required"
+                  }
+                ]
+              },
+              {
+                "id": "OPTIONAL",
+                "gear": 13,
+                "relic": 5,
+                "name": "Valfri rebel, förslagsvis C3PO"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "TW_SECOND_GL",
+        "name": "Annat",
+        "notes": {
+          "header": "Prioritera och välj som du vill. Detta är guildens rekommendation:",
+          "texts": [
+            "En till GL",
+            "Profundity",
+            "Leviathan",
+            "omi Ashsoka Tano (Fulcrum)"
+          ]
+        }
+      }
+    ]
   }
 ]

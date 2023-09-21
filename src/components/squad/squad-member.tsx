@@ -25,9 +25,14 @@ const SquadMember: React.FC<SquadMemberProps> = (props) => {
     return (
       <div className="flex gap-1 items-center">
         <PermIdentityOutlinedIcon sx={{ fontSize: 50 }} />
-        <span className="mb-1 leading-none text-sm">
-          {farmGuideTeamMember?.name}
-        </span>
+        <div className="flex flex-col justify-start">
+          <span className="mb-1 leading-none text-sm">
+            {farmGuideTeamMember?.name}
+          </span>
+          {farmGuideTeamMember.gear && (
+            <RequiredGear teamMember={farmGuideTeamMember} />
+          )}
+        </div>
       </div>
     );
   }
