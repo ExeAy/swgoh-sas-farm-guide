@@ -2977,6 +2977,95 @@
     "activate_shard_count": 25
   },
   {
+    "name": "Captain Drogan",
+    "base_id": "CAPTAINDROGAN",
+    "pk": 3461,
+    "url": "http://swgoh.gg/characters/captain-drogan/",
+    "image": "https://game-assets.swgoh.gg/tex.charui_captaindrogan.png",
+    "power": 36723,
+    "description": "Respected Rebel Captain who employs coordinated strikes to ruin enemy forces and turn the tide of battle",
+    "combat_type": 1,
+    "gear_levels": [
+      {
+        "tier": 1,
+        "gear": ["010", "011", "003", "004", "003", "009"]
+      },
+      {
+        "tier": 2,
+        "gear": ["034", "014", "015", "028", "025", "012"]
+      },
+      {
+        "tier": 3,
+        "gear": ["027", "049", "069", "010", "069", "049"]
+      },
+      {
+        "tier": 4,
+        "gear": ["038", "030", "072", "073", "069", "082"]
+      },
+      {
+        "tier": 5,
+        "gear": ["068", "038", "068", "089", "049", "070"]
+      },
+      {
+        "tier": 6,
+        "gear": ["073", "070", "089", "072", "068", "097"]
+      },
+      {
+        "tier": 7,
+        "gear": ["113", "109", "102", "089", "102", "107"]
+      },
+      {
+        "tier": 8,
+        "gear": ["125", "096", "111", "117", "117", "111"]
+      },
+      {
+        "tier": 9,
+        "gear": ["135", "117", "096", "117", "111", "111"]
+      },
+      {
+        "tier": 10,
+        "gear": ["132", "125", "132", "125", "174", "144"]
+      },
+      {
+        "tier": 11,
+        "gear": ["149", "141", "173", "125", "144", "174"]
+      },
+      {
+        "tier": 12,
+        "gear": [
+          "165",
+          "158",
+          "158",
+          "169",
+          "169",
+          "G12Finisher_CAPTAINDROGAN_B"
+        ]
+      },
+      {
+        "tier": 13,
+        "gear": ["9999", "9999", "9999", "9999", "9999", "9999"]
+      }
+    ],
+    "alignment": "Light Side",
+    "categories": ["Attacker", "Rebel", "Rebel Fighter"],
+    "ability_classes": [
+      "Ability Block",
+      "Assist",
+      "Burning",
+      "Counter",
+      "Dispel",
+      "Gain Turn Meter",
+      "Offense Down",
+      "Protection Up",
+      "Remove Turn Meter",
+      "Stun"
+    ],
+    "role": "Attacker",
+    "ship": "",
+    "ship_slot": null,
+    "activate_shard_count": 25
+  },
+  {
     "name": "Captain Han Solo",
     "base_id": "HOTHHAN",
     "pk": 239,
@@ -7298,7 +7387,7 @@
     "pk": 3362,
     "url": "http://swgoh.gg/characters/fifth-brother/",
     "image": "https://game-assets.swgoh.gg/tex.charui_fifthbrother.png",
-    "power": 37507,
+    "power": 38292,
     "description": "A powerful Inquisitor that specializes in supporting the purge of all Jedi by applying devastating debuffs.",
     "combat_type": 1,
     "gear_levels": [
@@ -10759,7 +10848,7 @@
     "pk": 3440,
     "url": "http://swgoh.gg/characters/jabba-the-hutt/",
     "image": "https://game-assets.swgoh.gg/tex.charui_jabbathehutt.png",
-    "power": 44095,
+    "power": 55327,
     "description": "A ruthless crime boss who exerts his influence on others to control the flow of battle to support his criminal underworld and Hutt Cartel enforcers",
     "combat_type": 1,
     "gear_levels": [
@@ -11735,7 +11824,7 @@
     "pk": 1264,
     "url": "http://swgoh.gg/characters/jedi-master-kenobi/",
     "image": "https://game-assets.swgoh.gg/tex.charui_globiwan.png",
-    "power": 47076,
+    "power": 54543,
     "description": "Renowned Jedi Master that provides damage and support through a diverse set of abilities",
     "combat_type": 1,
     "gear_levels": [
@@ -11841,7 +11930,7 @@
     "pk": 600,
     "url": "http://swgoh.gg/characters/jedi-master-luke-skywalker/",
     "image": "https://game-assets.swgoh.gg/tex.charui_luke_jml.png",
-    "power": 47076,
+    "power": 54543,
     "description": "The wizened Jedi master of legend who empowers his Jedi allies with the knowledge and skills he has obtained",
     "combat_type": 1,
     "gear_levels": [
@@ -13102,12 +13191,114 @@
     "activate_shard_count": 50
   },
   {
+    "name": "Leia Organa",
+    "base_id": "GLLEIA",
+    "pk": 3462,
+    "url": "http://swgoh.gg/characters/leia-organa/",
+    "image": "https://game-assets.swgoh.gg/tex.charui_leiaendor.png",
+    "power": 54543,
+    "description": "Leia Organa, the tactical leader of the Rebellion and high priority target of the Empire, dictates the precise strikes of the battle while inspiring and defending her allies",
+    "combat_type": 1,
+    "gear_levels": [
+      {
+        "tier": 1,
+        "gear": ["003", "003", "005", "005", "009", "009"]
+      },
+      {
+        "tier": 2,
+        "gear": ["015", "041", "014", "014", "026", "059"]
+      },
+      {
+        "tier": 3,
+        "gear": ["052", "070", "031", "070", "031", "026"]
+      },
+      {
+        "tier": 4,
+        "gear": ["085", "082", "077", "072", "071", "068"]
+      },
+      {
+        "tier": 5,
+        "gear": ["083", "088", "083", "077", "091", "077"]
+      },
+      {
+        "tier": 6,
+        "gear": ["090", "091", "094", "083", "088", "098"]
+      },
+      {
+        "tier": 7,
+        "gear": ["105", "108", "108", "090", "172", "108"]
+      },
+      {
+        "tier": 8,
+        "gear": ["112", "117", "172", "172", "108", "112"]
+      },
+      {
+        "tier": 9,
+        "gear": ["108", "117", "173", "172", "112", "111"]
+      },
+      {
+        "tier": 10,
+        "gear": ["135", "122", "174", "117", "135", "145"]
+      },
+      {
+        "tier": 11,
+        "gear": ["145", "146", "129", "130", "149", "124"]
+      },
+      {
+        "tier": 12,
+        "gear": ["165", "161", "165", "168", "169", "G12Finisher_GLLEIA_C"]
+      },
+      {
+        "tier": 13,
+        "gear": ["9999", "9999", "9999", "9999", "9999", "9999"]
+      }
+    ],
+    "alignment": "Light Side",
+    "categories": ["Galactic Legend", "Leader", "Rebel", "Tank"],
+    "ability_classes": [
+      "AoE",
+      "Assist",
+      "Buff Immunity",
+      "Burning",
+      "Counter",
+      "Critical Chance Down",
+      "Critical Damage Down",
+      "Damage Immunity",
+      "Daze",
+      "Defense Down",
+      "Dispel",
+      "Expose",
+      "Foresight",
+      "Gain Turn Meter",
+      "Leader: +Defense",
+      "Leader: +Max Health",
+      "Leader: +Speed",
+      "Leader: Foresight",
+      "Leader: Healing",
+      "Leader: Protection Up",
+      "Potency Down",
+      "Protection Up",
+      "Remove Turn Meter",
+      "Revive",
+      "Stagger",
+      "Stealth",
+      "Stun",
+      "Taunt",
+      "Tenacity Down",
+      "Vulnerable"
+    ],
+    "role": "Tank",
+    "ship": "",
+    "ship_slot": null,
+    "activate_shard_count": 330
+  },
+  {
     "name": "Lobot",
     "base_id": "LOBOT",
     "pk": 84,
     "url": "http://swgoh.gg/characters/lobot/",
     "image": "https://game-assets.swgoh.gg/tex.charui_lobot.png",
-    "power": 32121,
+    "power": 32905,
     "description": "Rebel Support that can reliably inflict Defense Down, clear allied debuffs, and speed up allied Droids",
     "combat_type": 1,
     "gear_levels": [
@@ -13167,12 +13358,18 @@
     "alignment": "Light Side",
     "categories": ["Leader", "Rebel", "Support"],
     "ability_classes": [
+      "Assist",
       "Defense Down",
+      "Defense Up",
       "Dispel",
-      "Dispel - All Allies",
+      "Foresight",
       "Gain Turn Meter",
       "Heal",
-      "Leader: +Speed"
+      "Leader: +Speed",
+      "Remove Turn Meter",
+      "Speed Down",
+      "Speed Up",
+      "Target Lock"
     ],
     "role": "Support",
     "ship": "",
@@ -13268,7 +13465,7 @@
     "pk": 1712,
     "url": "http://swgoh.gg/characters/lord-vader/",
     "image": "https://game-assets.swgoh.gg/tex.charui_lordvader.png",
-    "power": 47076,
+    "power": 54543,
     "description": "Legendary Sith Lord who utilizes the actions of others to empower his own potential and is not to be underestimated",
     "combat_type": 1,
     "gear_levels": [
@@ -16563,7 +16760,7 @@
     "pk": 434,
     "url": "http://swgoh.gg/characters/rey/",
     "image": "https://game-assets.swgoh.gg/tex.charui_rey_tros.png",
-    "power": 47076,
+    "power": 54543,
     "description": "Resistance Leader who safeguards her allies by providing powerful shields and delivering high damage",
     "combat_type": 1,
     "gear_levels": [
@@ -18057,7 +18254,7 @@
     "pk": 596,
     "url": "http://swgoh.gg/characters/sith-eternal-emperor/",
     "image": "https://game-assets.swgoh.gg/tex.charui_espalpatine_pre.png",
-    "power": 47076,
+    "power": 54543,
     "description": "Cunning Emperor of the Sith that eliminates his enemies with the overwhelming power of the dark side",
     "combat_type": 1,
     "gear_levels": [
@@ -18823,7 +19020,7 @@
     "pk": 441,
     "url": "http://swgoh.gg/characters/supreme-leader-kylo-ren/",
     "image": "https://game-assets.swgoh.gg/tex.charui_kyloren_tros.png",
-    "power": 47076,
+    "power": 54543,
     "description": "Destructive Leader of the First Order who overpowers his enemies with brutal attacks",
     "combat_type": 1,
     "gear_levels": [
