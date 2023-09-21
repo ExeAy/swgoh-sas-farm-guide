@@ -2425,7 +2425,8 @@
               },
               {
                 "id": "DROIDEKA",
-                "gear": 12,
+                "gear": 13,
+                "relic": 5,
                 "omicrons": [
                   {
                     "id": "uniqueskill_DROIDEKA01",
