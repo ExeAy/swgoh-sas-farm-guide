@@ -9,7 +9,7 @@ import type {
   SubPartSelectionMode,
 } from "../model/farm-guide";
 import { Player } from "../model/player";
-import { getPlayerGLs } from "./characterutils.";
+import { characterIsGalacticLegend, getPlayerGLs } from "./character.utils.";
 
 export interface CharacterRecommendationParams {
   part: FarmGuideDataPart;
@@ -30,8 +30,12 @@ const isTeamMemberFinished = (
     (unit) => unit.base_id === member.id
   );
 
-  console.log("playerCharacter", playerCharacter);
-  console.log("member", member);
+  console.log(
+    "playerCharacter, gear",
+    playerCharacter?.name,
+    playerCharacter?.gear_level
+  );
+  console.log("member", member.id);
 
   if (!playerCharacter) return false;
   if (playerCharacter.rarity < 7) return false;
@@ -56,7 +60,7 @@ const getRecommendedCharactersFromOptionalTeams = (
 ): FarmGuideTeamMember[] => {
   const { recommendedCharacters } = params;
 
-  console.log("optionalTeams", optionalTeams);
+  console.log("Looking for characters in optional teams");
 
   let numberOfFinishedTeams = 0;
   for (const optionalTeam of optionalTeams.teams) {
@@ -64,11 +68,11 @@ const getRecommendedCharactersFromOptionalTeams = (
 
     console.log("optionalTeam", optionalTeam);
     if (isTeamFinished(optionalTeam, params)) {
-      console.log("team is finished", optionalTeam);
+      console.log("team is finished", optionalTeam.id);
       numberOfFinishedTeams++;
       continue;
     }
-    console.log("team is not finished", optionalTeam);
+    console.log("team is not finished", optionalTeam.id);
   }
 
   console.log("numberOfFinishedTeams", numberOfFinishedTeams);
@@ -108,17 +112,20 @@ const getRecommendedCharactersFromTeam = (
   ];
 
   if (team.members) {
-    console.log("team has members", team.members);
+    console.log(
+      "team has members",
+      team.members.map((member) => member.id)
+    );
     for (const member of team.members) {
-      console.log("checking member", member);
+      console.log("checking member", member.id);
       if (!isTeamMemberFinished(member, params)) {
-        console.log("member is not finished", member);
+        console.log("member is not finished", member.id);
         newRecommendedCharacters.push(member);
 
         if (newRecommendedCharacters.length >= MAX_RECOMMENDED_CHARACTERS)
           return newRecommendedCharacters;
       } else {
-        console.log("member is finished", member);
+        console.log("member is finished", member.id);
       }
     }
   } else if (team.optionalTeams) {
@@ -135,18 +142,19 @@ const getPartsWithRecommendedGL = (
   subPart: FarmGuideDataSubPart,
   characters: Character[]
 ): FarmGuideDataPart[] => {
-  console.log("getPartsWithRecommendedGL subPart", subPart);
+  console.log("getPartsWithRecommendedGL subPart", subPart.id);
   return (
     subPart.subParts.filter((p) => {
       return (
         p.teamParts.findIndex((tp) => {
           const team = tp as FarmGuideTeam;
-          console.log("teamPart team", team);
+          console.log("teamPart team", team.id);
           return (
             team.isPreferred &&
             team.members?.some((member) => {
               const char = characters.find((c) => c.base_id === member.id);
-              return char?.isGalacticLegend ?? false;
+              if (!char) return false;
+              return characterIsGalacticLegend(char);
             })
           );
         }) !== -1
@@ -160,12 +168,15 @@ const getPartsWithPlayerGLs = (
   player: Player
 ): FarmGuideDataPart[] => {
   const playerGLs = getPlayerGLs(player);
-  console.log("getPartsWithPlayerGLs playerGLs", playerGLs);
+  console.log(
+    "getPartsWithPlayerGLs playerGLs",
+    playerGLs.map((gl) => gl.name)
+  );
   return subPart.subParts.filter((p) => {
     return (
       p.teamParts.findIndex((tp) => {
         const team = tp as FarmGuideTeam;
-        console.log("team", team);
+        console.log("getPartsWithPlayerGLs, team", team.id);
         const inTeam = team.members?.some((member) => {
           return playerGLs.some((c) => c.base_id === member.id);
         });
@@ -176,7 +187,7 @@ const getPartsWithPlayerGLs = (
         if (team.optionalTeams) {
           return team.optionalTeams.teams.some((t) => {
             return t.members?.some((member) => {
-              console.log("Chekcing member in optional team", member);
+              console.log("Chekcing member in optional team", member.id);
               return playerGLs.some((c) => c.base_id === member.id);
             });
           });
@@ -199,7 +210,7 @@ const getRecommendedCharacterFromPart = (
   ) {
     console.log(
       "returning recommended characters from part",
-      recommendedCharacters
+      recommendedCharacters.map((char) => char.id)
     );
     return recommendedCharacters;
   }
@@ -208,15 +219,15 @@ const getRecommendedCharacterFromPart = (
     ...(recommendedCharacters ?? []),
   ];
 
-  part.teamParts.forEach((team) => {
+  for (const team of part.teamParts) {
     if (Object.keys(team).includes("subParts")) {
       console.log("teams is sub part");
       const subPart = team as FarmGuideDataSubPart;
       const selectionMode = subPart.selectionMode as SubPartSelectionMode;
       if (selectionMode === "findFirstNonFinishedTeam") {
         console.log("selectionMode is findFirstNonFinishedTeam");
-        (team as FarmGuideDataSubPart).subParts.forEach((subPart) => {
-          console.log("subPart", subPart);
+        for (const subPart of (team as FarmGuideDataSubPart).subParts) {
+          console.log("subPart", subPart.name);
           newRecommendedCharacters = getRecommendedCharacterFromPart({
             ...params,
             part: subPart,
@@ -225,16 +236,18 @@ const getRecommendedCharacterFromPart = (
           console.log(
             "newRecommendedCharacters for subPart",
             subPart.id,
-            newRecommendedCharacters
+            newRecommendedCharacters.map((char) => char.id)
           );
-
           if (newRecommendedCharacters.length >= MAX_RECOMMENDED_CHARACTERS)
-            return newRecommendedCharacters;
-        });
+            break;
+        }
       } else if (selectionMode === "pickExistingGL") {
         console.log("selectionMode is pickExistingGL");
         const playerGLs = getPlayerGLs(player);
-        console.log("playerGLs", playerGLs);
+        console.log(
+          "playerGLs",
+          playerGLs.map((gl) => gl.name)
+        );
 
         if (!playerGLs) {
           const partWithRecommendedGL = getPartsWithRecommendedGL(
@@ -257,9 +270,8 @@ const getRecommendedCharacterFromPart = (
                 part: partWithPlayerGLs,
                 recommendedCharacters: newRecommendedCharacters,
               });
-
               if (newRecommendedCharacters.length >= MAX_RECOMMENDED_CHARACTERS)
-                return newRecommendedCharacters;
+                break;
             }
           }
         }
@@ -274,11 +286,12 @@ const getRecommendedCharacterFromPart = (
       );
       console.log(
         "newRecommendedCharacters for teamPart",
-        team,
-        newRecommendedCharacters
+        team.id,
+        newRecommendedCharacters.map((char) => char.id)
       );
     }
-  });
+    if (newRecommendedCharacters.length >= MAX_RECOMMENDED_CHARACTERS) break;
+  }
 
   return newRecommendedCharacters;
 };
