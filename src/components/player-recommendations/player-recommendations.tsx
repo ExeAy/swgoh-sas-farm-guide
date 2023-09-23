@@ -27,9 +27,11 @@ const PlayerRecommendations: React.FC = () => {
   return (
     <FarmDataContext.Provider value={farmGuideData}>
       <CharacterContext.Provider value={characters}>
-        <Container className="flex justify-center items-center">
+        <Container className="!flex flex-col justify-center items-center gap-6">
           <AllyCodeForm getPlayer={getPlayer} />
-          <CharactersSuggestions player={player} />
+          <div className="flex">
+            <CharactersSuggestions player={player} />
+          </div>
         </Container>
       </CharacterContext.Provider>
     </FarmDataContext.Provider>
