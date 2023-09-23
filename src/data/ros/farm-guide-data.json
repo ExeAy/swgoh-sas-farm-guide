@@ -453,7 +453,7 @@
                 },
                 {
                   "id": "BASTILASHANDARK",
-                  "gear": 13,
+                  "gear": 12,
                   "relic": 3,
                   "zetas": [
                     {
@@ -780,8 +780,7 @@
                   },
                   {
                     "id": "BASTILASHAN",
-                    "gear": 13,
-                    "relic": 1
+                    "gear": 12
                   },
                   {
                     "id": "MISSIONVAO",
