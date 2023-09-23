@@ -340,32 +340,31 @@ const getRecommendedCharacterFromPart = (
             recommendedCharacters: newRecommendedCharacters,
           });
         } else {
+          // Check if any raid team is finished
+          let partsWithoutGLs = filterGLTeamsFromPart(subPart.subParts, params);
+
+          const finishedTeams: FarmGuideTeam[] =
+            getFinishedTeamsFromPartsWithNoSubParts(partsWithoutGLs, params);
+          console.log(
+            "finishedTeams in raid section",
+            finishedTeams.map((t) => t.id)
+          );
+
+          if (finishedTeams.length > 0) break;
+
           const partsWithPlayerGLs = getPartsWithPlayerGLs(subPart, player);
           console.log(
             "partsWithPlayerGLs",
             partsWithPlayerGLs.map((p) => p.name)
           );
 
-          const partsWithoutGLs = filterGLTeamsFromPart(
-            partsWithPlayerGLs,
-            params
-          );
+          partsWithoutGLs = filterGLTeamsFromPart(partsWithPlayerGLs, params);
           console.log(
             "partsWithoutGLs",
-            partsWithoutGLs.map((p) => p.teamParts.map)
+            partsWithoutGLs.map((p) => p.teamParts.map((t) => t.id))
           );
 
           if (partsWithoutGLs.length > 0) {
-            // Check if any raid team is finished
-            const finishedTeams: FarmGuideTeam[] =
-              getFinishedTeamsFromPartsWithNoSubParts(partsWithoutGLs, params);
-            console.log(
-              "finishedTeams in raid section",
-              finishedTeams.map((t) => t.id)
-            );
-
-            if (finishedTeams.length > 0) break;
-
             const unfinishedTeams: FarmGuideTeam[] =
               getUnFinishedTeamsFromPartsWithNoSubParts(
                 partsWithoutGLs,
