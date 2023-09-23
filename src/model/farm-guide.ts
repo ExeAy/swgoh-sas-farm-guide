@@ -1,4 +1,7 @@
 export type OmiZetaRecommendation = "required" | "recommended";
+export type SubPartSelectionMode =
+  | "pickExistingGL"
+  | "findFirstNonFinishedTeam";
 
 export type Notes = {
   header?: string;
@@ -19,14 +22,26 @@ export interface FarmGuideTeamMember {
   omicrons?: FarmGuideAbility[];
 }
 
+export interface OptionalTeams {
+  minimumTeamsToFarm: number;
+  teams: FarmGuideTeam[];
+}
+
 export interface FarmGuideTeam {
   id: string;
   name: string;
-  highlight?: boolean;
+  isPreferred?: boolean;
   withArrowAfter?: boolean;
   members?: FarmGuideTeamMember[];
-  optionalTeams?: FarmGuideTeam[];
+  optionalTeams?: OptionalTeams;
   notes?: Notes;
+}
+
+export interface FarmGuideDataSubPart {
+  id: string;
+  minimumPartsToFarm?: number;
+  selectionMode: string;
+  subParts: FarmGuideDataPart[];
 }
 
 export interface FarmGuideDataPart {
@@ -35,5 +50,5 @@ export interface FarmGuideDataPart {
   color: string;
   description?: string;
   notes?: Notes;
-  teamParts: (FarmGuideTeam | FarmGuideDataPart[])[];
+  teamParts: (FarmGuideTeam | FarmGuideDataSubPart)[];
 }

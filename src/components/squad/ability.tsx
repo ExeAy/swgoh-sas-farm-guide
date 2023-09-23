@@ -1,7 +1,6 @@
 import { Tooltip } from "@mui/material";
 import Image from "next/image";
-import { useContext, useMemo } from "react";
-import { AbilitiesContext } from "../../contexts/AbilitiesContext";
+import { Abilities } from "../../contexts/AbilitiesContext";
 import type { FarmGuideAbility } from "../../model/farm-guide";
 
 interface AbilityProps {
@@ -12,22 +11,20 @@ interface AbilityProps {
 const Ability: React.FC<AbilityProps> = (props) => {
   const { farmGuideAbility, type } = props;
 
-  const abilities = useContext(AbilitiesContext);
-
-  const ability = useMemo(
-    () => abilities.find((ability) => ability.base_id === farmGuideAbility.id),
-    [abilities, farmGuideAbility]
+  const ability = Abilities.find(
+    (ability) => ability.base_id === farmGuideAbility.id
   );
-  const color = useMemo<string>(() => {
-    if (ability?.is_zeta) {
-      if (farmGuideAbility.recommendation === "required") return "indigo-800";
-      else return "indigo-400";
-    } else if (ability?.is_omicron) {
-      if (farmGuideAbility.recommendation === "required") return "slate-800";
-      else return "slate-400";
-    }
-    return "gray-800";
-  }, [ability, farmGuideAbility]);
+
+  let color: string;
+  if (ability?.is_zeta) {
+    if (farmGuideAbility.recommendation === "required") color = "indigo-800";
+    else color = "indigo-400";
+  } else if (ability?.is_omicron) {
+    if (farmGuideAbility.recommendation === "required") color = "slate-800";
+    else color = "slate-400";
+  } else {
+    color = "gray-800";
+  }
 
   if (!ability) {
     return null;
