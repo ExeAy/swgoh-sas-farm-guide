@@ -561,115 +561,6 @@
         "selectionMode": "pickExistingGL",
         "subParts": [
           {
-            "id": "22",
-            "name": "JML",
-            "color": "amber",
-            "description": "JML",
-            "teamParts": [
-              {
-                "id": "22a",
-                "name": "Old Republic",
-                "notes": {
-                  "texts": [
-                    "Detta är förslag på lag som funkar bäst på de högre nivåerna. Men det är fritt fram att kombinera som man vill."
-                  ]
-                },
-                "members": [
-                  {
-                    "id": "JEDIKNIGHTREVAN",
-                    "gear": 13,
-                    "relic": 5,
-                    "zetas": [
-                      {
-                        "id": "specialskill_JEDIKNIGHTREVAN02",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "uniqueskill_JEDIKNIGHTREVAN02",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "leaderskill_JEDIKNIGHTREVAN",
-                        "recommendation": "required"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "BASTILASHAN",
-                    "gear": 13,
-                    "relic": 1
-                  },
-                  {
-                    "id": "MISSIONVAO",
-                    "gear": 12,
-                    "zetas": [
-                      {
-                        "id": "uniqueskill_MISSIONVAO02",
-                        "recommendation": "required"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "ZAALBAR",
-                    "gear": 12,
-                    "zetas": [
-                      {
-                        "id": "uniqueskill_ZAALBAR02",
-                        "recommendation": "required"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "OPTIONAL",
-                    "name": "Jolee Bindo eller Juhani"
-                  }
-                ]
-              },
-              {
-                "id": "22b",
-                "name": "JML",
-                "notes": {
-                  "texts": [
-                    "JKR, Bastilla och Jolee Bindo är karakäter som fungera mycket bra i JML-lag"
-                  ]
-                },
-                "members": [
-                  {
-                    "id": "GRANDMASTERLUKE",
-                    "gear": 13,
-                    "relic": 8,
-                    "zetas": [
-                      {
-                        "id": "leaderskill_GRANDMASTERLUKE",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "basicskill_GRANDMASTERLUKE",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "specialskill_GRANDMASTERLUKE01",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "specialskill_GRANDMASTERLUKE02",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "uniqueskill_GRANDMASTERLUKE01",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "uniqueskill_GALACTICLEGEND01",
-                        "recommendation": "required"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "id": "BIG_KD_JABBA",
             "name": "Jabba",
             "color": "amber",
@@ -815,91 +706,248 @@
               },
               {
                 "id": "23_OPTIONAL_GLs",
-                "name": "Valfri GL",
-                "optionalTeams": {
-                  "minimumTeamsToFarm": 1,
-                  "preferredTeamsToFarm": ["23b"],
-                  "teams": [
-                    {
-                      "id": "23b",
-                      "name": "Jabba",
-                      "members": [
-                        {
-                          "id": "JABBATHEHUTT",
-                          "gear": 13,
-                          "relic": 8,
-                          "zetas": [
-                            {
-                              "id": "basicskill_JABBATHEHUTT",
-                              "recommendation": "required"
-                            },
-                            {
-                              "id": "specialskill_JABBATHEHUTT01",
-                              "recommendation": "required"
-                            },
-                            {
-                              "id": "specialskill_JABBATHEHUTT02",
-                              "recommendation": "required"
-                            },
-                            {
-                              "id": "leaderskill_JABBATHEHUTT",
-                              "recommendation": "required"
-                            },
-                            {
-                              "id": "uniqueskill_JABBATHEHUTT01",
-                              "recommendation": "required"
-                            },
-                            {
-                              "id": "uniqueskill_GALACTICLEGEND01",
-                              "recommendation": "required"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "id": "23c",
-                      "name": "Leia",
-                      "members": [
-                        {
-                          "id": "GLLEIA",
-                          "gear": 13,
-                          "relic": 8,
-                          "zetas": [
-                            {
-                              "id": "basicskill_GLLEIA",
-                              "recommendation": "required"
-                            },
-                            {
-                              "id": "specialskill_GLLEIA01",
-                              "recommendation": "required"
-                            },
-                            {
-                              "id": "specialskill_GLLEIA02",
-                              "recommendation": "required"
-                            },
-                            {
-                              "id": "uniqueskill_GLLEIA01",
-                              "recommendation": "required"
-                            },
-                            {
-                              "id": "uniqueskill_GALACTICLEGEND01",
-                              "recommendation": "required"
-                            },
-                            {
-                              "id": "leaderskill_GLLEIA",
-                              "recommendation": "required"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
+                "name": "Jabba",
+                "isPreferred": true,
+                "members": [
+                  {
+                    "id": "JABBATHEHUTT",
+                    "gear": 13,
+                    "relic": 8,
+                    "zetas": [
+                      {
+                        "id": "basicskill_JABBATHEHUTT",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_JABBATHEHUTT01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_JABBATHEHUTT02",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "leaderskill_JABBATHEHUTT",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_JABBATHEHUTT01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_GALACTICLEGEND01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
-
+          {
+            "id": "22",
+            "name": "JML",
+            "color": "amber",
+            "description": "JML",
+            "teamParts": [
+              {
+                "id": "22a",
+                "name": "Old Republic",
+                "notes": {
+                  "texts": [
+                    "Detta är förslag på lag som funkar bäst på de högre nivåerna. Men det är fritt fram att kombinera som man vill."
+                  ]
+                },
+                "members": [
+                  {
+                    "id": "JEDIKNIGHTREVAN",
+                    "gear": 13,
+                    "relic": 5,
+                    "zetas": [
+                      {
+                        "id": "specialskill_JEDIKNIGHTREVAN02",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_JEDIKNIGHTREVAN02",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "leaderskill_JEDIKNIGHTREVAN",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "BASTILASHAN",
+                    "gear": 13,
+                    "relic": 1
+                  },
+                  {
+                    "id": "MISSIONVAO",
+                    "gear": 12,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_MISSIONVAO02",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ZAALBAR",
+                    "gear": 12,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_ZAALBAR02",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "OPTIONAL",
+                    "name": "Jolee Bindo eller Juhani"
+                  }
+                ]
+              },
+              {
+                "id": "22b",
+                "name": "JML",
+                "notes": {
+                  "texts": [
+                    "JKR, Bastilla och Jolee Bindo är karakäter som fungera mycket bra i JML-lag"
+                  ]
+                },
+                "members": [
+                  {
+                    "id": "GRANDMASTERLUKE",
+                    "gear": 13,
+                    "relic": 8,
+                    "zetas": [
+                      {
+                        "id": "leaderskill_GRANDMASTERLUKE",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "basicskill_GRANDMASTERLUKE",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_GRANDMASTERLUKE01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_GRANDMASTERLUKE02",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_GRANDMASTERLUKE01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_GALACTICLEGEND01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "KD_LEIA",
+            "name": "Leia",
+            "color": "amber",
+            "description": "Leia",
+            "teamParts": [
+              {
+                "id": "KD_LEIA_HC_TEAMS",
+                "name": "Hutt Cartell mot Leia",
+                "members": [
+                  {
+                    "id": "CADBANE",
+                    "gear": 12
+                  },
+                  {
+                    "id": "BOBAFETT",
+                    "gear": 12,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_BOBAFETT01",
+                        "recommendation": "recommended"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "GREEDO",
+                    "gear": 12,
+                    "zetas": [
+                      {
+                        "id": "specialskill_GREEDO02",
+                        "recommendation": "recommended"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "KRRSANTAN",
+                    "gear": 12,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_KRRSANTAN01",
+                        "recommendation": "recommended"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "BOUSHH",
+                    "gear": 12,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_BOUSHH01",
+                        "recommendation": "recommended"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "KD_LEIA_HC_TEANS",
+                "name": "Leia",
+                "members": [
+                  {
+                    "id": "GLLEIA",
+                    "gear": 13,
+                    "relic": 8,
+                    "zetas": [
+                      {
+                        "id": "basicskill_GLLEIA",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_GLLEIA01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_GLLEIA02",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_GLLEIA01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_GALACTICLEGEND01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "leaderskill_GLLEIA",
+                        "recommendation": "required"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
           {
             "id": "KD_VADER",
             "name": "Lord Vader",

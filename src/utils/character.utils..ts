@@ -1,7 +1,8 @@
 import { Character, PlayerCharacter } from "../model/character";
 import { Player } from "../model/player";
 
-export const characterIsGalacticLegend = (character: Character): boolean => {
+export const characterIsGalacticLegend = (character?: Character): boolean => {
+  if (!character) return false;
   return character.categories.includes("Galactic Legend");
 };
 
