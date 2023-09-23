@@ -21,7 +21,6 @@ interface UnitResponse {
 }
 
 export async function getPlayerData(allyCode: string): Promise<Player> {
-  console.log("getPlayerData", allyCode);
   const formattedAllyCode = allyCode.toString().replace(/-/g, "");
 
   try {
