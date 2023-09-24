@@ -39,8 +39,8 @@ export interface FarmGuideTeam {
 
 export interface FarmGuideDataSubPart {
   id: string;
-  minimumPartsToFarm?: number;
   selectionMode: string;
+  withArrowAfter?: boolean;
   subParts: FarmGuideDataPart[];
 }
 

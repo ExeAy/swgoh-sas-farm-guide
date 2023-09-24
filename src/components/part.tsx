@@ -1,3 +1,4 @@
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import PartContainer from "./common/part-container";
 import { FarmGuideData } from "../contexts/FarmDataContext";
 import TeamGroup from "./team-group";
@@ -24,31 +25,47 @@ const Part = (props: PartProps) => {
           const farmGuideSubParts = teamPart as FarmGuideDataSubPart;
           if (farmGuideSubParts.subParts.length > 1) {
             return (
-              <div
-                key={partData.id}
-                className={`grid grid-rows-2 gap-2 grid-flow-col`}
-              >
-                {farmGuideSubParts.subParts.map((subPart) => {
-                  const specialClass = subPart.id.includes("BIG")
-                    ? "row-span-2"
-                    : "";
-                  return (
-                    <div
-                      key={subPart.id}
-                      className={`p-2 bg-${subPart.color}-200 ${specialClass}`}
-                    >
-                      <SubPart part={subPart} />
-                    </div>
-                  );
-                })}
-              </div>
+              <>
+                <div
+                  key={partData.id}
+                  className={`grid grid-rows-2 gap-2 grid-flow-col`}
+                >
+                  {farmGuideSubParts.subParts.map((subPart) => {
+                    const specialClass = subPart.id.includes("BIG")
+                      ? "row-span-2"
+                      : "";
+                    return (
+                      <div
+                        key={subPart.id}
+                        className={`p-2 bg-${subPart.color}-200 ${specialClass}`}
+                      >
+                        <SubPart part={subPart} />
+                      </div>
+                    );
+                  })}
+                </div>
+                {farmGuideSubParts.withArrowAfter && (
+                  <ArrowForwardIcon
+                    key={`arrow-${farmGuideSubParts.id}`}
+                    sx={{ fontSize: 50 }}
+                  />
+                )}
+              </>
             );
           } else {
             const subPart = farmGuideSubParts.subParts[0] as FarmGuideDataPart;
             return (
-              <div key={subPart.id} className={`p-2 bg-${subPart.color}-200`}>
-                <SubPart part={subPart} />
-              </div>
+              <>
+                <div key={subPart.id} className={`p-2 bg-${subPart.color}-200`}>
+                  <SubPart part={subPart} />
+                </div>
+                {farmGuideSubParts.withArrowAfter && (
+                  <ArrowForwardIcon
+                    key={`arrow-${farmGuideSubParts.id}`}
+                    sx={{ fontSize: 50 }}
+                  />
+                )}
+              </>
             );
           }
         } else {
