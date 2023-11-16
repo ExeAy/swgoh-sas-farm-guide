@@ -533,7 +533,7 @@
   },
   {
     "id": "SPEEDER_RAID",
-    "name": "Speeder bike raid",
+    "name": "Speeder bike raid och GL",
     "description": "Fokus på lag för speeder bike raiden",
     "color": "lime",
     "teamParts": [
@@ -543,6 +543,15 @@
         "notes": {
           "texts": [
             "Vi vet för lite om raiden för att kunna ge några specifika rekommendationer. Vi kommer uppdatera denna sektionen när vi vet mer. Det vi vet är att man använder 3 gubbar per match."
+          ]
+        }
+      },
+      {
+        "id": "SPEEDER_GL_INFO",
+        "name": "GL info",
+        "notes": {
+          "texts": [
+            "Välj först en GL att gå mot. Och farma upp först eventuella gubbar som behövs för både raiden och GL:n. Vet du inte vilken GL du ska välja så rekommenderar vi Jabba."
           ]
         }
       },
