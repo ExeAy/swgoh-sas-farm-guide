@@ -535,7 +535,7 @@
     "id": "GL",
     "name": "Raid & Galactic Legends",
     "description": "Galactic Legend",
-    "color": "amber",
+    "color": "lime",
     "teamParts": [
       {
         "id": "RAID_INFO",
@@ -554,7 +554,7 @@
           {
             "id": "RAID_GL_LEIA_CHARS",
             "name": "Leia",
-            "color": "amber",
+            "color": "lime",
             "teamParts": [
               {
                 "id": "GL_LEIA_RAID_CHARS",
@@ -685,7 +685,7 @@
           {
             "id": "RAID_GL_LUKE_CHARS",
             "name": "Jedi Master Luke Skywalker",
-            "color": "amber",
+            "color": "lime",
             "teamParts": [
               {
                 "id": "GL_LUKE_RAID_CHARS",
@@ -821,7 +821,7 @@
           {
             "id": "RAID_GL_JABBA_CHARS",
             "name": "Jabba The Hut",
-            "color": "amber",
+            "color": "lime",
             "teamParts": [
               {
                 "id": "GL_JABBA_RAID_CHARS",
@@ -950,7 +950,7 @@
           {
             "id": "RAID_GL_SEE_CHARS",
             "name": "Sith Eternal Emperor",
-            "color": "amber",
+            "color": "lime",
             "teamParts": [
               {
                 "id": "GL_SEE_RAID_CHARS",
