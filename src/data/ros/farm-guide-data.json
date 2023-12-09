@@ -683,6 +683,116 @@
             ]
           },
           {
+            "id": "RAID_GL_JABBA_CHARS",
+            "name": "Jabba The Hut",
+            "color": "lime",
+            "teamParts": [
+              {
+                "id": "GL_JABBA_RAID_CHARS",
+                "name": "Karaktärer som behövs för Jabba",
+                "members": [
+                  {
+                    "id": "C3POLEGENDARY",
+                    "gear": 13,
+                    "relic": 7,
+                    "zetas": [
+                      {
+                        "id": "specialskill_C3POLEGENDARY01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "CHEWBACCALEGENDARY",
+                    "gear": 13,
+                    "relic": 3,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_CHEWBACCALEGENDARY01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_CHEWBACCALEGENDARY02",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "HANSOLO",
+                    "gear": 13,
+                    "relic": 8,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_HANSOLO01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ADMINISTRATORLANDO",
+                    "gear": 13,
+                    "relic": 3
+                  },
+                  {
+                    "id": "JEDIKNIGHTLUKE",
+                    "gear": 13,
+                    "relic": 7,
+                    "zetas": [
+                      {
+                        "id": "leaderskill_JEDIKNIGHTLUKE",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_JEDIKNIGHTLUKE01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "GL_JABBA",
+                "name": "Jabba The Hut",
+                "isPreferred": true,
+
+                "members": [
+                  {
+                    "id": "JABBATHEHUTT",
+                    "name": "Jabba",
+                    "gear": 13,
+                    "relic": 7,
+                    "zetas": [
+                      {
+                        "id": "basicskill_JABBATHEHUTT",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_JABBATHEHUTT01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_JABBATHEHUTT02",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "leaderskill_JABBATHEHUTT",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_JABBATHEHUTT01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_GALACTICLEGEND01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "id": "RAID_GL_LUKE_CHARS",
             "name": "Jedi Master Luke Skywalker",
             "color": "lime",
@@ -691,25 +801,6 @@
                 "id": "GL_LUKE_RAID_CHARS",
                 "name": "Karaktärer som behövs för JML",
                 "members": [
-                  {
-                    "id": "COMMANDERLUKESKYWALKER",
-                    "gear": 13,
-                    "relic": 3,
-                    "zetas": [
-                      {
-                        "id": "leaderskill_COMMANDERLUKESKYWALKER",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "uniqueskill_COMMANDERLUKESKYWALKER01",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "uniqueskill_COMMANDERLUKESKYWALKER02",
-                        "recommendation": "required"
-                      }
-                    ]
-                  },
                   {
                     "id": "C3POLEGENDARY",
                     "gear": 13,
@@ -806,135 +897,6 @@
                       },
                       {
                         "id": "uniqueskill_GRANDMASTERLUKE01",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "uniqueskill_GALACTICLEGEND01",
-                        "recommendation": "required"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "RAID_GL_JABBA_CHARS",
-            "name": "Jabba The Hut",
-            "color": "lime",
-            "teamParts": [
-              {
-                "id": "GL_JABBA_RAID_CHARS",
-                "name": "Karaktärer som behövs för Jabba",
-                "members": [
-                  {
-                    "id": "COMMANDERLUKESKYWALKER",
-                    "gear": 13,
-                    "relic": 3,
-                    "zetas": [
-                      {
-                        "id": "leaderskill_COMMANDERLUKESKYWALKER",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "uniqueskill_COMMANDERLUKESKYWALKER01",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "uniqueskill_COMMANDERLUKESKYWALKER02",
-                        "recommendation": "required"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "C3POLEGENDARY",
-                    "gear": 13,
-                    "relic": 7,
-                    "zetas": [
-                      {
-                        "id": "specialskill_C3POLEGENDARY01",
-                        "recommendation": "required"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "CHEWBACCALEGENDARY",
-                    "gear": 13,
-                    "relic": 3,
-                    "zetas": [
-                      {
-                        "id": "uniqueskill_CHEWBACCALEGENDARY01",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "uniqueskill_CHEWBACCALEGENDARY02",
-                        "recommendation": "required"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "HANSOLO",
-                    "gear": 13,
-                    "relic": 8,
-                    "zetas": [
-                      {
-                        "id": "uniqueskill_HANSOLO01",
-                        "recommendation": "required"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "ADMINISTRATORLANDO",
-                    "gear": 13,
-                    "relic": 3
-                  },
-                  {
-                    "id": "JEDIKNIGHTLUKE",
-                    "gear": 13,
-                    "relic": 7,
-                    "zetas": [
-                      {
-                        "id": "leaderskill_JEDIKNIGHTLUKE",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "uniqueskill_JEDIKNIGHTLUKE01",
-                        "recommendation": "required"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "GL_JABBA",
-                "name": "Jabba The Hut",
-                "isPreferred": true,
-
-                "members": [
-                  {
-                    "id": "JABBATHEHUTT",
-                    "name": "Jabba",
-                    "gear": 13,
-                    "relic": 7,
-                    "zetas": [
-                      {
-                        "id": "basicskill_JABBATHEHUTT",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "specialskill_JABBATHEHUTT01",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "specialskill_JABBATHEHUTT02",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "leaderskill_JABBATHEHUTT",
-                        "recommendation": "required"
-                      },
-                      {
-                        "id": "uniqueskill_JABBATHEHUTT01",
                         "recommendation": "required"
                       },
                       {
