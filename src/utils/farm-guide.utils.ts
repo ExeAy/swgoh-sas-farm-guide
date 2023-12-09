@@ -11,6 +11,8 @@ import type {
 import { Player } from "../model/player";
 import { characterIsGalacticLegend, getPlayerGLs } from "./character.utils.";
 
+const RELIC_OFFSET = 2;
+
 export interface CharacterRecommendationParams {
   part: FarmGuideDataPart;
   characters: Character[];
@@ -18,7 +20,7 @@ export interface CharacterRecommendationParams {
   player: Player;
 }
 
-const MAX_RECOMMENDED_CHARACTERS = 3;
+const MAX_RECOMMENDED_CHARACTERS = 5;
 
 const isTeamMemberFinished = (
   member: FarmGuideTeamMember,
@@ -36,11 +38,20 @@ const isTeamMemberFinished = (
     playerCharacter?.gear_level
   );
 
+  console.log(
+    "playerCharacter, relic",
+    playerCharacter?.name,
+    playerCharacter?.relic_tier
+  );
+
   if (!playerCharacter) return false;
   if (playerCharacter.rarity < 7) return false;
   if (member.gear !== undefined && playerCharacter.gear_level < member.gear)
     return false;
-  if (member.relic !== undefined && playerCharacter.relic_tier < member.relic)
+  if (
+    member.relic !== undefined &&
+    Math.abs(playerCharacter.relic_tier - RELIC_OFFSET) < member.relic
+  )
     return false;
 
   return true;
@@ -230,6 +241,7 @@ const getPartsWithRecommendedGL = (
 ): FarmGuideDataPart[] => {
   return (
     subPart.subParts.filter((p) => {
+      console.log("getPartsWithRecommendedGL subPart", p.id);
       return (
         p.teamParts.findIndex((tp) => {
           const team = tp as FarmGuideTeam;
@@ -333,6 +345,8 @@ const getRecommendedCharacterFromPart = (
             subPart,
             characters
           )[0];
+
+          console.log("partWithRecommendedGL", partWithRecommendedGL.id);
 
           return getRecommendedCharacterFromPart({
             ...params,

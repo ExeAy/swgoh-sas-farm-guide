@@ -532,66 +532,669 @@
     ]
   },
   {
-    "id": "SPEEDER_RAID",
-    "name": "Speeder bike raid och GL",
-    "description": "Fokus på lag för speeder bike raiden",
+    "id": "GL",
+    "name": "Raid & Galactic Legends",
+    "description": "Galactic Legend",
     "color": "lime",
     "teamParts": [
       {
-        "id": "SPEEDER_1A",
-        "name": "Generell info",
+        "id": "RAID_INFO",
+        "name": "Raid Info",
         "notes": {
           "texts": [
-            "Vi vet för lite om raiden för att kunna ge några specifika rekommendationer. Vi kommer uppdatera denna sektionen när vi vet mer. Det vi vet är att man använder 3 gubbar per match."
+            "Gå för endast en GL eftersom de är mycket resurskrävande.",
+            "Ett flertal karaktärer som behövs för raiden behövs även för vissa Galactic Legends. Se till att prioritera dessa karaktärer först. Har inte din valda GL en direkt koppling till raid-karaktärer så baseras raid-karaktärer på vår rekommendation."
           ]
         }
       },
       {
-        "id": "SPEEDER_GL_INFO",
-        "name": "GL info",
-        "notes": {
-          "texts": [
-            "Välj först en GL att gå mot. Och farma upp först eventuella gubbar som behövs för både raiden och GL:n. Vet du inte vilken GL du ska välja så rekommenderar vi Jabba."
-          ]
-        }
+        "id": "RIAD_GL_CHOCE_PART",
+        "selectionMode": "pickExistingGL",
+        "subParts": [
+          {
+            "id": "RAID_GL_LEIA_CHARS",
+            "name": "Leia",
+            "color": "lime",
+            "teamParts": [
+              {
+                "id": "GL_LEIA_RAID_CHARS",
+                "name": "Karaktärer som behövs för Leia",
+                "members": [
+                  {
+                    "id": "CAPTAINREX",
+                    "gear": 13,
+                    "relic": 7,
+                    "zetas": [
+                      {
+                        "id": "specialskill_CAPTAINREX01",
+                        "recommendation": "recommended"
+                      },
+                      {
+                        "id": "uniqueskill_CAPTAINREX01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "PRINCESSKNEESAA",
+                    "gear": 13,
+                    "relic": 7
+                  },
+                  {
+                    "id": "WICKET",
+                    "gear": 13,
+                    "relic": 3
+                  },
+                  {
+                    "id": "CHIEFCHIRPA",
+                    "gear": 13,
+                    "relic": 3,
+                    "zetas": [
+                      {
+                        "id": "leaderskill_CHIEFCHIRPA",
+                        "recommendation": "recommended"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ADMIRALACKBAR",
+                    "gear": 13,
+                    "relic": 3
+                  },
+                  {
+                    "id": "SCOUTTROOPER_V3",
+                    "gear": 13,
+                    "relic": 3,
+                    "zetas": [
+                      {
+                        "id": "specialskill_SCOUTTROOPER_V302",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_SCOUTTROOPER_V301",
+                        "recommendation": "recommended"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "CAPTAINDROGAN",
+                    "gear": 13,
+                    "relic": 7
+                  },
+                  {
+                    "id": "COMMANDERLUKESKYWALKER",
+                    "gear": 13,
+                    "relic": 7,
+                    "zetas": [
+                      {
+                        "id": "leaderskill_COMMANDERLUKESKYWALKER",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_COMMANDERLUKESKYWALKER01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_COMMANDERLUKESKYWALKER02",
+                        "recommendation": "required"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "GL_LEIA",
+                "name": "Leia",
+                "members": [
+                  {
+                    "id": "GLLEIA",
+                    "name": "Leia",
+                    "gear": 13,
+                    "relic": 7,
+                    "zetas": [
+                      {
+                        "id": "basicskill_GLLEIA",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_GLLEIA01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_GLLEIA02",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "leaderskill_GLLEIA",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_GLLEIA01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_GALACTICLEGEND01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "RAID_GL_LUKE_CHARS",
+            "name": "Jedi Master Luke Skywalker",
+            "color": "lime",
+            "teamParts": [
+              {
+                "id": "GL_LUKE_RAID_CHARS",
+                "name": "Karaktärer som behövs för JML",
+                "members": [
+                  {
+                    "id": "COMMANDERLUKESKYWALKER",
+                    "gear": 13,
+                    "relic": 3,
+                    "zetas": [
+                      {
+                        "id": "leaderskill_COMMANDERLUKESKYWALKER",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_COMMANDERLUKESKYWALKER01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_COMMANDERLUKESKYWALKER02",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "C3POLEGENDARY",
+                    "gear": 13,
+                    "relic": 5,
+                    "zetas": [
+                      {
+                        "id": "specialskill_C3POLEGENDARY01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "CHEWBACCALEGENDARY",
+                    "gear": 13,
+                    "relic": 3,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_CHEWBACCALEGENDARY01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_CHEWBACCALEGENDARY02",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "HANSOLO",
+                    "gear": 13,
+                    "relic": 6,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_HANSOLO01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "JEDIKNIGHTLUKE",
+                    "gear": 13,
+                    "relic": 7,
+                    "zetas": [
+                      {
+                        "id": "leaderskill_JEDIKNIGHTLUKE",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_JEDIKNIGHTLUKE01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "WEDGEANTILLES",
+                    "gear": 13,
+                    "relic": 3
+                  },
+                  {
+                    "id": "BIGGSDARKLIGHTER",
+                    "gear": 13,
+                    "relic": 3
+                  },
+                  {
+                    "id": "ADMINISTRATORLANDO",
+                    "gear": 13,
+                    "relic": 5
+                  }
+                ]
+              },
+              {
+                "id": "GL_LUKE",
+                "name": "Jedi Master Luke Skywalker",
+                "members": [
+                  {
+                    "id": "GRANDMASTERLUKE",
+                    "gear": 13,
+                    "relic": 8,
+                    "zetas": [
+                      {
+                        "id": "leaderskill_GRANDMASTERLUKE",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "basicskill_GRANDMASTERLUKE",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_GRANDMASTERLUKE01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_GRANDMASTERLUKE02",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_GRANDMASTERLUKE01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_GALACTICLEGEND01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "RAID_GL_JABBA_CHARS",
+            "name": "Jabba The Hut",
+            "color": "lime",
+            "teamParts": [
+              {
+                "id": "GL_JABBA_RAID_CHARS",
+                "name": "Karaktärer som behövs för Jabba",
+                "members": [
+                  {
+                    "id": "COMMANDERLUKESKYWALKER",
+                    "gear": 13,
+                    "relic": 3,
+                    "zetas": [
+                      {
+                        "id": "leaderskill_COMMANDERLUKESKYWALKER",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_COMMANDERLUKESKYWALKER01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_COMMANDERLUKESKYWALKER02",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "C3POLEGENDARY",
+                    "gear": 13,
+                    "relic": 7,
+                    "zetas": [
+                      {
+                        "id": "specialskill_C3POLEGENDARY01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "CHEWBACCALEGENDARY",
+                    "gear": 13,
+                    "relic": 3,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_CHEWBACCALEGENDARY01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_CHEWBACCALEGENDARY02",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "HANSOLO",
+                    "gear": 13,
+                    "relic": 8,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_HANSOLO01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ADMINISTRATORLANDO",
+                    "gear": 13,
+                    "relic": 3
+                  },
+                  {
+                    "id": "JEDIKNIGHTLUKE",
+                    "gear": 13,
+                    "relic": 7,
+                    "zetas": [
+                      {
+                        "id": "leaderskill_JEDIKNIGHTLUKE",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_JEDIKNIGHTLUKE01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "GL_JABBA",
+                "name": "Jabba The Hut",
+                "isPreferred": true,
+
+                "members": [
+                  {
+                    "id": "JABBATHEHUTT",
+                    "name": "Jabba",
+                    "gear": 13,
+                    "relic": 7,
+                    "zetas": [
+                      {
+                        "id": "basicskill_JABBATHEHUTT",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_JABBATHEHUTT01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_JABBATHEHUTT02",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "leaderskill_JABBATHEHUTT",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_JABBATHEHUTT01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_GALACTICLEGEND01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "RAID_GL_SEE_CHARS",
+            "name": "Sith Eternal Emperor",
+            "color": "lime",
+            "teamParts": [
+              {
+                "id": "GL_SEE_RAID_CHARS",
+                "name": "Karaktärer som behövs för SEE",
+                "members": [
+                  {
+                    "id": "ADMIRALPIETT",
+                    "gear": 13,
+                    "relic": 5,
+                    "zetas": [
+                      {
+                        "id": "specialskill_ADMIRALPIETT02",
+                        "recommendation": "recommended"
+                      },
+                      {
+                        "id": "uniqueskill_ADMIRALPIETT01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "VEERS",
+                    "gear": 13,
+                    "relic": 3,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_VEERS01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "COLONELSTARCK",
+                    "gear": 13,
+                    "relic": 3,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_COLONELSTARCK01",
+                        "recommendation": "recommended"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "GL_SEE",
+                "name": "Sith Eternal Emperor",
+                "members": [
+                  {
+                    "id": "SITHPALPATINE",
+                    "gear": 13,
+                    "relic": 8,
+                    "zetas": [
+                      {
+                        "id": "basicskill_SITHPALPATINE",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_SITHPALPATINE01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_SITHPALPATINE02",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "leaderskill_SITHPALPATINE",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_SITHPALPATINE01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_GALACTICLEGEND01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
-        "id": "SPEEDER_2A",
-        "name": "Karaktärer som går att använda",
+        "id": "GL_CHOICE",
+        "name": "GL:s utan koppling",
         "notes": {
-          "header": "Observera att vi inte vet hur bra de är och vad som funkar bäst tillsammans.",
           "texts": [
-            "Galactic Legend Leia Organa",
-            "Captain Drogan ",
-            "Scout Trooper ",
-            "Princess Kneesaa ",
-            "Captain Rex ",
-            "Admiral Ackbar",
-            "C-3PO",
-            "Chewbacca (Journey Guide version)",
-            "Han Solo (Raid reward version)",
-            "Hera Syndulla",
-            "Lando Calrissian",
-            "Wedge Antilles",
-            "Jedi Knight Luke Skywalker",
-            "Chief Chirpa",
-            "Ewok Elder",
-            "Ewok Scout",
-            "Logray",
-            "Paploo",
-            "Teebo",
-            "Wicket",
-            "Admiral Piett",
-            "Imperial Stormtrooper",
-            "Iden Versio",
-            "Moff Gideon",
-            "Range Trooper",
-            "Magmatrooper",
-            "Death Trooper",
-            "Shoretrooper",
-            "General Veers",
-            "Col. Starck",
-            "Scout trooper"
+            "Dessa GL:s har ingen koppling till raiden. Farma gärna upp valfria karaktärer till raiden ändå. Har du ingen aning om vilka så rekommenderar vi Veers, Piet plus tre valfria imp. troopers."
+          ]
+        },
+        "optionalTeams": {
+          "minimumTeamsToFarm": 0,
+          "teams": [
+            {
+              "id": "GL_KENOBI",
+              "name": "Kenobi",
+              "members": [
+                {
+                  "id": "JEDIMASTERKENOBI",
+                  "gear": 13,
+                  "relic": 8,
+                  "zetas": [
+                    {
+                      "id": "basicskill_JEDIMASTERKENOBI",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_JEDIMASTERKENOBI01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_JEDIMASTERKENOBI02",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "leaderskill_JEDIMASTERKENOBI",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_JEDIMASTERKENOBI01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_GALACTICLEGEND01",
+                      "recommendation": "required"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GL_VADER",
+              "name": "Lord Vader",
+              "members": [
+                {
+                  "id": "LORDVADER",
+                  "gear": 13,
+                  "relic": 8,
+                  "zetas": [
+                    {
+                      "id": "basicskill_LORDVADER",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_LORDVADER01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_LORDVADER02",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "leaderskill_LORDVADER",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_LORDVADER01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_GALACTICLEGEND01",
+                      "recommendation": "required"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GL_SLKR",
+              "name": "Kylo Ren",
+              "members": [
+                {
+                  "id": "SUPREMELEADERKYLOREN",
+                  "gear": 13,
+                  "relic": 8,
+                  "zetas": [
+                    {
+                      "id": "basicskill_SUPREMELEADERKYLOREN",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_SUPREMELEADERKYLOREN01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_SUPREMELEADERKYLOREN02",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "leaderskill_SUPREMELEADERKYLOREN",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_SUPREMELEADERKYLOREN01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_GALACTICLEGEND01",
+                      "recommendation": "required"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GL_REY",
+              "name": "Rey",
+              "members": [
+                {
+                  "id": "GLREY",
+                  "gear": 13,
+                  "relic": 7,
+                  "zetas": [
+                    {
+                      "id": "basicskill_GLREY",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_GLREY01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "specialskill_GLREY02",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "leaderskill_GLREY",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_GLREY01",
+                      "recommendation": "required"
+                    },
+                    {
+                      "id": "uniqueskill_GALACTICLEGEND01",
+                      "recommendation": "required"
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         }
       }
