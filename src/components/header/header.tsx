@@ -1,9 +1,15 @@
 import type React from "react"
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  title: string
+}
+
+const Header: React.FC<HeaderProps> = (props) => {
+  const { title } = props
+
   return (
     <div>
-      <h1 className="flex justify-center font-bold text-5xl">RoS Farm Guide</h1>
+      <h1 className="flex justify-center font-bold text-5xl">{title}</h1>
     </div>
   )
 }

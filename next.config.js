@@ -11,6 +11,15 @@ const nextConfig = {
       },
     ],
   },
+  redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/ros",
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig

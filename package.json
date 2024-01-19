@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "convex": "convex dev"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
@@ -15,6 +16,7 @@
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.4",
     "@vercel/analytics": "^1.0.2",
+    "convex": "^1.8.0",
     "next": "13.4.13",
     "react": "18.2.0",
     "react-dom": "18.2.0"
