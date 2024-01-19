@@ -1,13 +1,13 @@
-import type { FarmGuideTeam } from "../../model/farm-guide";
-import SquadMember from "./squad-member";
-import NoteBlock from "../common/notes";
+import type { FarmGuideTeam } from "../../model/farm-guide"
+import SquadMember from "./squad-member"
+import NoteBlock from "../common/notes"
 
 interface SquadProps {
-  team: FarmGuideTeam;
+  team: FarmGuideTeam
 }
 
 const Squad: React.FC<SquadProps> = (props) => {
-  const { team } = props;
+  const { team } = props
 
   return (
     <div
@@ -24,7 +24,7 @@ const Squad: React.FC<SquadProps> = (props) => {
       ))}
       {team.notes && <NoteBlock notes={team.notes} />}
     </div>
-  );
-};
+  )
+}
 
-export default Squad;
+export default Squad

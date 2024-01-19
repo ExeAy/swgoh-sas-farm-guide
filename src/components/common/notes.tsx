@@ -1,24 +1,20 @@
-import { Notes } from "../../model/farm-guide";
+import { Notes } from "../../model/farm-guide"
 
 const NoteBlock = (props: { notes?: Notes }) => {
-  const { notes } = props;
+  const { notes } = props
 
   if (!notes) {
-    return null;
+    return null
   }
 
-  const { header, texts } = notes;
+  const { header, texts } = notes
 
   return (
     <div className="text-base">
       {header ? <h3 className="font-bold mb-2">{header}</h3> : null}
-      <ul>
-        {texts?.map((text, index) => (
-          <li key={index}>{text}</li>
-        ))}
-      </ul>
+      <ul>{texts?.map((text, index) => <li key={index}>{text}</li>)}</ul>
     </div>
-  );
-};
+  )
+}
 
-export default NoteBlock;
+export default NoteBlock

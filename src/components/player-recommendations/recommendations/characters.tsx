@@ -1,32 +1,32 @@
-import { useEffect, useState } from "react";
-import { Player } from "../../../model/player";
-import { FarmGuideTeamMember } from "../../../model/farm-guide";
-import { getCharacterRecommendation } from "../../../actions/player.actions";
-import SquadMember from "../../squad/squad-member";
+import { useEffect, useState } from "react"
+import { Player } from "../../../model/player"
+import { FarmGuideTeamMember } from "../../../model/farm-guide"
+import { getCharacterRecommendation } from "../../../actions/player.actions"
+import SquadMember from "../../squad/squad-member"
 
 interface CharactersSuggestionsProps {
-  player?: Player;
+  player?: Player
 }
 
 const CharactersSuggestions: React.FC<CharactersSuggestionsProps> = (props) => {
-  const { player } = props;
+  const { player } = props
   const [recommendedCharacters, setRecommendedCharacters] = useState<
     FarmGuideTeamMember[]
-  >([]);
+  >([])
 
   useEffect(() => {
     const getRecommendedCharacters = async () => {
-      if (!player) return;
+      if (!player) return
 
-      const chars = await getCharacterRecommendation(player.allyCode);
-      setRecommendedCharacters(chars);
-    };
+      const chars = await getCharacterRecommendation(player.allyCode)
+      setRecommendedCharacters(chars)
+    }
 
-    getRecommendedCharacters();
-  }, [player]);
+    getRecommendedCharacters()
+  }, [player])
 
   if (!player) {
-    return null;
+    return null
   }
 
   return (
@@ -39,7 +39,7 @@ const CharactersSuggestions: React.FC<CharactersSuggestionsProps> = (props) => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CharactersSuggestions;
+export default CharactersSuggestions

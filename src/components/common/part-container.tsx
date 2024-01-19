@@ -1,5 +1,5 @@
-import type React from 'react'
-import type { FarmGuideDataPart } from '../../model/farm-guide'
+import type React from "react"
+import type { FarmGuideDataPart } from "../../model/farm-guide"
 
 interface PartContainerProps {
   color: string

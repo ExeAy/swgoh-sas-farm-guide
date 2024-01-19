@@ -1,28 +1,28 @@
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import PartContainer from "./common/part-container";
-import { FarmGuideData } from "../contexts/FarmDataContext";
-import TeamGroup from "./team-group";
-import SubPart from "./sub-part";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward"
+import PartContainer from "./common/part-container"
+import { FarmGuideData } from "../contexts/FarmDataContext"
+import TeamGroup from "./team-group"
+import SubPart from "./sub-part"
 import type {
   FarmGuideDataPart,
   FarmGuideDataSubPart,
   FarmGuideTeam,
-} from "../model/farm-guide";
-import NoteBlock from "./common/notes";
+} from "../model/farm-guide"
+import NoteBlock from "./common/notes"
 
 interface PartProps {
-  id: string;
+  id: string
 }
 
 const Part = (props: PartProps) => {
-  const { id } = props;
-  const partData = FarmGuideData.find((part) => part.id === id);
+  const { id } = props
+  const partData = FarmGuideData.find((part) => part.id === id)
 
   const element = (
     <div className="flex items-center gap-2">
       {partData?.teamParts!.map((teamPart, index) => {
         if (Object.keys(teamPart).includes("subParts")) {
-          const farmGuideSubParts = teamPart as FarmGuideDataSubPart;
+          const farmGuideSubParts = teamPart as FarmGuideDataSubPart
           if (farmGuideSubParts.subParts.length > 1) {
             return (
               <>
@@ -33,7 +33,7 @@ const Part = (props: PartProps) => {
                   {farmGuideSubParts.subParts.map((subPart) => {
                     const specialClass = subPart.id.includes("BIG")
                       ? "row-span-2"
-                      : "";
+                      : ""
                     return (
                       <div
                         key={subPart.id}
@@ -41,7 +41,7 @@ const Part = (props: PartProps) => {
                       >
                         <SubPart part={subPart} />
                       </div>
-                    );
+                    )
                   })}
                 </div>
                 {farmGuideSubParts.withArrowAfter && (
@@ -51,9 +51,9 @@ const Part = (props: PartProps) => {
                   />
                 )}
               </>
-            );
+            )
           } else {
-            const subPart = farmGuideSubParts.subParts[0] as FarmGuideDataPart;
+            const subPart = farmGuideSubParts.subParts[0] as FarmGuideDataPart
             return (
               <>
                 <div key={subPart.id} className={`p-2 bg-${subPart.color}-200`}>
@@ -66,7 +66,7 @@ const Part = (props: PartProps) => {
                   />
                 )}
               </>
-            );
+            )
           }
         } else {
           return (
@@ -77,11 +77,11 @@ const Part = (props: PartProps) => {
               color={partData.color}
               index={index}
             />
-          );
+          )
         }
       })}
     </div>
-  );
+  )
 
   return (
     <div>
@@ -93,7 +93,7 @@ const Part = (props: PartProps) => {
       </PartContainer>
       {partData?.notes && <NoteBlock notes={partData.notes} />}
     </div>
-  );
-};
+  )
+}
 
-export default Part;
+export default Part

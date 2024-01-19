@@ -1,24 +1,24 @@
-import Image from "next/image";
-import Link from "next/link";
-import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
-import type { FarmGuideTeamMember } from "../../model/farm-guide";
-import Ability from "./ability";
-import RequiredGear from "./gear";
-import { Characters } from "../../contexts/CharactersContext";
+import Image from "next/image"
+import Link from "next/link"
+import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined"
+import type { FarmGuideTeamMember } from "../../model/farm-guide"
+import Ability from "./ability"
+import RequiredGear from "./gear"
+import { Characters } from "../../contexts/CharactersContext"
 
 interface SquadMemberProps {
-  farmGuideTeamMember: FarmGuideTeamMember;
+  farmGuideTeamMember: FarmGuideTeamMember
 }
 
 const SquadMember: React.FC<SquadMemberProps> = (props) => {
-  const { farmGuideTeamMember } = props;
+  const { farmGuideTeamMember } = props
 
   const character = Characters.find(
-    (char) => char.base_id === farmGuideTeamMember.id
-  );
+    (char) => char.base_id === farmGuideTeamMember.id,
+  )
 
   if (!farmGuideTeamMember) {
-    return null;
+    return null
   }
 
   if (farmGuideTeamMember.id === "OPTIONAL") {
@@ -34,11 +34,11 @@ const SquadMember: React.FC<SquadMemberProps> = (props) => {
           )}
         </div>
       </div>
-    );
+    )
   }
 
   if (!character) {
-    return null;
+    return null
   }
 
   return (
@@ -74,7 +74,7 @@ const SquadMember: React.FC<SquadMemberProps> = (props) => {
           : null}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SquadMember;
+export default SquadMember

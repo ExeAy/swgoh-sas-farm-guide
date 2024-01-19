@@ -1,13 +1,13 @@
-import type { FarmGuideDataPart, FarmGuideTeam } from "../model/farm-guide";
-import NoteBlock from "./common/notes";
-import TeamGroup from "./team-group";
+import type { FarmGuideDataPart, FarmGuideTeam } from "../model/farm-guide"
+import NoteBlock from "./common/notes"
+import TeamGroup from "./team-group"
 
 interface SubPartProps {
-  part: FarmGuideDataPart;
+  part: FarmGuideDataPart
 }
 
 const SubPart = (props: SubPartProps) => {
-  const { part } = props;
+  const { part } = props
 
   return (
     <div
@@ -27,7 +27,7 @@ const SubPart = (props: SubPartProps) => {
       </div>
       {part?.notes && <NoteBlock notes={part.notes} />}
     </div>
-  );
-};
+  )
+}
 
-export default SubPart;
+export default SubPart

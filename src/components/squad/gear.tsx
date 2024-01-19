@@ -1,4 +1,4 @@
-import type { FarmGuideTeamMember } from '../../model/farm-guide'
+import type { FarmGuideTeamMember } from "../../model/farm-guide"
 
 interface RequiredGearProps {
   teamMember: FarmGuideTeamMember

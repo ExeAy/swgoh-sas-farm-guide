@@ -36,4 +36,4 @@ module.exports = {
     "text-gray-800",
   ],
   plugins: [],
-};
+}

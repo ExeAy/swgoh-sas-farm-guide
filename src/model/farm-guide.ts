@@ -1,54 +1,52 @@
-export type OmiZetaRecommendation = "required" | "recommended";
-export type SubPartSelectionMode =
-  | "pickExistingGL"
-  | "findFirstNonFinishedTeam";
+export type OmiZetaRecommendation = "required" | "recommended"
+export type SubPartSelectionMode = "pickExistingGL" | "findFirstNonFinishedTeam"
 
 export type Notes = {
-  header?: string;
-  texts: string[];
-};
+  header?: string
+  texts: string[]
+}
 
 export type FarmGuideAbility = {
-  id: string;
-  recommendation: string;
-};
+  id: string
+  recommendation: string
+}
 
 export interface FarmGuideTeamMember {
-  id: string;
-  name?: string;
-  gear?: number;
-  relic?: number;
-  zetas?: FarmGuideAbility[];
-  omicrons?: FarmGuideAbility[];
+  id: string
+  name?: string
+  gear?: number
+  relic?: number
+  zetas?: FarmGuideAbility[]
+  omicrons?: FarmGuideAbility[]
 }
 
 export interface OptionalTeams {
-  minimumTeamsToFarm: number;
-  teams: FarmGuideTeam[];
+  minimumTeamsToFarm: number
+  teams: FarmGuideTeam[]
 }
 
 export interface FarmGuideTeam {
-  id: string;
-  name: string;
-  isPreferred?: boolean;
-  withArrowAfter?: boolean;
-  members?: FarmGuideTeamMember[];
-  optionalTeams?: OptionalTeams;
-  notes?: Notes;
+  id: string
+  name: string
+  isPreferred?: boolean
+  withArrowAfter?: boolean
+  members?: FarmGuideTeamMember[]
+  optionalTeams?: OptionalTeams
+  notes?: Notes
 }
 
 export interface FarmGuideDataSubPart {
-  id: string;
-  selectionMode: string;
-  withArrowAfter?: boolean;
-  subParts: FarmGuideDataPart[];
+  id: string
+  selectionMode: string
+  withArrowAfter?: boolean
+  subParts: FarmGuideDataPart[]
 }
 
 export interface FarmGuideDataPart {
-  id: string;
-  name: string;
-  color: string;
-  description?: string;
-  notes?: Notes;
-  teamParts: (FarmGuideTeam | FarmGuideDataSubPart)[];
+  id: string
+  name: string
+  color: string
+  description?: string
+  notes?: Notes
+  teamParts: (FarmGuideTeam | FarmGuideDataSubPart)[]
 }

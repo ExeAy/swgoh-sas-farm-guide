@@ -1,21 +1,21 @@
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward"
 import type {
   FarmGuideDataPart,
   FarmGuideDataSubPart,
   FarmGuideTeam,
-} from "../model/farm-guide";
-import Squad from "./squad/squad";
-import NoteBlock from "./common/notes";
+} from "../model/farm-guide"
+import Squad from "./squad/squad"
+import NoteBlock from "./common/notes"
 
 interface TeamGroupProps {
-  team: FarmGuideTeam;
-  allTeams: (FarmGuideTeam | FarmGuideDataSubPart)[];
-  color: string;
-  index: number;
+  team: FarmGuideTeam
+  allTeams: (FarmGuideTeam | FarmGuideDataSubPart)[]
+  color: string
+  index: number
 }
 
 const TeamGroup = (props: TeamGroupProps) => {
-  const { team, index, color, allTeams } = props;
+  const { team, index, color, allTeams } = props
 
   if (!team.members && !team.optionalTeams && team.notes) {
     return (
@@ -23,21 +23,21 @@ const TeamGroup = (props: TeamGroupProps) => {
         {team.name && <h2 className="font-bold text-xl">{team.name}</h2>}
         <NoteBlock notes={team.notes} />
       </div>
-    );
+    )
   }
 
-  const elements: JSX.Element[] = [];
+  const elements: JSX.Element[] = []
 
   if (index !== 0 && !Object.keys(allTeams[index - 1]).includes("subParts")) {
-    const previousTeam = allTeams[index - 1] as FarmGuideTeam;
+    const previousTeam = allTeams[index - 1] as FarmGuideTeam
 
     if (
       previousTeam.withArrowAfter !== false &&
       (previousTeam.optionalTeams || previousTeam.members)
     )
       elements.push(
-        <ArrowForwardIcon key={`arrow-${team.id}`} sx={{ fontSize: 50 }} />
-      );
+        <ArrowForwardIcon key={`arrow-${team.id}`} sx={{ fontSize: 50 }} />,
+      )
   }
 
   if (team.optionalTeams) {
@@ -65,19 +65,19 @@ const TeamGroup = (props: TeamGroupProps) => {
             <NoteBlock notes={team.notes} />
           </div>
         </div>
-      </div>
-    );
+      </div>,
+    )
   } else {
-    elements.push(<Squad key={team.id} team={team} />);
+    elements.push(<Squad key={team.id} team={team} />)
   }
 
   if (team.withArrowAfter) {
     elements.push(
-      <ArrowForwardIcon key={`arrow-${team.id}-after`} sx={{ fontSize: 50 }} />
-    );
+      <ArrowForwardIcon key={`arrow-${team.id}-after`} sx={{ fontSize: 50 }} />,
+    )
   }
 
-  return <div className="flex items-center gap-1">{elements}</div>;
-};
+  return <div className="flex items-center gap-1">{elements}</div>
+}
 
-export default TeamGroup;
+export default TeamGroup

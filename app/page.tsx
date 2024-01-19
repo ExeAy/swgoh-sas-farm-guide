@@ -1,7 +1,7 @@
-import { Analytics } from "@vercel/analytics/react";
-import FarmGuideOverview from "../src/components/farm-guide-overview";
-import Header from "../src/components/header/header";
-import PlayerRecommendations from "../src/components/player-recommendations/player-recommendations";
+import { Analytics } from "@vercel/analytics/react"
+import FarmGuideOverview from "../src/components/farm-guide-overview"
+import Header from "../src/components/header/header"
+import PlayerRecommendations from "../src/components/player-recommendations/player-recommendations"
 
 export default function Home() {
   return (
@@ -16,5 +16,5 @@ export default function Home() {
       </div>
       <Analytics />
     </main>
-  );
+  )
 }

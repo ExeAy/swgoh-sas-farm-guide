@@ -1,33 +1,33 @@
-import { Tooltip } from "@mui/material";
-import Image from "next/image";
-import { Abilities } from "../../contexts/AbilitiesContext";
-import type { FarmGuideAbility } from "../../model/farm-guide";
+import { Tooltip } from "@mui/material"
+import Image from "next/image"
+import { Abilities } from "../../contexts/AbilitiesContext"
+import type { FarmGuideAbility } from "../../model/farm-guide"
 
 interface AbilityProps {
-  farmGuideAbility: FarmGuideAbility;
-  type: "zeta" | "omicron";
+  farmGuideAbility: FarmGuideAbility
+  type: "zeta" | "omicron"
 }
 
 const Ability: React.FC<AbilityProps> = (props) => {
-  const { farmGuideAbility, type } = props;
+  const { farmGuideAbility, type } = props
 
   const ability = Abilities.find(
-    (ability) => ability.base_id === farmGuideAbility.id
-  );
+    (ability) => ability.base_id === farmGuideAbility.id,
+  )
 
-  let color: string;
+  let color: string
   if (ability?.is_zeta) {
-    if (farmGuideAbility.recommendation === "required") color = "indigo-800";
-    else color = "indigo-400";
+    if (farmGuideAbility.recommendation === "required") color = "indigo-800"
+    else color = "indigo-400"
   } else if (ability?.is_omicron) {
-    if (farmGuideAbility.recommendation === "required") color = "slate-800";
-    else color = "slate-400";
+    if (farmGuideAbility.recommendation === "required") color = "slate-800"
+    else color = "slate-400"
   } else {
-    color = "gray-800";
+    color = "gray-800"
   }
 
   if (!ability) {
-    return null;
+    return null
   }
 
   return (
@@ -59,7 +59,7 @@ const Ability: React.FC<AbilityProps> = (props) => {
         {farmGuideAbility.recommendation === "recommended" ? ")" : null}
       </span>
     </Tooltip>
-  );
-};
+  )
+}
 
-export default Ability;
+export default Ability

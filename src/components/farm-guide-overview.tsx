@@ -1,12 +1,12 @@
-"use client";
+"use client"
 
-import farmGuideData from "../data/ros/farm-guide-data.json";
-import characters from "../data/swgoh/characters.json";
-import abilities from "../data/swgoh/abilities.json";
-import { FarmDataContext } from "../contexts/FarmDataContext";
-import { CharacterContext } from "../contexts/CharactersContext";
-import { AbilitiesContext } from "../contexts/AbilitiesContext";
-import FarmBlocks from "./farm-blocks";
+import farmGuideData from "../data/ros/farm-guide-data.json"
+import characters from "../data/swgoh/characters.json"
+import abilities from "../data/swgoh/abilities.json"
+import { FarmDataContext } from "../contexts/FarmDataContext"
+import { CharacterContext } from "../contexts/CharactersContext"
+import { AbilitiesContext } from "../contexts/AbilitiesContext"
+import FarmBlocks from "./farm-blocks"
 
 const FarmGuideOverview: React.FC = () => {
   return (
@@ -29,7 +29,7 @@ const FarmGuideOverview: React.FC = () => {
       </div>
       <FarmBlocks />
     </div>
-  );
-};
+  )
+}
 
-export default FarmGuideOverview;
+export default FarmGuideOverview
