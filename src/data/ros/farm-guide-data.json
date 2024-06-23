@@ -2464,7 +2464,8 @@
                 "members": [
                   {
                     "id": "CHIEFCHIRPA",
-                    "gear": 12,
+                    "gear": 13,
+                    "relic": 3,
                     "zetas": [
                       {
                         "id": "leaderskill_CHIEFCHIRPA",
@@ -2474,7 +2475,8 @@
                   },
                   {
                     "id": "PRINCESSKNEESAA",
-                    "gear": 12,
+                    "gear": 13,
+                    "relic": 3,
                     "zetas": [
                       {
                         "id": "specialskill_PRINCESSKNEESAA02",
@@ -2490,7 +2492,8 @@
                   },
                   {
                     "id": "LOGRAY",
-                    "gear": 12,
+                    "gear": 13,
+                    "relic": 3,
                     "zetas": [
                       {
                         "id": "uniqueskill_LOGRAY01",
@@ -2500,7 +2503,8 @@
                   },
                   {
                     "id": "PAPLOO",
-                    "gear": 12,
+                    "gear": 13,
+                    "relic": 3,
                     "zetas": [
                       {
                         "id": "uniqueskill_PAPLOO01",
