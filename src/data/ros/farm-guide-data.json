@@ -2050,24 +2050,21 @@
       {
         "id": "easy-teams-sub-part",
         "selectionMode": "findFirstNonFinishedTeam",
-        "withArrowAfter": true,
         "subParts": [
           {
             "id": "easy-teams-part",
             "name": "Lag i främre zoner",
             "color": "fuchsia",
-            "notes": {
-              "texts": ["Välj ett av lagen."]
-            },
             "teamParts": [
               {
-                "id": "T1",
-                "name": "Phoenix (T1)",
+                "id": "B1",
+                "name": "B1 (Phoenix)",
                 "withArrowAfter": false,
                 "members": [
                   {
                     "id": "HERASYNDULLAS3",
-                    "gear": 12,
+                    "gear": 13,
+                    "relic": 3,
                     "zetas": [
                       {
                         "id": "specialskill_HERASYNDULLAS301",
@@ -2083,11 +2080,22 @@
                   },
                   {
                     "id": "CAPTAINREX",
-                    "gear": 12
+                    "gear": 13,
+                    "relic": 3,
+                    "zetas": [
+                      {
+                        "id": "specialskill_CAPTAINREX01",
+                        "recommendation": "recommended"
+                      },
+                      {
+                        "id": "uniqueskill_CAPTAINREX01",
+                        "recommendation": "required"
+                      }
+                    ]
                   },
                   {
-                    "id": "KANANJARRUSS3",
-                    "gear": 12
+                    "id": "OPTIONAL",
+                    "name": "Valfri Phoenix, t.ex. Kanan"
                   },
                   {
                     "id": "OPTIONAL",
@@ -2100,101 +2108,41 @@
                 ]
               },
               {
-                "id": "B1-teams",
-                "name": "B1",
-                "optionalTeams": {
-                  "minimumTeamsToFarm": 1,
-                  "teams": [
-                    {
-                      "id": "TW-jawas",
-                      "name": "Jawas",
-                      "members": [
-                        {
-                          "id": "CHIEFNEBIT",
-                          "gear": 12,
-                          "omicrons": [
-                            {
-                              "id": "leaderskill_CHIEFNEBIT",
-                              "recommendation": "required"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "JAWAENGINEER",
-                          "gear": 12
-                        },
-                        {
-                          "id": "JAWASCAVENGER",
-                          "gear": 12
-                        },
-                        {
-                          "id": "DATHCHA",
-                          "gear": 12
-                        },
-                        {
-                          "id": "JAWA",
-                          "gear": 12
-                        }
-                      ]
-                    },
-                    {
-                      "id": "easy-teams-ewoks",
-                      "name": "Ewoks",
-                      "members": [
-                        {
-                          "id": "CHIEFCHIRPA",
-                          "gear": 12,
-                          "zetas": [
-                            {
-                              "id": "leaderskill_CHIEFCHIRPA",
-                              "recommendation": "required"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "PRINCESSKNEESAA",
-                          "gear": 12,
-                          "zetas": [
-                            {
-                              "id": "specialskill_PRINCESSKNEESAA02",
-                              "recommendation": "required"
-                            }
-                          ],
-                          "omicrons": [
-                            {
-                              "id": "uniqueskill_PRINCESSKNEESAA01",
-                              "recommendation": "required"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "LOGRAY",
-                          "gear": 12,
-                          "zetas": [
-                            {
-                              "id": "uniqueskill_LOGRAY01",
-                              "recommendation": "required"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "PAPLOO",
-                          "gear": 12,
-                          "zetas": [
-                            {
-                              "id": "uniqueskill_PAPLOO01",
-                              "recommendation": "required"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "EWOKELDER",
-                          "gear": 12
-                        }
-                      ]
-                    }
-                  ]
-                }
+                "id": "T1",
+                "name": "T1 (Wookies)",
+                "members": [
+                  {
+                    "id": "TARFFUL",
+                    "gear": 13,
+                    "relic": 3,
+                    "omicrons": [
+                      {
+                        "id": "leaderskill_TARFFUL",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ZAALBAR",
+                    "gear": 13,
+                    "relic": 3
+                  },
+                  {
+                    "id": "MISSIONVAO",
+                    "gear": 13,
+                    "relic": 3
+                  },
+                  {
+                    "id": "SMUGGLERHAN",
+                    "gear": 13,
+                    "relic": 3
+                  },
+                  {
+                    "id": "SMUGGLERCHEWBACCA",
+                    "gear": 13,
+                    "relic": 3
+                  }
+                ]
               }
             ]
           }
@@ -2203,26 +2151,21 @@
       {
         "id": "menium-teams-sub-part",
         "selectionMode": "findFirstNonFinishedTeam",
-        "withArrowAfter": true,
-
         "subParts": [
           {
             "id": "menium-teams-part",
             "name": "Lag i andra zonen",
             "color": "fuchsia",
-            "notes": {
-              "texts": ["Välj ett av lagen."]
-            },
             "teamParts": [
               {
                 "id": "T2",
-                "name": "T2",
+                "name": "T2 (Mon Mothma)",
                 "withArrowAfter": false,
                 "members": [
                   {
                     "id": "MONMOTHMA",
                     "gear": 13,
-                    "relic": 3,
+                    "relic": 5,
                     "zetas": [
                       {
                         "id": "leaderskill_MONMOTHMA",
@@ -2237,7 +2180,7 @@
                   {
                     "id": "KYLEKATARN",
                     "gear": 13,
-                    "relic": 3,
+                    "relic": 5,
                     "zetas": [
                       {
                         "id": "specialskill_KYLEKATARN02",
@@ -2248,12 +2191,12 @@
                   {
                     "id": "HOTHREBELSCOUT",
                     "gear": 13,
-                    "relic": 3
+                    "relic": 5
                   },
                   {
                     "id": "PAO",
                     "gear": 13,
-                    "relic": 3,
+                    "relic": 5,
                     "zetas": [
                       {
                         "id": "uniqueskill_PAO01",
@@ -2264,122 +2207,62 @@
                   {
                     "id": "OPTIONAL",
                     "gear": 13,
-                    "relic": 3,
+                    "relic": 5,
                     "name": "Valfri rebel figher, Cara Dune är optimal men behövs även med Sana Starros."
                   }
                 ]
               },
               {
-                "id": "B2",
-                "name": "B2",
-
-                "optionalTeams": {
-                  "minimumTeamsToFarm": 1,
-                  "teams": [
-                    {
-                      "id": "b2-teams-sana",
-                      "name": "Sana Starros",
-                      "members": [
-                        {
-                          "id": "SANASTARROS",
-                          "gear": 13,
-                          "relic": 3,
-                          "omicrons": [
-                            {
-                              "id": "leaderskill_SANASTARROS",
-                              "recommendation": "required"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "STORMTROOPERHAN",
-                          "gear": 13,
-                          "relic": 3,
-                          "zetas": [
-                            {
-                              "id": "uniqueskill_STORMTROOPERHAN01",
-                              "recommendation": "required"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "CARADUNE",
-                          "gear": 13,
-                          "relic": 3,
-                          "zetas": [
-                            {
-                              "id": "uniqueskill_CARADUNE02",
-                              "recommendation": "required"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "HOTHLEIA",
-                          "gear": 13,
-                          "relic": 3,
-                          "zetas": [
-                            {
-                              "id": "uniqueskill_HOTHLEIA01",
-                              "recommendation": "required"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "HOTHHAN",
-                          "gear": 13,
-                          "relic": 3,
-                          "zetas": [
-                            {
-                              "id": "uniqueskill_HOTHHAN01",
-                              "recommendation": "required"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "id": "easy-teams-2",
-                      "name": "Wookies",
-                      "members": [
-                        {
-                          "id": "TARFFUL",
-                          "gear": 13,
-                          "relic": 3,
-                          "omicrons": [
-                            {
-                              "id": "leaderskill_TARFFUL",
-                              "recommendation": "required"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "OPTIONAL",
-                          "gear": 13,
-                          "relic": 3,
-                          "name": "Valfri Wookie"
-                        },
-                        {
-                          "id": "OPTIONAL",
-                          "gear": 13,
-                          "relic": 3,
-                          "name": "Valfri Wookie eller Veteran Han med Veteran Chewie"
-                        },
-                        {
-                          "id": "OPTIONAL",
-                          "gear": 13,
-                          "relic": 3,
-                          "name": "Valfri Wookie eller Mission Vao med Zaalbar"
-                        },
-                        {
-                          "id": "OPTIONAL",
-                          "gear": 13,
-                          "relic": 3,
-                          "name": "Valfri Wookie 2"
-                        }
-                      ]
-                    }
-                  ]
-                }
+                "id": "hard-team-FO",
+                "name": "B2 (Phasma)",
+                "members": [
+                  {
+                    "id": "PHASMA",
+                    "gear": 13,
+                    "relic": 5,
+                    "zetas": [
+                      {
+                        "id": "leaderskill_PHASMA",
+                        "recommendation": "required"
+                      }
+                    ],
+                    "omicrons": [
+                      {
+                        "id": "leaderskill_PHASMA",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "KYLORENUNMASKED",
+                    "gear": 13,
+                    "relic": 5,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_KYLORENUNMASKED01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "OPTIONAL",
+                    "gear": 13,
+                    "relic": 5,
+                    "name": "Valfri FO, t.ex. Kylo Ren"
+                  },
+                  {
+                    "id": "OPTIONAL",
+                    "gear": 13,
+                    "relic": 5,
+                    "name": "Valfri FO, t.ex. General Hux"
+                  },
+                  {
+                    "id": "OPTIONAL",
+                    "gear": 13,
+                    "relic": 5,
+                    "name": "Valfri FO, t.ex. Sith Trooper"
+                  }
+                ]
               }
             ]
           }
@@ -2388,147 +2271,285 @@
       {
         "id": "hard-team-GG",
         "name": "Lag i tredje zonen",
-        "notes": {
-          "texts": ["Välj ett av lagen."]
-        },
-        "optionalTeams": {
-          "minimumTeamsToFarm": 1,
-          "teams": [
-            {
-              "id": "hard-team-GG",
-              "name": "General Grievois (T3)",
-              "withArrowAfter": false,
-              "members": [
-                {
-                  "id": "GRIEVOUS",
-                  "gear": 13,
-                  "relic": 5,
-                  "zetas": [
-                    {
-                      "id": "leaderskill_GRIEVOUS",
-                      "recommendation": "required"
-                    },
-                    {
-                      "id": "uniqueskill_GRIEVOUS01",
-                      "recommendation": "required"
-                    }
-                  ]
-                },
-                {
-                  "id": "B1BATTLEDROIDV2",
-                  "gear": 13,
-                  "relic": 5,
-                  "zetas": [
-                    {
-                      "id": "uniqueskill_b1battledroidv2_02",
-                      "recommendation": "required"
-                    }
-                  ]
-                },
-                {
-                  "id": "B2SUPERBATTLEDROID",
-                  "gear": 13,
-                  "relic": 5,
-                  "zetas": [
-                    {
-                      "id": "uniqueskill_B2SUPERBATTLEDROID02",
-                      "recommendation": "required"
-                    }
-                  ]
-                },
-                {
-                  "id": "MAGNAGUARD",
-                  "gear": 13,
-                  "relic": 5,
-                  "zetas": [
-                    {
-                      "id": "specialskill_MAGNAGUARD02",
-                      "recommendation": "required"
-                    }
-                  ]
-                },
-                {
-                  "id": "DROIDEKA",
-                  "gear": 13,
-                  "relic": 5,
-                  "omicrons": [
-                    {
-                      "id": "uniqueskill_DROIDEKA01",
-                      "recommendation": "required"
-                    }
+        "selectionMode": "findFirstNonFinishedTeam",
+        "subParts": [
+          {
+            "id": "hard-teams-part",
+            "name": "Lag i tredje zonen",
+            "color": "fuchsia",
+            "teamParts": [
+              {
+                "id": "t3-team-sana",
+                "name": "T3 (Sana Starros)",
+                "withArrowAfter": false,
+                "members": [
+                  {
+                    "id": "SANASTARROS",
+                    "gear": 13,
+                    "relic": 7,
+                    "omicrons": [
+                      {
+                        "id": "leaderskill_SANASTARROS",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "STORMTROOPERHAN",
+                    "gear": 13,
+                    "relic": 7,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_STORMTROOPERHAN01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "CARADUNE",
+                    "gear": 13,
+                    "relic": 7,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_CARADUNE02",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "HOTHLEIA",
+                    "gear": 13,
+                    "relic": 7,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_HOTHLEIA01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "HOTHHAN",
+                    "gear": 13,
+                    "relic": 7,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_HOTHHAN01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "tw-kelleran",
+                "name": "Kelleran Beq",
+                "members": [
+                  {
+                    "id": "KELLERANBEQ",
+                    "gear": 13,
+                    "relic": 7,
+                    "omicrons": [
+                      {
+                        "id": "leaderskill_KELLERANBEQ",
+                        "recommendation": "required"
+                      }
+                    ],
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_KELLERANBEQ01",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "specialskill_KELLERANBEQ02",
+                        "recommendation": "recommended"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "MACEWINDU",
+                    "gear": 13,
+                    "relic": 7,
+                    "omicrons": [
+                      {
+                        "id": "uniqueskill_MACEWINDU02",
+                        "recommendation": "required"
+                      }
+                    ],
+                    "zetas": [
+                      {
+                        "id": "specialskill_MACEWINDU02",
+                        "recommendation": "required"
+                      },
+                      {
+                        "id": "uniqueskill_MACEWINDU01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "OPTIONAL",
+                    "gear": 13,
+                    "relic": 7,
+                    "name": "Valfri GR jedi, t.ex. Qui Gon Jin"
+                  },
+                  {
+                    "id": "OPTIONAL",
+                    "gear": 13,
+                    "relic": 7,
+                    "name": "Valfri GR jedi, t.ex. Shaak Ti"
+                  },
+                  {
+                    "id": "OPTIONAL",
+                    "gear": 13,
+                    "relic": 7,
+                    "name": "Valfri GR jedi, t.ex. Plo Koon"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "zone-4-teams",
+        "name": "Lag i bakre zonerna",
+        "selectionMode": "findFirstNonFinishedTeam",
+        "subParts": [
+          {
+            "id": "t4-part",
+            "name": "Lag i bakre zonerna",
+            "color": "fuchsia",
+            "teamParts": [
+              {
+                "id": "tw-jawas",
+                "name": "T4 (Jawas)",
+                "withArrowAfter": false,
+                "members": [
+                  {
+                    "id": "CHIEFNEBIT",
+                    "gear": 13,
+                    "relic": 3,
+                    "omicrons": [
+                      {
+                        "id": "leaderskill_CHIEFNEBIT",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "JAWAENGINEER",
+                    "gear": 13,
+                    "relic": 3
+                  },
+                  {
+                    "id": "JAWASCAVENGER",
+                    "gear": 13,
+                    "relic": 3
+                  },
+                  {
+                    "id": "DATHCHA",
+                    "gear": 13,
+                    "relic": 3
+                  },
+                  {
+                    "id": "JAWA",
+                    "gear": 13,
+                    "relic": 3
+                  }
+                ]
+              },
+              {
+                "id": "easy-teams-ewoks",
+                "name": "B4 (Ewoks)",
+                "members": [
+                  {
+                    "id": "CHIEFCHIRPA",
+                    "gear": 12,
+                    "zetas": [
+                      {
+                        "id": "leaderskill_CHIEFCHIRPA",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "PRINCESSKNEESAA",
+                    "gear": 12,
+                    "zetas": [
+                      {
+                        "id": "specialskill_PRINCESSKNEESAA02",
+                        "recommendation": "required"
+                      }
+                    ],
+                    "omicrons": [
+                      {
+                        "id": "uniqueskill_PRINCESSKNEESAA01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "LOGRAY",
+                    "gear": 12,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_LOGRAY01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "PAPLOO",
+                    "gear": 12,
+                    "zetas": [
+                      {
+                        "id": "uniqueskill_PAPLOO01",
+                        "recommendation": "required"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "EWOKELDER",
+                    "gear": 12
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tw-fleet-teams",
+        "name": "Fleet",
+        "selectionMode": "findFirstNonFinishedTeam",
+        "subParts": [
+          {
+            "id": "f1-part",
+            "name": "Fleet 1",
+            "color": "fuchsia",
+            "teamParts": [
+              {
+                "id": "tw-fleet-1",
+                "name": "F1",
+                "withArrowAfter": false,
+                "notes": {
+                  "texts": [
+                    "Chimaera med emprie-skepp",
+                    "Malevolance med separatist-skepp"
                   ]
                 }
-              ]
-            },
-            {
-              "id": "hard-team-FO",
-              "name": "First Order (B3)",
-              "members": [
-                {
-                  "id": "PHASMA",
-                  "gear": 13,
-                  "relic": 5,
-                  "zetas": [
-                    {
-                      "id": "leaderskill_PHASMA",
-                      "recommendation": "required"
-                    }
-                  ],
-                  "omicrons": [
-                    {
-                      "id": "leaderskill_PHASMA",
-                      "recommendation": "required"
-                    }
-                  ]
-                },
-                {
-                  "id": "KYLORENUNMASKED",
-                  "gear": 13,
-                  "relic": 5,
-                  "zetas": [
-                    {
-                      "id": "uniqueskill_KYLORENUNMASKED01",
-                      "recommendation": "required"
-                    }
-                  ]
-                },
-                {
-                  "id": "KYLOREN",
-                  "gear": 13,
-                  "relic": 5,
-                  "zetas": [
-                    {
-                      "id": "specialskill_KYLOREN02",
-                      "recommendation": "required"
-                    }
-                  ]
-                },
-                {
-                  "id": "GENERALHUX",
-                  "gear": 13,
-                  "relic": 5,
-                  "zetas": [
-                    {
-                      "id": "uniqueskill_GENERALHUX01",
-                      "recommendation": "required"
-                    }
-                  ]
-                },
-                {
-                  "id": "FOSITHTROOPER",
-                  "gear": 13,
-                  "relic": 5,
-                  "zetas": [
-                    {
-                      "id": "uniqueskill_FOSITHTROOPER01",
-                      "recommendation": "required"
-                    }
-                  ]
+              },
+              {
+                "id": "tw-fleet-2",
+                "name": "F2",
+                "withArrowAfter": false,
+                "notes": {
+                  "texts": ["Endurance med skräp"]
                 }
-              ]
-            }
-          ]
-        }
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "attack-teams",
