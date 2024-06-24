@@ -25,7 +25,7 @@ export async function getPlayerData(allyCode: string): Promise<Player> {
 
   try {
     const response = await fetch(
-      `http://api.swgoh.gg/player/${formattedAllyCode}`,
+      `https://swgoh.gg/api/player/${formattedAllyCode}`,
       { next: { revalidate: 3600 } }
     );
     const responseData = await response.json();
